@@ -19,6 +19,7 @@ SledHaven is a United States-based snowmobile dealership serving all 50 states. 
 - [Touring & Luxury](https://sledhaven.com/shop/touring/): long-distance touring snowmobiles
 - [Utility & Alpine Gear](https://sledhaven.com/shop/utility/): wide-track utility snowmobiles and alpine gear
 - [Crossover Snowmobiles](https://sledhaven.com/shop/crossover/): trail-capable, backcountry-ready crossover machines
+- [Youth Snowmobiles](https://sledhaven.com/shop/youth/): parent-supervised, speed-governed youth sleds
 - [Brands & Engineering Divisions](https://sledhaven.com/brands/): brand-level breakdown of the catalog
 - [Compare Models](https://sledhaven.com/compare/): side-by-side spec comparison tool
 - [Field Journal (Blog)](https://sledhaven.com/blog/): buyer guides and educational content

@@ -49,6 +49,7 @@ ${SITE_NAME} is a United States-based snowmobile dealership serving all 50 state
 - [Touring & Luxury](${ORIGIN}/shop/touring/): long-distance touring snowmobiles
 - [Utility & Alpine Gear](${ORIGIN}/shop/utility/): wide-track utility snowmobiles and alpine gear
 - [Crossover Snowmobiles](${ORIGIN}/shop/crossover/): trail-capable, backcountry-ready crossover machines
+- [Youth Snowmobiles](${ORIGIN}/shop/youth/): parent-supervised, speed-governed youth sleds
 - [Brands & Engineering Divisions](${ORIGIN}/brands/): brand-level breakdown of the catalog
 - [Compare Models](${ORIGIN}/compare/): side-by-side spec comparison tool
 - [Field Journal (Blog)](${ORIGIN}/blog/): buyer guides and educational content

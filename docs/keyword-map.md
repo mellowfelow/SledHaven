@@ -34,6 +34,16 @@ Real Semrush data confirmed `crossover snowmobile` as a distinct, low-competitio
 
 **Remaining gap:** a true Expedition-style *utility-crossover* (deep-snow hauler, not just performance-crossover) is still unstocked — the `backcountry-crossover` subcategory is seeded in the taxonomy for this but has no product yet. Flag for a future SKU.
 
+## New: Youth category (added 2026-11-22)
+
+Real Semrush data confirmed strong, low-competition demand for a youth segment: `youth snowmobile` (Vol 720, KD 15%, Easy) and `youth snowmobile for sale` (Vol 210, KD 6%, Very Easy, clean Transactional intent) plus `youth snowmobiles for sale` (Vol 210, KD 7%). This matches a real industry segment (Ski-Doo MXZ 120/200/Neo, Polaris 120) that SledHaven did not previously stock at all. Added `/shop/youth/` with two subcategories — Recreational Youth and Trainer Trail Youth — under a new in-house brand, **SledHaven Junior**, with four parent-governed products ($3,999–$7,299) priced below the real Ski-Doo MXZ 120/200 ($4,199–$4,299) and MXZ Neo ($6,849–$7,049) benchmarks researched for this addition.
+
+| Keyword | Volume | KD | Intent | Assigned URL |
+|---|---|---|---|---|
+| `youth snowmobile` | 720 | 15% | Informational/Commercial | `/shop/youth/` |
+| `youth snowmobile for sale` | 210 | 6% | Transactional | `/shop/youth/` |
+| `youth snowmobiles for sale` | 210 | 7% | Transactional | `/shop/youth/` (supporting) |
+
 ## Open item — Trail category keyword
 
 Neither `trail snowmobile` (Vol 260, dominated by trail-riding-conditions/informational intent — "Wisconsin snowmobile trails open") nor `performance trail snowmobile` (no measurable volume) gave a clean transactional keyword for `/shop/trail/`. The page currently relies on the strong site-wide `snowmobiles for sale` / `snowmobile for sale` terms plus its own product names. Needs a follow-up Semrush check against more specific variants (e.g. brand-model-style long-tail, "performance sled for sale") before a dedicated trail-category keyword can be assigned with confidence.
