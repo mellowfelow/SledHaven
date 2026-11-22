@@ -81,6 +81,31 @@ Added `/shop/electric/` as an 8th top-level category with 2 subcategories, match
 
 **Note on data source:** this check used the genuine `semrush.com` free Keyword Checker (confirmed real company page, not a lookalike), separate from the `4.semrush.com.in` source the earlier sessions' checks in this file came from. That domain is NOT verified as legitimate Semrush — it redirected to an unrelated third-party login page (`noxtools.com`) during this session. Earlier keyword figures in this file sourced from that domain should be treated as unverified until re-checked against genuine Semrush or another trusted tool.
 
+## Parts & Gear expansion (added 2026-11-22, second pass — "too thin" review)
+
+User flagged Parts & Gear (13 products, 7 subcategories) as too thin. Ran a second, more intensive research pass using genuine semrush.com's free Keyword Checker (5 checks/day quota) plus web search, then expanded to 28 products across 11 subcategories.
+
+**Semrush-validated this pass (genuine semrush.com, real figures):**
+
+| Keyword | Volume (US) | KD | Intent |
+|---|---|---|---|
+| `snowmobile jacket` | 1,300 | 12% (Very Easy) | Informational/Commercial |
+| `snowmobile goggles` | 1,300 | 10% (Very Easy) | Informational/Commercial |
+| `snowmobile bibs` | 720 | 10% (Very Easy) | Informational/Commercial |
+
+Real competitors confirmed in the live SERP: 509 (ride509.com), Polaris's own apparel line, Dennis Kirk, Ski-Doo Outlet, Up North Sports. This justified expanding **Riding Gear & Apparel** from 2 products (helmet, gloves) to 6 (+ jacket $279, bibs $249, goggles $89, boots $219). **Boots was not individually Semrush-checked** — the day's 5-check quota ran out on this term — priced/added on the reasonable inference that it follows the same uniform low-competition pattern as jacket/bibs/goggles, not on a directly verified number. Flag for a follow-up check.
+
+**Added via real-market web-search pricing (not Semrush volume, but real cited retail prices):**
+- **Ice Scratchers & Snowflaps** (new subcategory): real OEM $100-170 (Ski-Doo), universal aftermarket $20-60, premium performance $270 (Canadian retailer) — added 2 products ($69, $229)
+- **Lighting & Electrical** (new subcategory): real aftermarket range $17-400+ depending on tier — added 2 LED light bar products ($159, $299)
+- **Seats & Comfort** (new subcategory): real OEM heated seats $495-890 (Ski-Doo), aftermarket pad ~$140 — added a heated seat ($349, well under OEM) and a budget seat cover/cushion ($59, no direct price cited — reasonable estimate for a common low-cost accessory category)
+- **Carbide Skis & Runners**: added a race-spec tier ($219) grounded in the real C&A Pro Mini Race Carbide listing ($254.99)
+- **Trailers & Towing**: added a tow strap ($34, grounded in real snowmobile-specific strap pricing $11-44) and a loading ramp ($229, **no direct price source found** — estimated from general ATV/snowmobile ramp market knowledge, flag for verification)
+
+**EV Charging Accessories (new subcategory, tied to the Electric category):** real portable Level 2 charger market is $190-280 (Lectron and similar) — added a portable home charging kit ($249). The DC fast-charge adapter cable ($199) has **no specific cited retail price** — priced relative to the home-charger tier, flag for verification, same caveat pattern as the earlier clutch-kit gap.
+
+**Net result:** Parts & Gear grew from 13 products / 7 subcategories to **28 products / 11 subcategories**. Three items across this expansion (boots exact volume, loading ramp price, DC fast-charge cable price) are reasonable estimates rather than directly-cited figures — flagged above rather than presented as equally verified.
+
 ## Open item — Trail category keyword
 
 Neither `trail snowmobile` (Vol 260, dominated by trail-riding-conditions/informational intent — "Wisconsin snowmobile trails open") nor `performance trail snowmobile` (no measurable volume) gave a clean transactional keyword for `/shop/trail/`. The page currently relies on the strong site-wide `snowmobiles for sale` / `snowmobile for sale` terms plus its own product names. Needs a follow-up Semrush check against more specific variants (e.g. brand-model-style long-tail, "performance sled for sale") before a dedicated trail-category keyword can be assigned with confidence.
