@@ -92,7 +92,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       '@type': 'PostalAddress',
       addressCountry: 'US',
     },
-    priceRange: '$449 - $17,499',
+    priceRange: '$139 - $17,499',
     numberOfItems: PRODUCTS.length,
     knowsAbout: CATEGORIES.map((c) => c.name),
     makesOffer: {

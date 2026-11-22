@@ -44,6 +44,24 @@ Real Semrush data confirmed strong, low-competition demand for a youth segment: 
 | `youth snowmobile for sale` | 210 | 6% | Transactional | `/shop/youth/` |
 | `youth snowmobiles for sale` | 210 | 7% | Transactional | `/shop/youth/` (supporting) |
 
+## New: Parts & Gear category (added 2026-11-22)
+
+Real Semrush data validated 6 real aftermarket demand categories, all low-competition (KD ≤15%), none guessed. Real retail pricing anchors were pulled via web search (Woody's, C&A Pro, PowerMadd Cobra, Sno Stuff, Dayco, Gates, SP1/Parts Unlimited, Klim/Snow Deer) to price each SledHaven part at or below the real market rate for the equivalent tier, while every part's fitment is written against real spec ranges already in the catalog (ski stance 34"-42", track length 120"-174", lug depth 1.0"-3.0", engine 599cc-899cc) rather than invented compatibility.
+
+| Keyword | Volume | KD | Intent | Assigned URL | Real-market price anchor |
+|---|---|---|---|---|---|
+| `snowmobile cover` | 880 | 15% | Commercial | `/shop/parts/` (covers-storage) | SP1/Parts Unlimited trailerable: $97-$270+ |
+| `snowmobile track studs` | 590 | 2% | Commercial | `/shop/parts/` (track-studs) | Woody's 90-stud kit: ~$354-$454 |
+| `heated snowmobile gloves` | 480 | 12% | Commercial | `/shop/parts/` (riding-gear) | Savior/Snow Deer: $75-$110; Klim premium higher |
+| `snowmobile drive belt` | 210-260 | 14-15% | Commercial | `/shop/parts/` (belts-clutch) | Dayco/Gates: $95-$230 |
+| `snowmobile ski carbides` | 170 | 3% | Informational/Commercial | `/shop/parts/` (carbide-skis) | C&A Pro/Woody's runners: $69-$255/pair |
+| `snowmobile windshield` | 170-260 | 6-7% | Commercial | `/shop/parts/` (windshields) | PowerMadd Cobra: $155-$240; Sno Stuff: $90-$115 |
+| `snowmobile clutch kit` | 110 | 0% | Commercial | `/shop/parts/` (belts-clutch) | No reliable retail figure found — priced relative to belt tier |
+
+Added `/shop/parts/` as a 7th top-level category with 7 subcategories, 13 products (the 2 pre-existing gear SKUs relabeled into it, plus 11 new). `utility` was renamed from "Utility & Alpine Gear" to "Utility Snowmobiles" and its `heated-gear` subcategory removed, since gear now lives under `parts` — this is a cleaner separation (vehicles vs. accessories) matching how real dealers structure "New Snowmobiles" vs. "Parts & Accessories".
+
+**Caveat:** `snowmobile clutch kit` real-world retail pricing wasn't captured cleanly in this pass (searches returned unrelated results) — the $399 price was set relative to the validated belt pricing tier, not a direct competitor match. Worth a follow-up price check specifically against Woody's/BRP clutch kit listings before this is treated as fully verified.
+
 ## Open item — Trail category keyword
 
 Neither `trail snowmobile` (Vol 260, dominated by trail-riding-conditions/informational intent — "Wisconsin snowmobile trails open") nor `performance trail snowmobile` (no measurable volume) gave a clean transactional keyword for `/shop/trail/`. The page currently relies on the strong site-wide `snowmobiles for sale` / `snowmobile for sale` terms plus its own product names. Needs a follow-up Semrush check against more specific variants (e.g. brand-model-style long-tail, "performance sled for sale") before a dedicated trail-category keyword can be assigned with confidence.
