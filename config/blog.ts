@@ -129,7 +129,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: 'How the 10% Cryptocurrency Discount Works',
         paragraphs: [
-          'Because Bitcoin (BTC) and Tether (USDT) settle directly without legacy card-network interchange overhead, SledHaven passes the savings straight to the buyer as an automatic 10% reduction on your subtotal at checkout. On an Alpine Summit 850 Turbo R ($19,899), paying in crypto saves $1,989.90 instantly.',
+          'Because Bitcoin (BTC) and Tether (USDT) settle directly without legacy card-network interchange overhead, SledHaven passes the savings straight to the buyer as an automatic 10% reduction on your subtotal at checkout. On an Alpine Summit 850 Turbo R ($16,799), paying in crypto saves $1,679.90 instantly.',
         ],
       },
       {

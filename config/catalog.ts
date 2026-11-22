@@ -170,7 +170,7 @@ export const PRODUCTS: Product[] = [
     categoryName: 'Mountain Snowmobiles',
     subcategory: 'Turbo Backcountry',
     subcategorySlug: 'turbo-backcountry',
-    price: 19899,
+    price: 16799,
     badge: 'Premium',
     isVehicle: true,
     shortDescription:
@@ -209,7 +209,7 @@ export const PRODUCTS: Product[] = [
     categoryName: 'Mountain Snowmobiles',
     subcategory: 'Deep Powder',
     subcategorySlug: 'deep-powder',
-    price: 17450,
+    price: 16699,
     badge: 'Popular',
     isVehicle: true,
     shortDescription:
@@ -287,7 +287,7 @@ export const PRODUCTS: Product[] = [
     categoryName: 'Trail & Performance',
     subcategory: 'High-Speed Trail',
     subcategorySlug: 'high-speed-trail',
-    price: 18299,
+    price: 16799,
     badge: 'New',
     isVehicle: true,
     shortDescription:
@@ -365,7 +365,7 @@ export const PRODUCTS: Product[] = [
     categoryName: 'Touring & Luxury',
     subcategory: '2-Up Grand Touring',
     subcategorySlug: 'grand-touring-2up',
-    price: 17899,
+    price: 15999,
     badge: 'Premium',
     isVehicle: true,
     shortDescription:
