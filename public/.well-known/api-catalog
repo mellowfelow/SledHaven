@@ -1,37 +1,28 @@
 {
   "linkset": [
     {
-      "anchor": "https://sledhaven.com/api/products/",
-      "service-desc": [
+      "anchor": "https://sledhaven.com/",
+      "https://www.iana.org/assignments/link-relations/service-doc": [
         {
-          "href": "https://sledhaven.com/api/mcp/",
-          "type": "application/json"
+          "href": "https://sledhaven.com/faq/"
         }
       ],
-      "service-doc": [
-        {
-          "href": "https://sledhaven.com/llms.txt",
-          "type": "text/plain"
-        }
-      ]
+      "title": "SledHaven — American Alpine Performance. Delivered Nationwide."
     },
     {
-      "anchor": "https://sledhaven.com/api/categories/",
-      "service-doc": [
-        {
-          "href": "https://sledhaven.com/llms.txt",
-          "type": "text/plain"
-        }
-      ]
+      "anchor": "https://sledhaven.com/shop/",
+      "type": "text/html",
+      "title": "SledHaven Product Catalog"
     },
     {
-      "anchor": "https://sledhaven.com/api/search/",
-      "service-doc": [
-        {
-          "href": "https://sledhaven.com/llms.txt",
-          "type": "text/plain"
-        }
-      ]
+      "anchor": "https://sledhaven.com/api/products/",
+      "type": "application/json",
+      "title": "SledHaven Products API"
+    },
+    {
+      "anchor": "https://sledhaven.com/api/mcp/",
+      "type": "application/json",
+      "title": "SledHaven MCP Server"
     }
   ]
 }

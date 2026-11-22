@@ -1,25 +1,50 @@
 {
-  "schema_version": "1.0",
-  "site": "https://sledhaven.com",
+  "$schema": "https://agentskills.io/schema/v0.2.0/index.json",
   "name": "SledHaven",
+  "url": "https://sledhaven.com",
+  "description": "American Alpine Performance. Delivered Nationwide.",
   "skills": [
     {
-      "id": "browse-snowmobiles",
-      "name": "Browse & Filter Snowmobiles",
-      "endpoint": "https://sledhaven.com/api/products/",
-      "method": "GET"
+      "name": "browse-products",
+      "type": "navigation",
+      "description": "Browse the full snowmobile and gear catalog by category",
+      "url": "https://sledhaven.com/shop/",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b85"
     },
     {
-      "id": "search-snowmobiles",
-      "name": "Search Snowmobile Catalog",
-      "endpoint": "https://sledhaven.com/api/search/",
-      "method": "GET"
+      "name": "search-products",
+      "type": "navigation",
+      "description": "Search the catalog by keyword via JSON API",
+      "url": "https://sledhaven.com/api/search/",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b85"
     },
     {
-      "id": "mcp-tools",
-      "name": "MCP Commerce Tools",
-      "endpoint": "https://sledhaven.com/api/mcp/",
-      "method": "POST"
+      "name": "compare-models",
+      "type": "commerce",
+      "description": "Side-by-side spec comparison of snowmobile models",
+      "url": "https://sledhaven.com/compare/",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b85"
+    },
+    {
+      "name": "financing-info",
+      "type": "commerce",
+      "description": "Pay-in-4 financing terms and eligibility",
+      "url": "https://sledhaven.com/financing/",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b85"
+    },
+    {
+      "name": "product-education",
+      "type": "content",
+      "description": "Buyer guides and educational blog content",
+      "url": "https://sledhaven.com/blog/",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b85"
+    },
+    {
+      "name": "contact",
+      "type": "support",
+      "description": "Contact for product questions, orders, or support",
+      "url": "https://sledhaven.com/contact/",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b85"
     }
   ]
 }

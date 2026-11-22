@@ -1,6 +1,31 @@
 {
   "issuer": "https://sledhaven.com",
-  "service_documentation": "https://sledhaven.com/auth.md",
+  "authorization_endpoint": null,
+  "token_endpoint": null,
+  "jwks_uri": null,
   "grant_types_supported": [],
-  "response_types_supported": []
+  "response_types_supported": [],
+  "scopes_supported": [],
+  "service_documentation": "https://sledhaven.com/auth.md",
+  "note": "SledHaven has no protected APIs. All resources are publicly accessible.",
+  "public_resources": [
+    "https://sledhaven.com/shop/",
+    "https://sledhaven.com/blog/",
+    "https://sledhaven.com/faq/",
+    "https://sledhaven.com/api/products/",
+    "https://sledhaven.com/llms.txt",
+    "https://sledhaven.com/.well-known/api-catalog",
+    "https://sledhaven.com/.well-known/agent-skills/index.json",
+    "https://sledhaven.com/.well-known/mcp/server-card.json"
+  ],
+  "agent_auth": {
+    "register_uri": null,
+    "identity_types_supported": [
+      "none"
+    ],
+    "credential_types_supported": [
+      "none"
+    ],
+    "notes": "No registration required. All content is publicly accessible to agents."
+  }
 }

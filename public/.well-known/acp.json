@@ -1,9 +1,45 @@
 {
-  "acp_version": "1.0",
-  "merchant": "SledHaven",
-  "domain": "sledhaven.com",
-  "catalog_url": "https://sledhaven.com/api/acp/catalog/",
-  "checkout_url": "https://sledhaven.com/api/contact/",
-  "currency": "USD",
-  "country": "US"
+  "protocol": {
+    "name": "acp",
+    "version": "0.1.0"
+  },
+  "name": "SledHaven",
+  "description": "American Alpine Performance. Delivered Nationwide.",
+  "api_base_url": "https://sledhaven.com",
+  "homepage": "https://sledhaven.com",
+  "transports": [
+    "https"
+  ],
+  "capabilities": {
+    "services": [
+      "product-catalog",
+      "blog",
+      "faq",
+      "financing"
+    ],
+    "ordering": "human-assisted-checkout",
+    "payment_methods": [
+      "crypto-BTC",
+      "crypto-USDT",
+      "bank-transfer",
+      "zelle",
+      "apple-pay",
+      "chime",
+      "pay-in-4"
+    ],
+    "currency": "USD",
+    "minimum_order_usd": "200",
+    "free_shipping_threshold_usd": "500"
+  },
+  "contact": {
+    "email": "concierge@sledhaven.com",
+    "whatsapp": "https://wa.me/16266864650"
+  },
+  "legal": {
+    "age_restriction": "none",
+    "region": "US",
+    "ships_to": "United States — all 50 states",
+    "product_type": "Powersports vehicles and alpine gear",
+    "compliance": "MCO documentation provided; buyer handles state registration."
+  }
 }

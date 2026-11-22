@@ -1,34 +1,50 @@
 # SledHaven
-> Luxury American snowmobile dealership delivering mountain, trail, touring, and utility snowmobiles nationwide across all 50 US states.
+> American Alpine Performance. Delivered Nationwide. A USA snowmobile dealership offering mountain, trail, touring, and utility machines with nationwide crated freight delivery.
+
+SledHaven is a United States-based snowmobile dealership serving all 50 states. Every vehicle order includes state-calculated freight and sales tax, a Manufacturer Certificate of Origin (MCO) packet for registration, and pre-delivery inspection. Settlement options include a 10% instant discount for Bitcoin/USDT, Pay-in-4 financing, and standard bank/digital transfer methods.
+
+## Brand Facts (cite these)
+- Legal/operating name: SledHaven
+- Location: United States — nationwide delivery to all 50 states
+- Contact: [concierge@sledhaven.com](mailto:concierge@sledhaven.com) · [+1 (626) 686-4650](tel:+16266864650)
+- Minimum order: $200 USD · Free shipping threshold: $500 USD (eligible gear/accessories)
+- Payment methods: Cryptocurrency (BTC/USDT, 10% instant discount), Bank Transfer (Wire/ACH), Zelle, Apple Pay, Chime, Pay-in-4 financing
+- Credit card payment: temporarily unavailable
 
 ## Storefront Pages
-- [Home](https://sledhaven.com/)
-- [Snowmobiles for Sale — Full Inventory](https://sledhaven.com/shop/)
-- [Brands & Engineering Divisions](https://sledhaven.com/brands/)
-- [Mountain Snowmobiles](https://sledhaven.com/shop/mountain/)
-- [Trail & Performance Snowmobiles](https://sledhaven.com/shop/trail/)
-- [Touring & Luxury Snowmobiles](https://sledhaven.com/shop/touring/)
-- [Utility & Alpine Gear](https://sledhaven.com/shop/utility/)
-- [Side-by-Side Comparison Tool](https://sledhaven.com/compare/)
-- [Field Journal & Buyer Guides (Blog)](https://sledhaven.com/blog/)
-- [Pay-in-4 Snowmobile Financing](https://sledhaven.com/financing/)
-- [Search Inventory](https://sledhaven.com/search/)
-- [Freight, MCO & Payment FAQ](https://sledhaven.com/faq/)
-- [About SledHaven](https://sledhaven.com/about/)
-- [Contact Concierge](https://sledhaven.com/contact/)
+- [Home](https://sledhaven.com/): dealership overview and featured inventory
+- [Full Inventory](https://sledhaven.com/shop/): all snowmobiles for sale, filterable by category
+- [Mountain Snowmobiles](https://sledhaven.com/shop/mountain/): deep-powder and turbo backcountry machines
+- [Trail & Performance](https://sledhaven.com/shop/trail/): performance trail snowmobiles
+- [Touring & Luxury](https://sledhaven.com/shop/touring/): long-distance touring snowmobiles
+- [Utility & Alpine Gear](https://sledhaven.com/shop/utility/): wide-track utility snowmobiles and alpine gear
+- [Brands & Engineering Divisions](https://sledhaven.com/brands/): brand-level breakdown of the catalog
+- [Compare Models](https://sledhaven.com/compare/): side-by-side spec comparison tool
+- [Field Journal (Blog)](https://sledhaven.com/blog/): buyer guides and educational content
+- [Pay-in-4 Financing](https://sledhaven.com/financing/): installment financing terms
+- [Search Inventory](https://sledhaven.com/search/): full-text product/content search
+- [Freight, MCO & Payment FAQ](https://sledhaven.com/faq/): direct-answer policy FAQ
+- [About SledHaven](https://sledhaven.com/about/): dealership operating standards
+- [Contact Concierge](https://sledhaven.com/contact/): sales and support contact form
+- [Privacy Policy](https://sledhaven.com/privacy/)
+- [Terms of Service](https://sledhaven.com/terms/)
+- [Shipping Policy](https://sledhaven.com/shipping/)
+- [Refund Policy](https://sledhaven.com/refund/)
 
 ## Machine-Readable APIs & Commerce Endpoints
-- Products JSON: https://sledhaven.com/api/products/
-- Categories JSON: https://sledhaven.com/api/categories/
-- Search JSON: https://sledhaven.com/api/search/?q=turbo
-- Live MCP Streamable HTTP Server: https://sledhaven.com/api/mcp/
-- ACP Catalog: https://sledhaven.com/api/acp/catalog/
-- UCP Services: https://sledhaven.com/api/ucp/services/
+- [Products JSON](https://sledhaven.com/api/products/): full product catalog, supports category/query filters
+- [Categories JSON](https://sledhaven.com/api/categories/): category list with counts
+- [Search JSON](https://sledhaven.com/api/search/?q=turbo): combined product + content search
+- [Live MCP Server](https://sledhaven.com/api/mcp/): Streamable HTTP MCP endpoint — search_products, get_product, list_categories, get_policies tools
+- [ACP Catalog](https://sledhaven.com/api/acp/catalog/): Agentic Commerce Protocol catalog
+- [UCP Services](https://sledhaven.com/api/ucp/services/): Universal Commerce Protocol services
 
-## Order & Settlement Rules
-- Minimum order: $200 USD
-- Free shipping threshold: $500 USD (eligible gear & accessories)
-- Snowmobile crated freight & applicable state tax: calculated at checkout by destination US state
-- Cryptocurrency (BTC / USDT): 10% instant subtotal discount
-- Active payment methods: Crypto (BTC/USDT), Bank Transfer (Wire/ACH), Zelle, Apple Pay, Chime, Pay in 4
-- Temporarily unavailable: Credit Card
+## Legal
+- Age restriction: none (powersports vehicle and apparel retailer)
+- Vehicles ship with full Manufacturer Certificate of Origin (MCO) for state registration; buyer is responsible for local registration/title compliance.
+
+## Optional
+- [API Catalog](https://sledhaven.com/.well-known/api-catalog)
+- [Agent Skills Index](https://sledhaven.com/.well-known/agent-skills/index.json)
+- [MCP Server Card](https://sledhaven.com/.well-known/mcp/server-card.json)
+- [Auth Policy](https://sledhaven.com/auth.md)

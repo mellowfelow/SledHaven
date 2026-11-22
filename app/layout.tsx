@@ -10,6 +10,8 @@ import Footer from '@/components/Footer';
 import CartDrawer from '@/components/CartDrawer';
 import ChatHub from '@/components/ChatHub';
 import JsonLd from '@/components/JsonLd';
+import { REVIEW_SUMMARY } from '@/config/reviews';
+import { CATEGORIES, PRODUCTS } from '@/config/catalog';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -58,9 +60,9 @@ export const metadata: Metadata = {
     description: SITE.description,
     images: [
       {
-        url: '/images/hero-alpine.jpg',
-        width: 1600,
-        height: 900,
+        url: '/images/og-cover.jpg',
+        width: 1200,
+        height: 630,
         alt: `${SITE.name} luxury alpine snowmobile on snow ridge`,
       },
     ],
@@ -69,19 +71,19 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: `${SITE.name} — Luxury Snowmobiles for Sale in the USA`,
     description: SITE.description,
-    images: ['/images/hero-alpine.jpg'],
+    images: ['/images/og-cover.jpg'],
   },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const organizationSchema = {
     '@context': 'https://schema.org',
-    '@type': 'AutoDealer',
+    '@type': ['AutoDealer', 'Store', 'Organization'],
+    '@id': `${SITE.url}/#organization`,
     name: SITE.name,
     url: SITE.url,
     description: SITE.description,
     telephone: SITE.contact.phone,
-    email: SITE.contact.email,
     areaServed: {
       '@type': 'Country',
       name: 'United States',
@@ -91,6 +93,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       addressCountry: 'US',
     },
     priceRange: '$649 - $19,899',
+    numberOfItems: PRODUCTS.length,
+    knowsAbout: CATEGORIES.map((c) => c.name),
+    makesOffer: {
+      '@type': 'AggregateOffer',
+      priceCurrency: 'USD',
+      offerCount: PRODUCTS.length,
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: REVIEW_SUMMARY.averageRating,
+      reviewCount: REVIEW_SUMMARY.totalReviews,
+      bestRating: 5,
+      worstRating: 1,
+    },
   };
 
   const websiteSchema = {

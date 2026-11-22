@@ -95,10 +95,18 @@ if (tyOrder && /(routing number|iban|swift|send screenshot on whatsapp)/i.test(t
   errors.push('app/thank-you-order/page.tsx must not display bank details or WhatsApp screenshot prompts');
 }
 
-// 7. Verify robots.ts disallows /admin/
-const robotsTs = mustExist('app/robots.ts');
-if (robotsTs && !robotsTs.includes('/admin/')) {
-  errors.push('app/robots.ts must disallow /admin/');
+// 7. Verify robots.txt route disallows /admin/, lists AI crawlers, and carries the agent-resource comment block
+const robotsRoute = mustExist('app/robots.txt/route.ts');
+if (robotsRoute) {
+  if (!robotsRoute.includes('/admin/')) {
+    errors.push('app/robots.txt/route.ts must disallow /admin/');
+  }
+  if (!robotsRoute.includes('GPTBot') || !robotsRoute.includes('ClaudeBot') || !robotsRoute.includes('PerplexityBot')) {
+    errors.push('app/robots.txt/route.ts must list the major AI crawlers');
+  }
+  if (!robotsRoute.includes('llms.txt')) {
+    errors.push('app/robots.txt/route.ts must include the agent-readable resource comment block');
+  }
 }
 
 // 8. Verify no NEXT_PUBLIC_ADMIN_PASSCODE leakage anywhere

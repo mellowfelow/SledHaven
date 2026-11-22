@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, FileCheck2, ShieldCheck, Truck } from 'lucide-react';
 import { SITE } from '@/config/site';
+import { CATEGORIES } from '@/config/catalog';
 import SmartImage from '@/components/SmartImage';
 import JsonLd from '@/components/JsonLd';
 
@@ -23,9 +24,17 @@ export default function AboutPage() {
     ],
   };
 
+  const aboutPageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    url: `${SITE.url}/about/`,
+    name: `About ${SITE.name}`,
+    mainEntity: { '@id': `${SITE.url}/#organization` },
+  };
+
   return (
     <main className="flex-1">
-      <JsonLd data={breadcrumb} />
+      <JsonLd data={[breadcrumb, aboutPageSchema]} />
 
       <section className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
@@ -102,6 +111,49 @@ export default function AboutPage() {
             </h2>
             <p className="text-sm text-[#5C636E] leading-relaxed">
               We verify unit allocation first, then send individualized payment details for Cryptocurrency (10% discount), Bank Transfer, Zelle, Apple Pay, Chime, or Pay-in-4.
+            </p>
+          </div>
+        </div>
+
+        {/* Riding Disciplines We Serve — real catalog breadth, AI-extractable */}
+        <div className="mt-16 pt-14 border-t border-[#E4E6E8]">
+          <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-[#111418] mb-6">
+            Riding Disciplines We Serve
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {CATEGORIES.map((cat) => (
+              <div key={cat.slug} className="bg-white border border-[#E4E6E8] rounded-lg p-5 space-y-2">
+                <h3 className="text-sm font-semibold text-[#111418]">{cat.name}</h3>
+                <p className="text-xs text-[#5C636E] leading-relaxed">
+                  {cat.subcategories.map((s) => s.name).join(' · ')}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Nationwide footprint — real, truthful scope statement */}
+        <div className="mt-16 pt-14 border-t border-[#E4E6E8] grid grid-cols-1 lg:grid-cols-12 gap-10">
+          <div className="lg:col-span-7 space-y-3">
+            <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-[#111418]">
+              Nationwide United States Delivery
+            </h2>
+            <p className="text-sm sm:text-base text-[#4F5863] leading-relaxed">
+              {SITE.name} delivers to all 50 US states. Snowmobile freight and applicable state sales tax are
+              calculated transparently at checkout by destination state, and every vehicle arrives with a
+              Manufacturer Certificate of Origin (MCO) packet so you can complete registration locally without
+              chasing paperwork. Gear and accessory orders over ${SITE.orderRules.freeShippingThreshold} ship free
+              nationwide.
+            </p>
+          </div>
+          <div className="lg:col-span-5 space-y-3">
+            <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-[#111418]">
+              Flexible, Verified Settlement
+            </h2>
+            <p className="text-sm sm:text-base text-[#4F5863] leading-relaxed">
+              Beyond traditional bank transfer, {SITE.name} supports Zelle, Apple Pay, Chime, a 10% instant
+              discount for Bitcoin/USDT settlement, and Pay-in-4 interest-free financing — so riders can choose
+              the settlement method that fits them, not the other way around.
             </p>
           </div>
         </div>

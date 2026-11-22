@@ -15,7 +15,7 @@ export const SITE = {
   url: 'https://sledhaven.com',
   tagline: 'American Alpine Performance. Delivered Nationwide.',
   description:
-    'Premier USA snowmobile dealership offering mountain, trail, touring, and utility snowmobiles for sale with state-calculated nationwide freight delivery, Pay-in-4 financing, and 10% crypto savings.',
+    'USA snowmobile dealership: mountain, trail, touring & utility sleds for sale with nationwide freight, Pay-in-4 financing, and a 10% crypto discount.',
   location: {
     country: 'USA',
     countryCode: 'US',

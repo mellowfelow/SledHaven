@@ -18,3 +18,5 @@
   - Backed by Upstash Redis (5 env-prefix auto-detection) with server-memory fallback
   - Flexible `parsePaymentDetail()` parser turns one pasted block into individually copyable fields on `/order/payment-details/`
   - Admin WhatsApp panel uses bold `*SledHaven*` opener; customer-originated links use literal `Hi SledHaven,`
+- **Customer Reviews (`config/reviews.ts`):**
+  - Source: real reviews migrated from SledHaven's prior website (client-confirmed 2026-11-22) — NOT fabricated. Preserve faithfully; do not alter counts/ratings/authors without client instruction.

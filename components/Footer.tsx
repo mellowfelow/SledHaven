@@ -135,11 +135,17 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} {SITE.name}. All rights reserved. US Off-Highway Vehicle & Snowmobile Retail.
           </p>
           <div className="flex items-center gap-5">
-            <Link href="/order/payment-details/" className="hover:text-white transition-colors">
-              Order Payment Portal
+            <Link href="/privacy/" className="hover:text-white transition-colors">
+              Privacy Policy
             </Link>
-            <Link href="/admin/" className="hover:text-white transition-colors">
-              Staff Reply Portal
+            <Link href="/terms/" className="hover:text-white transition-colors">
+              Terms of Service
+            </Link>
+            <Link href="/shipping/" className="hover:text-white transition-colors">
+              Shipping Policy
+            </Link>
+            <Link href="/refund/" className="hover:text-white transition-colors">
+              Refund Policy
             </Link>
           </div>
         </div>
