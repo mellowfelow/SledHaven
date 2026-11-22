@@ -1,0 +1,7 @@
+{
+  "resource": "https://sledhaven.com",
+  "bearer_methods_supported": [
+    "header"
+  ],
+  "resource_documentation": "https://sledhaven.com/auth.md"
+}

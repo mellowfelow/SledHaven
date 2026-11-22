@@ -1,0 +1,6 @@
+{
+  "ucp": "1.0",
+  "merchant": "SledHaven",
+  "domain": "sledhaven.com",
+  "services_url": "https://sledhaven.com/api/ucp/services/"
+}

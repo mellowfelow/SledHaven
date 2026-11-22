@@ -1,0 +1,9 @@
+{
+  "acp_version": "1.0",
+  "merchant": "SledHaven",
+  "domain": "sledhaven.com",
+  "catalog_url": "https://sledhaven.com/api/acp/catalog/",
+  "checkout_url": "https://sledhaven.com/api/contact/",
+  "currency": "USD",
+  "country": "US"
+}

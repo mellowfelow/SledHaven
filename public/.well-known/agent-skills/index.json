@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "site": "https://sledhaven.com",
+  "name": "SledHaven",
+  "skills": [
+    {
+      "id": "browse-snowmobiles",
+      "name": "Browse & Filter Snowmobiles",
+      "endpoint": "https://sledhaven.com/api/products/",
+      "method": "GET"
+    },
+    {
+      "id": "search-snowmobiles",
+      "name": "Search Snowmobile Catalog",
+      "endpoint": "https://sledhaven.com/api/search/",
+      "method": "GET"
+    },
+    {
+      "id": "mcp-tools",
+      "name": "MCP Commerce Tools",
+      "endpoint": "https://sledhaven.com/api/mcp/",
+      "method": "POST"
+    }
+  ]
+}

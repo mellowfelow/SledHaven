@@ -1,0 +1,37 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://sledhaven.com/api/products/",
+      "service-desc": [
+        {
+          "href": "https://sledhaven.com/api/mcp/",
+          "type": "application/json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://sledhaven.com/llms.txt",
+          "type": "text/plain"
+        }
+      ]
+    },
+    {
+      "anchor": "https://sledhaven.com/api/categories/",
+      "service-doc": [
+        {
+          "href": "https://sledhaven.com/llms.txt",
+          "type": "text/plain"
+        }
+      ]
+    },
+    {
+      "anchor": "https://sledhaven.com/api/search/",
+      "service-doc": [
+        {
+          "href": "https://sledhaven.com/llms.txt",
+          "type": "text/plain"
+        }
+      ]
+    }
+  ]
+}

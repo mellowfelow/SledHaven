@@ -1,0 +1,22 @@
+{
+  "serverInfo": {
+    "name": "SledHaven Storefront MCP",
+    "version": "1.0.0"
+  },
+  "transport": {
+    "type": "streamable-http",
+    "endpoint": "https://sledhaven.com/api/mcp/"
+  },
+  "authentication": {
+    "required": false
+  },
+  "capabilities": {
+    "tools": [
+      "list_products",
+      "get_product",
+      "search_products",
+      "list_categories",
+      "calculate_shipping"
+    ]
+  }
+}

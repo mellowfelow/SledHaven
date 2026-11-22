@@ -1,0 +1,20 @@
+# SledHaven — Project Architecture & Strategy (Internal — Never Deployed to public/)
+
+- **Brand:** SledHaven (`sledhaven.com`)
+- **Positioning:** Luxury USA Snowmobile Dealership — Mountain, Trail, Touring, and Utility snowmobiles + Alpine Carbon Gear
+- **Target Hosting:** Vercel (Next.js App Router, real API routes, no static export)
+- **Order Rules:**
+  - Minimum order: `$200`
+  - Free shipping threshold: `$500` (accessories/gear)
+  - Snowmobile vehicle freight & applicable state tax: calculated transparently at checkout by destination US state
+  - Cryptocurrency discount: `10%` instant subtotal discount for BTC / USDT
+- **Checkout & Settlement:**
+  - Channel: Email order form checkout (full required legal name, email, phone, US street address, city, state, ZIP, payment method)
+  - Active payment methods: Crypto (BTC/USDT -10%), Bank Transfer (Wire/ACH), Apple Pay, Chime, Zelle, Pay-in-4 Financing
+  - Disabled method: Credit Card (explicitly labeled Temporarily Unavailable)
+  - Customer order confirmation email fires unconditionally on every order submission using LIGHT email shell
+- **Reply Portal (`/admin/*`):**
+  - Passcode-gated via `X-Admin-Passcode` header (`ADMIN_PASSCODE` env var or secure first-run scrypt claim)
+  - Backed by Upstash Redis (5 env-prefix auto-detection) with server-memory fallback
+  - Flexible `parsePaymentDetail()` parser turns one pasted block into individually copyable fields on `/order/payment-details/`
+  - Admin WhatsApp panel uses bold `*SledHaven*` opener; customer-originated links use literal `Hi SledHaven,`

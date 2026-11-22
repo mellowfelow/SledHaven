@@ -1,0 +1,6 @@
+{
+  "name": "SledHaven",
+  "description": "SledHaven — Luxury American snowmobile dealership offering mountain, trail, touring, and utility snowmobiles for sale with nationwide US freight delivery, Pay-in-4 financing, and 10% crypto savings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

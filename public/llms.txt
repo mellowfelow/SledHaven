@@ -1,0 +1,34 @@
+# SledHaven
+> Luxury American snowmobile dealership delivering mountain, trail, touring, and utility snowmobiles nationwide across all 50 US states.
+
+## Storefront Pages
+- [Home](https://sledhaven.com/)
+- [Snowmobiles for Sale — Full Inventory](https://sledhaven.com/shop/)
+- [Brands & Engineering Divisions](https://sledhaven.com/brands/)
+- [Mountain Snowmobiles](https://sledhaven.com/shop/mountain/)
+- [Trail & Performance Snowmobiles](https://sledhaven.com/shop/trail/)
+- [Touring & Luxury Snowmobiles](https://sledhaven.com/shop/touring/)
+- [Utility & Alpine Gear](https://sledhaven.com/shop/utility/)
+- [Side-by-Side Comparison Tool](https://sledhaven.com/compare/)
+- [Field Journal & Buyer Guides (Blog)](https://sledhaven.com/blog/)
+- [Pay-in-4 Snowmobile Financing](https://sledhaven.com/financing/)
+- [Search Inventory](https://sledhaven.com/search/)
+- [Freight, MCO & Payment FAQ](https://sledhaven.com/faq/)
+- [About SledHaven](https://sledhaven.com/about/)
+- [Contact Concierge](https://sledhaven.com/contact/)
+
+## Machine-Readable APIs & Commerce Endpoints
+- Products JSON: https://sledhaven.com/api/products/
+- Categories JSON: https://sledhaven.com/api/categories/
+- Search JSON: https://sledhaven.com/api/search/?q=turbo
+- Live MCP Streamable HTTP Server: https://sledhaven.com/api/mcp/
+- ACP Catalog: https://sledhaven.com/api/acp/catalog/
+- UCP Services: https://sledhaven.com/api/ucp/services/
+
+## Order & Settlement Rules
+- Minimum order: $200 USD
+- Free shipping threshold: $500 USD (eligible gear & accessories)
+- Snowmobile crated freight & applicable state tax: calculated at checkout by destination US state
+- Cryptocurrency (BTC / USDT): 10% instant subtotal discount
+- Active payment methods: Crypto (BTC/USDT), Bank Transfer (Wire/ACH), Zelle, Apple Pay, Chime, Pay in 4
+- Temporarily unavailable: Credit Card
