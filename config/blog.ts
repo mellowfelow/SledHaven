@@ -19,7 +19,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: '2026-usa-snowmobile-buyers-guide',
     title: '2026 Buyer’s Guide: Choosing the Right Snowmobile for Sale in the USA',
     excerpt:
-      'Match engine architecture, track lug profile, and suspension geometry to your primary American riding terrain — from Rocky Mountain powder to groomed Midwest trails.',
+      'Match engine architecture, track lug profile, and suspension geometry to your riding terrain — from Rocky Mountain powder to groomed Midwest trails.',
     category: 'Buyer Guides',
     publishedAt: '2026-10-14',
     readTime: '6 min read',
@@ -53,7 +53,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'nationwide-crated-snowmobile-freight-mco-registration',
     title: 'How Nationwide Crated Snowmobile Freight & State MCO Registration Works',
     excerpt:
-      'What happens after you reserve a snowmobile online: pre-delivery inspection, steel-reinforced crating, residential liftgate freight, and Manufacturer Certificate of Origin paperwork.',
+      'What happens after you reserve a snowmobile online: pre-delivery inspection, steel-reinforced crating, liftgate freight, and MCO registration paperwork.',
     category: 'Freight & Ownership',
     publishedAt: '2026-10-28',
     readTime: '5 min read',

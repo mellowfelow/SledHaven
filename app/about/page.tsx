@@ -10,7 +10,7 @@ import JsonLd from '@/components/JsonLd';
 export const metadata: Metadata = {
   title: 'About SledHaven — American Snowmobile Dealership',
   description:
-    'Learn how SledHaven delivers mountain, trail, touring, and utility snowmobiles nationwide across the United States with transparent state freight calculation and MCO paperwork.',
+    'How SledHaven delivers mountain, trail, touring & utility snowmobiles nationwide with transparent state freight calculation and MCO registration paperwork.',
   alternates: { canonical: '/about/' },
 };
 

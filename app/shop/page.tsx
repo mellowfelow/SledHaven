@@ -9,7 +9,7 @@ import JsonLd from '@/components/JsonLd';
 export const metadata: Metadata = {
   title: 'Snowmobiles for Sale — Full 2026 USA Inventory',
   description:
-    'Browse SledHaven mountain, trail, touring, and utility snowmobiles for sale in the USA. State-calculated crated freight, Pay-in-4 financing, and 10% crypto discount.',
+    'Browse SledHaven mountain, trail, crossover, touring & utility snowmobiles for sale in the USA with crated freight, Pay-in-4 financing & a 10% crypto discount.',
   alternates: { canonical: '/shop/' },
 };
 

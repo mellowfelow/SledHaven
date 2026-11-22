@@ -10,7 +10,7 @@ import JsonLd from '@/components/JsonLd';
 export const metadata: Metadata = {
   title: 'Journal & Snowmobile Buying Guides',
   description:
-    'Technical guides on buying snowmobiles in the USA, nationwide crated freight, state MCO registration, mountain vs. trail specs, and Pay-in-4 vs. 10% crypto savings.',
+    'Technical guides on buying snowmobiles in the USA: crated freight, state MCO registration, mountain vs. trail specs, and Pay-in-4 vs. 10% crypto savings.',
   alternates: { canonical: '/blog/' },
 };
 

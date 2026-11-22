@@ -8,7 +8,7 @@ import JsonLd from '@/components/JsonLd';
 export const metadata: Metadata = {
   title: 'Compare Snowmobiles Side-by-Side',
   description:
-    'Compare SledHaven mountain, trail, touring, and utility snowmobiles side by side across displacement, horsepower, track length, dry weight, Pay-in-4, and 10% crypto pricing.',
+    'Compare SledHaven snowmobiles side by side across displacement, horsepower, track length, dry weight, and pricing with Pay-in-4 and 10% crypto savings.',
   alternates: { canonical: '/compare/' },
 };
 
