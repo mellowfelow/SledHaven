@@ -50,6 +50,7 @@ ${SITE_NAME} is a United States-based snowmobile dealership serving all 50 state
 - [Utility Snowmobiles](${ORIGIN}/shop/utility/): wide-track utility workhorses
 - [Crossover Snowmobiles](${ORIGIN}/shop/crossover/): trail-capable, backcountry-ready crossover machines
 - [Youth Snowmobiles](${ORIGIN}/shop/youth/): parent-supervised, speed-governed youth sleds
+- [Electric Snowmobiles](${ORIGIN}/shop/electric/): battery-electric trail sleds and light recreational snow bikes
 - [Parts & Gear](${ORIGIN}/shop/parts/): fitment-matched carbides, studs, belts, windshields, covers, and heated riding gear
 - [Brands & Engineering Divisions](${ORIGIN}/brands/): brand-level breakdown of the catalog
 - [Compare Models](${ORIGIN}/compare/): side-by-side spec comparison tool

@@ -62,6 +62,25 @@ Added `/shop/parts/` as a 7th top-level category with 7 subcategories, 13 produc
 
 **Caveat:** `snowmobile clutch kit` real-world retail pricing wasn't captured cleanly in this pass (searches returned unrelated results) — the $399 price was set relative to the validated belt pricing tier, not a direct competitor match. Worth a follow-up price check specifically against Woody's/BRP clutch kit listings before this is treated as fully verified.
 
+## New: Electric category (added 2026-11-22)
+
+Checked via genuine semrush.com (free Keyword Checker, not the browser-pane source used for other checks this session — see note below). Confirmed real, low-competition demand for an electric segment, and a real competitive market already serving it.
+
+| Keyword | Volume (US) | KD | Intent |
+|---|---|---|---|
+| `electric snowmobile` | 2,400 | 8% (Very Easy) | Informational/Commercial |
+| `electric snowmobiles` | 390 | 11% (Very Easy) | — |
+| `electric snowmobile for sale` | 140 | 8% (Very Easy) | Transactional |
+| `children's electric snowmobile` | 320 | 23% (Easy) | — (youth-electric crossover opportunity, not yet built) |
+
+**Real competitors confirmed in the live Google SERP Semrush pulled:** Ski-Doo has its own electric model page (Grand Touring Electric / Expedition Electric — commercial/tour-operator focused, range-limited to ~31mi at a governed 15.5mph); **Taiga Motors** (Nomad — a real production performance electric sled, 90HP-equiv/23kWh/~62mi range, $17,490-$19,490); **MoonBikes** (a lighter electric "snow bike" class, $8,500 base, 2.5kWh, ~1-1.5hr ride time); **SnowmobileTrader.com has a literal "Electric" listing category** — confirming the industry already treats this as a distinct, named segment, not a novelty.
+
+Added `/shop/electric/` as an 8th top-level category with 2 subcategories, matching the two real distinct archetypes found (not one invented "electric" product):
+- **Electric Trail & Touring** (Taiga Nomad-style, serious trail-capable performance): Volt Trail 23kWh ($14,999) and Volt Trail 31kWh Long Range ($16,999) — both undercut Taiga's real $17,490-$19,490, with range/charge-time specs scaled proportionally from Taiga's published 23kWh->62mi and performance-battery->83mi figures.
+- **Light Recreational Electric** (MoonBikes-style snow bike, not a full-size sled): Volt Scout Light Electric ($7,499) and Volt Scout Dual-Battery ($8,999) — both undercut MoonBikes' real $8,500 base, with weight/range/charge-time specs grounded in MoonBikes' published 163lb/2.5kWh/1-1.5hr figures and its real dual-battery option.
+
+**Note on data source:** this check used the genuine `semrush.com` free Keyword Checker (confirmed real company page, not a lookalike), separate from the `4.semrush.com.in` source the earlier sessions' checks in this file came from. That domain is NOT verified as legitimate Semrush — it redirected to an unrelated third-party login page (`noxtools.com`) during this session. Earlier keyword figures in this file sourced from that domain should be treated as unverified until re-checked against genuine Semrush or another trusted tool.
+
 ## Open item — Trail category keyword
 
 Neither `trail snowmobile` (Vol 260, dominated by trail-riding-conditions/informational intent — "Wisconsin snowmobile trails open") nor `performance trail snowmobile` (no measurable volume) gave a clean transactional keyword for `/shop/trail/`. The page currently relies on the strong site-wide `snowmobiles for sale` / `snowmobile for sale` terms plus its own product names. Needs a follow-up Semrush check against more specific variants (e.g. brand-model-style long-tail, "performance sled for sale") before a dedicated trail-category keyword can be assigned with confidence.
