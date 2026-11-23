@@ -6,66 +6,15 @@ import { CATEGORIES, PRODUCTS } from '@/config/catalog';
 import SmartImage from '@/components/SmartImage';
 import ProductCard from '@/components/ProductCard';
 import TrustpilotReviewSlider from '@/components/TrustpilotReviewSlider';
+import HeroSlider from '@/components/HeroSlider';
 
 export default function HomePage() {
   const featured = PRODUCTS.slice(0, 8);
 
   return (
     <main className="flex-1">
-      {/* Section 1: Storefront Campaign Hero */}
-      <section className="relative bg-[#111418] text-white overflow-hidden">
-        <div className="relative min-h-[540px] lg:min-h-[640px] flex items-center">
-          <SmartImage
-            src="/images/hero-alpine.jpg"
-            alt="SledHaven flagship matte black and burnished bronze snowmobile on an American mountain ridge at twilight"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-center"
-          />
-          {/* Measured scrim guaranteeing >= 4.5:1 text contrast */}
-          <div
-            className="absolute inset-0 bg-gradient-to-r from-[#0C0F13]/92 via-[#0C0F13]/68 to-[#0C0F13]/25"
-            aria-hidden="true"
-          />
-
-          <div className="relative z-10 w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
-            <div className="max-w-2xl space-y-6">
-              <p className="text-xs font-medium tracking-widest uppercase text-[#D2A97E]">
-                United States Snowmobile Dealership &middot; 50-State Crated Delivery
-              </p>
-
-              <h1
-                className="font-serif font-semibold text-white leading-[1.1] tracking-tight"
-                style={{ fontSize: 'clamp(2.25rem, 4.4vw, 3.85rem)', textWrap: 'balance' }}
-              >
-                Snowmobiles for Sale. Engineered for American Winter.
-              </h1>
-
-              <p className="text-base sm:text-lg text-[#D8DDE4] leading-relaxed max-w-xl">
-                Curated mountain, trail, touring, and utility sleds delivered crated to your door with full Manufacturer Certificate of Origin (MCO) documentation, Pay-in-4 financing, and 10% instant savings on BTC or USDT.
-              </p>
-
-              <div className="pt-2 flex flex-wrap items-center gap-4">
-                <Link
-                  href="/shop/"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-md text-sm font-medium text-white bg-[#9A6B3E] hover:bg-[#835931] transition-colors whitespace-nowrap"
-                >
-                  <span>Explore Inventory</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-                <Link
-                  href="/compare/"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-md text-sm font-medium text-white bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 transition-colors whitespace-nowrap"
-                >
-                  <Scale className="w-4 h-4" />
-                  <span>Compare Models</span>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Section 1: Storefront Campaign Hero Slider */}
+      <HeroSlider />
 
       {/* Section 2: Featured Inventory Grid (8 products in 4/4 desktop layout) */}
       <section className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-20">
