@@ -16,38 +16,7 @@ export default function HomePage() {
       {/* Section 1: Storefront Campaign Hero Slider */}
       <HeroSlider />
 
-      {/* Section 2: Featured Inventory Grid (8 products in 4/4 desktop layout) */}
-      <section className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-8 border-b border-[#E4E6E8]">
-          <div className="space-y-2">
-            <p className="text-xs font-medium tracking-widest uppercase text-[#9A6B3E]">
-              2026 Showroom Allocation
-            </p>
-            <h2
-              className="font-serif text-2xl sm:text-3xl font-semibold text-[#111418]"
-              style={{ textWrap: 'balance' }}
-            >
-              Featured Snowmobiles for Sale
-            </h2>
-          </div>
-
-          <Link
-            href="/shop/"
-            className="inline-flex items-center gap-1.5 text-sm font-medium text-[#111418] hover:text-[#9A6B3E] transition-colors whitespace-nowrap"
-          >
-            <span>View All {PRODUCTS.length} Listings</span>
-            <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
-
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {featured.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
-      </section>
-
-      {/* Section 3: Shop by Riding Discipline (Structure A Categories) */}
+      {/* Section 2: Shop by Riding Discipline (Structure A Categories) */}
       <section className="bg-white border-y border-[#E4E6E8]">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-xl space-y-2 mb-10">
@@ -90,6 +59,37 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Section 3: Featured Inventory Grid (8 products in 4/4 desktop layout) */}
+      <section className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-8 border-b border-[#E4E6E8]">
+          <div className="space-y-2">
+            <p className="text-xs font-medium tracking-widest uppercase text-[#9A6B3E]">
+              2026 Showroom Allocation
+            </p>
+            <h2
+              className="font-serif text-2xl sm:text-3xl font-semibold text-[#111418]"
+              style={{ textWrap: 'balance' }}
+            >
+              Featured Snowmobiles for Sale
+            </h2>
+          </div>
+
+          <Link
+            href="/shop/"
+            className="inline-flex items-center gap-1.5 text-sm font-medium text-[#111418] hover:text-[#9A6B3E] transition-colors whitespace-nowrap"
+          >
+            <span>View All {PRODUCTS.length} Listings</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {featured.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
         </div>
       </section>
 

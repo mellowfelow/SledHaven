@@ -26,8 +26,8 @@ const SLIDES: HeroSlide[] = [
     secondaryCta: { label: 'Compare Models', href: '/compare/' },
   },
   {
-    image: '/images/sled-mountain-turbo.jpg',
-    imageAlt: 'Turbocharged mountain snowmobile cresting a deep-powder ridge',
+    image: '/images/hero-mountain-powder.jpg',
+    imageAlt: 'Rider kicking up deep powder through a snow-laden tree line on a mountain snowmobile',
     eyebrow: 'Mountain Snowmobiles · Ski-Doo & Polaris',
     heading: 'Deep-Snow Flagships Built for Steep Technical Terrain',
     body: 'The real Ski-Doo Summit X with Expert Package and Polaris 850 RMK Khaos 155 — turbocharged power, long-travel suspension, and tall-lug tracks for the steepest lines.',
@@ -35,8 +35,8 @@ const SLIDES: HeroSlide[] = [
     secondaryCta: { label: 'View All Inventory', href: '/shop/' },
   },
   {
-    image: '/images/sled-trail-gt.jpg',
-    imageAlt: 'High-performance trail snowmobile cornering on a groomed corridor',
+    image: '/images/hero-trail-action.jpg',
+    imageAlt: 'Ski-Doo trail snowmobile kicking up snow spray at speed through aspen trees',
     eyebrow: 'Trail & Performance · Ski-Doo & Arctic Cat',
     heading: 'Groomed-Trail Performance, From Entry to Race-Ready',
     body: 'From the value-oriented Ski-Doo MXZ Sport to the turbocharged MXZ X-RS with Competition Package and Arctic Cat’s ZR 858 Sno Pro — real trail sleds at every price point.',
@@ -44,8 +44,8 @@ const SLIDES: HeroSlide[] = [
     secondaryCta: { label: 'Compare Models', href: '/compare/' },
   },
   {
-    image: '/images/sled-touring-luxury.jpg',
-    imageAlt: 'Two-up touring snowmobile with heated seating on a long groomed corridor',
+    image: '/images/hero-touring-lake.jpg',
+    imageAlt: 'Two riders on snowmobiles crossing an open frozen lake corridor at sunset',
     eyebrow: 'Touring & Luxury · Ski-Doo Grand Touring',
     heading: 'Two-Up Comfort for the Longest Corridor Days',
     body: 'Real Ski-Doo Grand Touring models with heated two-up seating and integrated luggage — plus zero-emission electric sleds from Ski-Doo and Taiga Motors for commercial, fleet, and backcountry use.',

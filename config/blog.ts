@@ -90,7 +90,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Technical Specs',
     publishedAt: '2026-11-05',
     readTime: '5 min read',
-    coverImage: '/images/sled-mountain-turbo.jpg',
+    coverImage: '/images/sled-ski-doo-summit-x-expert.jpg',
     coverAlt: 'Studio view of Ski-Doo Summit X with Expert Package mountain snowmobile',
     relatedCategorySlug: 'trail',
     sections: [
@@ -122,7 +122,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Financing & Settlement',
     publishedAt: '2026-11-16',
     readTime: '4 min read',
-    coverImage: '/images/sled-touring-luxury.jpg',
+    coverImage: '/images/sled-ski-doo-gt-le-platinum.jpg',
     coverAlt: 'Studio view of Ski-Doo Grand Touring LE with Platinum Package snowmobile',
     relatedCategorySlug: 'utility',
     sections: [

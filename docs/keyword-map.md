@@ -170,3 +170,30 @@ Client asked to expand beyond the 4 existing real brands to the "top 10-15" US s
 - **Crazy Mountain, Moto MST** — named in market-research reports as industry players but no confirmable US dealer network or retail listings found. Adding them would mean inventing product specs under real company names with nothing real behind them — breaks the "100% real" rule.
 
 **Net result:** brand count went from 4 to 5 (Ski-Doo, Polaris, Arctic Cat, Lynx, Taiga Motors); vehicle product count went from 16 to 19 (added Taiga Nomad Pro, Performance, Scout). This is a researched ceiling, not an incomplete pass — see `docs/PROJECT.md` for the standing note against re-litigating this without fresh verification.
+
+## Site-wide product/brand image fix (2026-11-23) — full source list
+
+Fixed the cross-brand image mismatch flagged in `docs/PROJECT.md` for all 16 real vehicle products + 6 brand cards. Every image below was pulled directly from the named manufacturer's own site/CDN (official studio product renders, mostly transparent PNG, 661×480 to 2400×1350 source resolution), then flattened onto the site's `#EDE7DD` background and resized to 1200×896 to match the existing product-card convention.
+
+| Product | File | Official source |
+|---|---|---|
+| Ski-Doo Summit X w/ Expert Package | `sled-ski-doo-summit-x-expert.jpg` | ski-doo.brp.com/us/en/models/previous-models/2026/summit.html (Adobe Dynamic Media asset) |
+| Polaris 850 RMK Khaos 155 | `sled-polaris-rmk-khaos-155.jpg` | polaris.com/en-us/snowmobiles/2026/rmk/rmk-khaos/850-rmk-khaos-155-specs/ (cdn1.polaris.com) |
+| Ski-Doo MXZ X-RS w/ Competition Package | `sled-ski-doo-mxz-xrs-competition.jpg` | ski-doo.brp.com .../2026/mxz.html |
+| Ski-Doo MXZ Sport | `sled-ski-doo-mxz-sport.jpg` | ski-doo.brp.com .../2026/mxz.html (direct dam asset, RSIDE studio) |
+| Arctic Cat ZR 858 Sno Pro | `sled-arctic-cat-zr-858-sno-pro.jpg` | arcticcat.com/snowmobile/2027/zr-858-sno-pro (hubfs catalog asset, 3/4 angle — no side-profile variant found) |
+| Ski-Doo Backcountry X-RS | `sled-ski-doo-backcountry-xrs.jpg` | ski-doo.brp.com .../2026/backcountry.html |
+| Ski-Doo Expedition Xtreme | `sled-ski-doo-expedition-xtreme.jpg` | ski-doo.brp.com .../2026/expedition.html (direct dam asset, RSIDE studio) |
+| Lynx XTerrain | `sled-lynx-xterrain.jpg` | brplynx.com/us/en/models/snowmobiles/crossover/xterrain.html (MY26-specific Viper Red/Black asset, not the current MY27 default) |
+| Ski-Doo Grand Touring LE w/ Platinum Package | `sled-ski-doo-gt-le-platinum.jpg` | ski-doo.brp.com .../2026/grand-touring.html |
+| Ski-Doo Grand Touring Sport | `sled-ski-doo-gt-sport.jpg` | ski-doo.brp.com .../2026/grand-touring.html (direct dam asset, RSIDE studio) |
+| Ski-Doo Skandic SE | `sled-ski-doo-skandic-se.jpg` | ski-doo.brp.com .../2026/skandic.html |
+| Ski-Doo Skandic Sport | `sled-ski-doo-skandic-sport.jpg` | ski-doo.brp.com .../2026/skandic.html (direct dam asset, RSIDE studio) |
+| Arctic Cat Bearcat 600 LT | `sled-arctic-cat-bearcat-600-lt.jpg` | arcticcat.com/snowmobile/2027/bearcat-600-lt (hubfs catalog asset, 3/4 angle; catalog lists this product as my26 — price matches the my27 page exactly, flagged for a future year-label check, not addressed in this pass) |
+| Ski-Doo MXZ Neo | `sled-ski-doo-mxz-neo.jpg` | ski-doo.brp.com .../2026/mxz-neo.html |
+| Ski-Doo MXZ 120 | `sled-ski-doo-mxz-120.jpg` | ski-doo.brp.com .../2026/mxz-120-200.html (MY25 dam asset — Ski-Doo's own page reuses this photo for the MY26 listing) |
+| Ski-Doo Grand Touring Electric | `sled-ski-doo-gt-electric.jpg` | ski-doo.brp.com .../2026/grand-touring-electric.html |
+
+Brand cards (BRANDS array in catalog.ts) now reuse each brand's own flagship product photo above: Ski-Doo → Summit X Expert, Polaris → RMK Khaos 155, Arctic Cat → ZR 858 Sno Pro, Lynx → XTerrain. Taiga → its existing Nomad Performance photo (sourced in the brand-addition pass above). Polaris's site (polaris.com) blocks direct navigation with a Cloudflare challenge on most pages; the `-specs/` subpage path loads without the challenge and was used for its CDN image.
+
+**Hero slider (slides 2-4) + category grid tiles:** sourced separately from Unsplash (free-license stock, no manufacturer claim) since these are atmospheric/category imagery, not specific-product photos — no watermarks, full commercial-use license. Files: `hero-mountain-powder.jpg`, `hero-trail-action.jpg`, `hero-touring-lake.jpg` (hero, 1376×768) and `category-mountain.jpg`, `category-trail.jpg`, `category-crossover.jpg`, `category-touring.jpg`, `category-utility.jpg`, `category-youth.jpg` (category grid, 1200×900). The Electric category tile reuses the real `sled-ski-doo-gt-electric.jpg` product photo instead of stock, since Unsplash has no electric-snowmobile-specific imagery. Parts & Gear category tile unchanged (`gear-carbon-helmet.jpg` was already an accurate in-house gear photo, not a mismatch).
