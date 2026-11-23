@@ -152,3 +152,21 @@ Neither `trail snowmobile` (Vol 260, dominated by trail-riding-conditions/inform
 - `snowmobile dealership` -> `/` & `/about/`
 - `compare snowmobiles side by side` -> `/compare/`
 - `nationwide snowmobile freight delivery` -> `/faq/` & `/about/`
+
+## Brand roster research (2026-11-23) — "top 10-15 brands" request vs. real market structure
+
+Client asked to expand beyond the 4 existing real brands to the "top 10-15" US snowmobile brands. Researched via ISMA (International Snowmobile Manufacturers Association) industry data, each manufacturer's own site, and dealer listings — **not** via Semrush, since the account had zero API units remaining on every report type at the time of this research (confirmed via the Semrush MCP tool's own error response). Note: the client also pointed at a `1.semrush.com.in` browser tab as "Semrush" — this is a lookalike domain, not semrush.com (the same domain family, `4.semrush.com.in`, redirected unprompted to an unrelated third-party login page earlier in this project). Findings came from manufacturer/industry sources instead, which is the more authoritative source for a brand-roster question regardless.
+
+**Finding: the US snowmobile market does not have a "top 10-15 brands" tier.** ISMA's own 2026 industry report names exactly 4 active full-line manufacturers:
+- **Arctic Cat** — active, but ownership fact on site was wrong (said Textron; corrected — sold to an independent investor group April 2025, see `docs/PROJECT.md`)
+- **BRP** (Ski-Doo + Lynx) — active, both already on site
+- **Polaris** — active, already on site
+- **Yamaha** — confirmed directly on yamahamotorsports.com: ended snowmobile production in 2025, dealer support only, no new models to sell. **Not added** — would be a false "buy new" claim.
+
+**Added: Taiga Motors** (Montreal, Quebec) as a verified 5th real brand — the only ground-up all-electric snowmobile manufacturer, with 3 live "Order Now" models confirmed on taigamotors.com (Nomad Pro $19,499 / Performance $21,999 / Scout $22,249, MY27). Full specs (drive unit kW, range, track, suspension, towing, charging) pulled directly from each model's official Taiga spec sheet. Added to the Electric category; a new `electric-utility-backcountry` subcategory was created for the Pro and Scout trims (fleet/backcountry use), while Performance joins the existing Ski-Doo Grand Touring Electric under `electric-trail-touring`.
+
+**Considered and rejected:**
+- **Alpina** — real company (47 North Snowmobiles is its US distributor, Saginaw MI), but makes industrial dual-track utility machines (ski patrol/grooming/oil-field use) sold B2B through one small distributor — not a consumer retail product, doesn't fit a "Shop" catalog.
+- **Crazy Mountain, Moto MST** — named in market-research reports as industry players but no confirmable US dealer network or retail listings found. Adding them would mean inventing product specs under real company names with nothing real behind them — breaks the "100% real" rule.
+
+**Net result:** brand count went from 4 to 5 (Ski-Doo, Polaris, Arctic Cat, Lynx, Taiga Motors); vehicle product count went from 16 to 19 (added Taiga Nomad Pro, Performance, Scout). This is a researched ceiling, not an incomplete pass — see `docs/PROJECT.md` for the standing note against re-litigating this without fresh verification.
