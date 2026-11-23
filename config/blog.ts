@@ -86,12 +86,12 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'mountain-vs-trail-vs-touring-snowmobile-specs',
     title: 'Mountain vs. Trail vs. Touring: Track Length, Stance & Suspension Explained',
     excerpt:
-      'A technical breakdown of ski stance width, lug depth, and electronic vs. coil-over damping across our 2026 Alpine, Vanguard, and Glacier Reserve models.',
+      'A technical breakdown of ski stance width, lug depth, and electronic vs. coil-over damping across our 2026 Ski-Doo, Polaris, Arctic Cat, and Lynx lineup.',
     category: 'Technical Specs',
     publishedAt: '2026-11-05',
     readTime: '5 min read',
     coverImage: '/images/sled-mountain-turbo.jpg',
-    coverAlt: 'Studio view of Alpine Summit 850 Turbo R mountain snowmobile',
+    coverAlt: 'Studio view of Ski-Doo Summit X with Expert Package mountain snowmobile',
     relatedCategorySlug: 'trail',
     sections: [
       {
@@ -103,7 +103,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: 'Lug Height and Cooling Realities',
         paragraphs: [
-          'Deep 2.75-inch to 3.0-inch mountain paddles act like scoops in waist-deep powder, propelling the machine straight up steep chutes. On hard-packed icy trails, however, tall paddles flex and throw less snow onto tunnel heat exchangers — which is why trail models like the Vanguard GT 900 Turbo use 1.25-inch pre-studded Ice Ripper tracks.',
+          'Deep 2.75-inch to 3.0-inch mountain paddles act like scoops in waist-deep powder, propelling the machine straight up steep chutes. On hard-packed icy trails, however, tall paddles flex and throw less snow onto tunnel heat exchangers — which is why trail models like the Ski-Doo MXZ X-RS run shorter 1.25-inch Ice Ripper tracks instead.',
         ],
       },
       {
@@ -123,13 +123,13 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: '2026-11-16',
     readTime: '4 min read',
     coverImage: '/images/sled-touring-luxury.jpg',
-    coverAlt: 'Studio view of Glacier Reserve Limited 900 grand touring snowmobile',
+    coverAlt: 'Studio view of Ski-Doo Grand Touring LE with Platinum Package snowmobile',
     relatedCategorySlug: 'utility',
     sections: [
       {
         heading: 'How the 10% Cryptocurrency Discount Works',
         paragraphs: [
-          'Because Bitcoin (BTC) and Tether (USDT) settle directly without legacy card-network interchange overhead, SledHaven passes the savings straight to the buyer as an automatic 10% reduction on your subtotal at checkout. On an Alpine Summit 850 Turbo R ($16,799), paying in crypto saves $1,679.90 instantly.',
+          'Because Bitcoin (BTC) and Tether (USDT) settle directly without legacy card-network interchange overhead, SledHaven passes the savings straight to the buyer as an automatic 10% reduction on your subtotal at checkout. On a Lynx XTerrain ($21,349), paying in crypto saves $2,134.90 instantly.',
         ],
       },
       {

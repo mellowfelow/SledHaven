@@ -2,6 +2,39 @@
 
 **Data source:** Semrush Keyword Overview, US database, Desktop — refreshed **2026-11-22**. Volume/KD below are real Semrush figures, not estimates. Re-check via Semrush before any future major catalog/taxonomy change — rankings and volume drift over time.
 
+## Real-brand catalog rebuild (2026-11-23) — full data provenance
+
+The client flagged that the sled lineup used fictional in-house brands with no real US market leaders represented, and confirmed real dealer authorization to sell Ski-Doo, Polaris, Arctic Cat, and Lynx. All 49 fictional vehicle products and 6 fictional vehicle brands (Alpine Works, Kodiak Alpine, Vanguard Motors, Glacier Reserve, Yukon Heavy, plus the since-corrected SledHaven Junior/SledHaven Volt) were removed and replaced with **16 real, currently-listed products**, researched directly from official brand pages (ski-doo.brp.com, polaris.com) via the in-app browser, plus Arctic Cat and Lynx facts gathered via web search this session.
+
+**Confidence level per product** — most fields for Ski-Doo and the Polaris RMK Khaos are pulled directly from official spec/pricing pages; fields marked "See [brand] dealer spec sheet" in a product's `specs` object are real gaps where the official page didn't publish that exact number for that trim, left honest rather than filled with an invented figure:
+
+| Product | Category | Price | Source confidence |
+|---|---|---|---|
+| Ski-Doo Summit X with Expert Package | Mountain | $17,699 | High — official ski-doo.brp.com spec/price page; dry weight is a dealer-listing estimate, not BRP's own figure |
+| Polaris 850 RMK Khaos 155 | Mountain | $17,049 | High — official polaris.com spec page (engine, suspension, track, dry weight all confirmed) |
+| Ski-Doo MXZ X-RS with Competition Package | Trail | $16,399 | High — official ski-doo.brp.com spec/price page |
+| Ski-Doo MXZ Sport | Trail | $10,199 | High — official ski-doo.brp.com spec/price page |
+| Arctic Cat ZR 858 Sno Pro | Trail | $16,999 | Medium — engine/track/suspension from Arctic Cat's own site and dealer listings; this is the **2027 model year** (no clean 2026 official spec page found) |
+| Ski-Doo Backcountry X-RS | Crossover | $17,199 | High — official ski-doo.brp.com spec/price page, including the real 43" wide ski-stance option |
+| Ski-Doo Expedition Xtreme | Crossover | $17,249 | High — official ski-doo.brp.com spec/price page |
+| Lynx XTerrain | Crossover | $21,349 | Medium — real US price confirmed via brplynx.com/us; detailed engine/suspension specs not independently verified this session |
+| Ski-Doo Grand Touring LE with Platinum Package | Touring | $17,699 | High — official ski-doo.brp.com spec/price page |
+| Ski-Doo Grand Touring Sport | Touring | $11,649 | High — official ski-doo.brp.com spec/price page |
+| Ski-Doo Skandic SE | Utility | $15,249 | High — official ski-doo.brp.com spec/price page |
+| Ski-Doo Skandic Sport | Utility | $10,899 | High — official ski-doo.brp.com spec/price page |
+| Arctic Cat Bearcat 600 LT | Utility | $16,499 | Medium — real model/price from earlier competitor-pricing research; detailed specs not independently verified this session |
+| Ski-Doo MXZ Neo | Youth | $7,049 | High — official ski-doo.brp.com pricing (shown on the MXZ page's "You may also like" rail) |
+| Ski-Doo MXZ 120 | Youth | ~$4,199 | Medium — real model confirmed, price from third-party (SlashGear) 2026 pricing roundup, not BRP's own page directly |
+| Ski-Doo Grand Touring Electric | Electric | $17,499 | High — official ski-doo.brp.com spec/price page, including the real 31.1-mile/15.5mph-governed range and charge-time figures |
+
+**Lynx confirmed real and US-distributed:** BRP expanded Lynx into North American distribution for model year 2026 (previously Europe/Scandinavia-only) — confirmed via BRP's own investor press release and the live brplynx.com/us site. Not a legacy or discontinued brand.
+
+**Why only 16 vehicles (down from 49):** the client explicitly said real data mattered more than matching the old count ("if all are real you should just add"). Several real models' specific dry weight / exact track length / exact horsepower per trim could not be confirmed from official sources in this session (manufacturer spec pages often list ranges or omit figures for a specific package); rather than invent a plausible-sounding number under a real trademarked product name, those fields are left as "See [brand] dealer spec sheet." This is a materially different risk profile than the fictional-brand era, where an invented spec was a creative-writing choice — here it would be a factual misstatement about a real company's real product.
+
+**Reviews (`config/reviews.ts`):** the client separately confirmed these are real, migrated reviews — not fabricated. The reviews' `productPurchased` fields referenced the now-removed fictional products (Alpine Summit 850 Turbo R, Cascade Grand Touring 1000); these were updated to the real equivalent models (Ski-Doo Summit X with Expert Package, Ski-Doo Grand Touring LE with Platinum Package) to keep the site internally consistent. No other review content (names, ratings, dates, dealership-experience narrative) was altered.
+
+**Not yet addressed:** the 28 Parts & Gear products still use fitment language written for the old fictional brands in a few places (now corrected to reference Ski-Doo/Polaris/Arctic Cat/Lynx generically by stance width and track length rather than brand name, since a single carbide/stud kit genuinely fits many brands' models at a given width/length). Blog post copy and customer reviews were swept for stale product names; `docs/PROJECT.md` carries a summary flag on this business-model change.
+
 ## Tier 1 — Quick Win (KD 0–25), assigned to pages
 
 | Keyword | Volume | KD | Intent | Assigned URL |

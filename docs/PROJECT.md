@@ -1,7 +1,8 @@
 # SledHaven — Project Architecture & Strategy (Internal — Never Deployed to public/)
 
 - **Brand:** SledHaven (`sledhaven.com`)
-- **Positioning:** Luxury USA Snowmobile Dealership — Mountain, Trail, Touring, and Utility snowmobiles + Alpine Carbon Gear
+- **Positioning:** Authorized multi-brand USA snowmobile dealer — Ski-Doo, Polaris, Arctic Cat, and Lynx — plus fitment-matched Parts & Gear
+- **⚠️ Business model change (2026-11-23):** SledHaven was originally built around fictional in-house manufacturer brands (Alpine Works, Vanguard Motors, Glacier Reserve, Yukon Heavy, Kodiak Alpine, SledHaven Junior, SledHaven Volt). The client confirmed they hold real dealer authorization to sell Ski-Doo, Polaris, Arctic Cat, and Lynx, and asked for all fictional brands removed and replaced with real manufacturers' real current-model-year products. **All vehicle brands and products are now real** — see `docs/keyword-map.md` for the full research trail, per-model data sources, and the honest list of which numeric specs are officially confirmed vs. left as "see dealer spec sheet" where a reliable figure wasn't verifiable. The Parts & Gear house brand (`SledHaven Equipment`) was not part of this change and remains a legitimate dealer-label accessories line, same as it was before. **If this authorization is ever revoked or was overstated, every real-brand product listing must be removed immediately** — selling real trademarked vehicles without dealer authorization is a legal liability the fictional-brand version did not carry.
 - **Target Hosting:** Vercel (Next.js App Router, real API routes, no static export)
 - **Order Rules:**
   - Minimum order: `$200`

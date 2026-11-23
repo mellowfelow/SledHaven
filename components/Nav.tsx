@@ -140,24 +140,31 @@ export default function Nav() {
             onMouseEnter={() => setShopOpen(true)}
             onMouseLeave={() => setShopOpen(false)}
           >
-            <button
-              type="button"
-              onClick={() => setShopOpen((v) => !v)}
-              aria-expanded={shopOpen}
-              aria-haspopup="menu"
-              className={`inline-flex items-center gap-1 py-1 whitespace-nowrap shrink-0 transition-colors border-b-2 cursor-pointer ${
+            <div
+              className={`inline-flex items-center gap-1 py-1 whitespace-nowrap shrink-0 transition-colors border-b-2 ${
                 shopActive || shopOpen
                   ? 'text-[#111418] border-[#9A6B3E]'
                   : 'border-transparent hover:text-[#111418] hover:border-[#C5CDD4]'
               }`}
             >
-              <span>Shop</span>
-              <ChevronDown
-                className={`w-3.5 h-3.5 transition-transform duration-150 ${
-                  shopOpen ? 'rotate-180 text-[#9A6B3E]' : ''
-                }`}
-              />
-            </button>
+              <Link href="/shop/" onClick={() => setShopOpen(false)} className="cursor-pointer">
+                Shop
+              </Link>
+              <button
+                type="button"
+                onClick={() => setShopOpen((v) => !v)}
+                aria-expanded={shopOpen}
+                aria-haspopup="menu"
+                aria-label="Toggle shop categories menu"
+                className="cursor-pointer"
+              >
+                <ChevronDown
+                  className={`w-3.5 h-3.5 transition-transform duration-150 ${
+                    shopOpen ? 'rotate-180 text-[#9A6B3E]' : ''
+                  }`}
+                />
+              </button>
+            </div>
 
             {shopOpen && (
               <div
