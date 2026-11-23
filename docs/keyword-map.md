@@ -36,7 +36,9 @@ Real Semrush data confirmed `crossover snowmobile` as a distinct, low-competitio
 
 ## New: Youth category (added 2026-11-22)
 
-Real Semrush data confirmed strong, low-competition demand for a youth segment: `youth snowmobile` (Vol 720, KD 15%, Easy) and `youth snowmobile for sale` (Vol 210, KD 6%, Very Easy, clean Transactional intent) plus `youth snowmobiles for sale` (Vol 210, KD 7%). This matches a real industry segment (Ski-Doo MXZ 120/200/Neo, Polaris 120) that SledHaven did not previously stock at all. Added `/shop/youth/` with two subcategories — Recreational Youth and Trainer Trail Youth — under a new in-house brand, **SledHaven Junior**, with four parent-governed products ($3,999–$7,299) priced below the real Ski-Doo MXZ 120/200 ($4,199–$4,299) and MXZ Neo ($6,849–$7,049) benchmarks researched for this addition.
+Real Semrush data confirmed strong, low-competition demand for a youth segment: `youth snowmobile` (Vol 720, KD 15%, Easy) and `youth snowmobile for sale` (Vol 210, KD 6%, Very Easy, clean Transactional intent) plus `youth snowmobiles for sale` (Vol 210, KD 7%). This matches a real industry segment (Ski-Doo MXZ 120/200/Neo, Polaris 120) that SledHaven did not previously stock at all. Added `/shop/youth/` with two subcategories — Recreational Youth and Trainer Trail Youth — with four parent-governed products ($3,999–$7,299) priced below the real Ski-Doo MXZ 120/200 ($4,199–$4,299) and MXZ Neo ($6,849–$7,049) benchmarks researched for this addition.
+
+> **Corrected 2026-11-23:** this section originally put these products under a new "SledHaven Junior" brand. Real manufacturers (Polaris Indy 120/200, Arctic Cat ZR 120) keep youth models under their *main* parent brand — never a separate "Junior" sub-brand — and a brand named after the dealer itself doesn't match how any of SledHaven's other manufacturer brands (Alpine Works, Kodiak Alpine, Vanguard Motors, Glacier Reserve, Yukon Heavy) are structured. Reassigned the youth line to the existing **Vanguard Motors** brand (its trail-focused, entry-friendly identity is the closest real-world fit), matching the real OEM pattern. Product names dropped "SledHaven Junior" accordingly (e.g. "Vanguard Drift 120").
 
 | Keyword | Volume | KD | Intent | Assigned URL |
 |---|---|---|---|---|
@@ -80,6 +82,8 @@ Added `/shop/electric/` as an 8th top-level category with 2 subcategories, match
 - **Light Recreational Electric** (MoonBikes-style snow bike, not a full-size sled): Volt Scout Light Electric ($7,499) and Volt Scout Dual-Battery ($8,999) — both undercut MoonBikes' real $8,500 base, with weight/range/charge-time specs grounded in MoonBikes' published 163lb/2.5kWh/1-1.5hr figures and its real dual-battery option.
 
 **Note on data source:** this check used the genuine `semrush.com` free Keyword Checker (confirmed real company page, not a lookalike), separate from the `4.semrush.com.in` source the earlier sessions' checks in this file came from. That domain is NOT verified as legitimate Semrush — it redirected to an unrelated third-party login page (`noxtools.com`) during this session. Earlier keyword figures in this file sourced from that domain should be treated as unverified until re-checked against genuine Semrush or another trusted tool.
+
+> **Corrected 2026-11-23:** the products above were originally branded "SledHaven Volt." Confirmed via research that real precedent for dedicated electric-only snowmobile makers (Taiga Motors, MoonBikes) is a standalone manufacturer brand distinct from any dealer — never the dealer's own name. Renamed the brand to **Voltrek Motors** (a standalone electric-only manufacturer, consistent with how Taiga/MoonBikes are structured in the real market) and dropped "SledHaven" from all four product names (e.g. "Voltrek Trail 23kWh").
 
 ## Parts & Gear expansion (added 2026-11-22, second pass — "too thin" review)
 
