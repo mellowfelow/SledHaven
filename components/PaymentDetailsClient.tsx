@@ -19,6 +19,7 @@ interface PublicOrderData {
     opening: string;
     closing: string;
   };
+  paymentPlan: 'full' | 'pay_in_4';
   items: { name: string; sku: string; quantity: number; lineTotal: number }[];
   subtotal: number;
   cryptoDiscount: number;
@@ -101,7 +102,7 @@ export default function PaymentDetailsClient() {
   }
 
   const amountDueNow = data
-    ? data.paymentMethod.id === 'pay_in_4' && data.payIn4Installment
+    ? data.paymentPlan === 'pay_in_4' && data.payIn4Installment
       ? data.payIn4Installment
       : data.total
     : 0;
@@ -164,7 +165,7 @@ export default function PaymentDetailsClient() {
               </div>
               <div className="text-left sm:text-right tabular-nums">
                 <p className="text-xs uppercase tracking-wider text-[#646D78]">
-                  {data.paymentMethod.id === 'pay_in_4'
+                  {data.paymentPlan === 'pay_in_4'
                     ? 'Installment 1 of 4 Due'
                     : 'Amount Due'}
                 </p>
@@ -173,6 +174,7 @@ export default function PaymentDetailsClient() {
                 </p>
                 <p className="text-xs text-[#9A6B3E] font-medium">
                   {data.paymentMethod.label}
+                  {data.paymentPlan === 'pay_in_4' ? ' · Pay-in-4' : ''}
                 </p>
               </div>
             </div>

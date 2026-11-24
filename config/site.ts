@@ -6,6 +6,15 @@ export interface PaymentMethodConfig {
   note?: string;
   opening: string;
   closing: string;
+  /** Excluded from the selectable Payment Method list in checkout UI, but still resolvable
+   *  (e.g. for legacy stored orders that reference it directly). */
+  hidden?: boolean;
+}
+
+export interface PaymentPlanConfig {
+  id: 'full' | 'pay_in_4';
+  label: string;
+  note: string;
 }
 
 export const SITE = {
@@ -144,6 +153,7 @@ export const SITE = {
         id: 'pay_in_4',
         label: 'Pay in 4 Financing',
         available: true,
+        hidden: true,
         note: '4 equal installments — 25% due today to reserve allocation.',
         opening:
           'Your Pay-in-4 reservation has been reviewed. To lock your snowmobile allocation and initiate crating, remit the first 25% installment using the verified details below.',
@@ -154,11 +164,23 @@ export const SITE = {
         id: 'credit_card',
         label: 'Credit Card',
         available: false,
-        note: 'Temporarily unavailable — select Crypto (10% off), Bank Transfer, Zelle, Apple Pay, Chime, or Pay in 4.',
+        note: 'Temporarily unavailable — select Crypto (10% off), Bank Transfer, Zelle, Apple Pay, or Chime.',
         opening: 'Credit card processing is currently unavailable.',
         closing: 'Please select an active payment method.',
       },
     ] as PaymentMethodConfig[],
+    paymentPlans: [
+      {
+        id: 'full',
+        label: 'Pay in Full (100%)',
+        note: 'Pay the full order total upfront via your selected payment method.',
+      },
+      {
+        id: 'pay_in_4',
+        label: 'Pay-in-4 Financing',
+        note: '25% due today to reserve your allocation, then 3 equal interest-free installments every 30 days.',
+      },
+    ] as PaymentPlanConfig[],
   },
 } as const;
 
@@ -166,5 +188,12 @@ export function getPaymentMethodConfig(id: string): PaymentMethodConfig {
   return (
     SITE.reply.paymentMethods.find((m) => m.id === id) ||
     SITE.reply.paymentMethods.find((m) => m.id === 'bank_transfer')!
+  );
+}
+
+export function getPaymentPlanConfig(id: string): PaymentPlanConfig {
+  return (
+    SITE.reply.paymentPlans.find((p) => p.id === id) ||
+    SITE.reply.paymentPlans.find((p) => p.id === 'full')!
   );
 }

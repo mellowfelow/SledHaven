@@ -118,6 +118,9 @@ export default function AdminOrdersPage() {
                     </td>
                     <td className="py-3.5 px-4 text-xs text-[#47505B]">
                       {paymentMethodParts(order.paymentMethod).label}
+                      {order.paymentPlan === 'pay_in_4' && (
+                        <span className="block text-[#9A6B3E] font-medium">Pay-in-4</span>
+                      )}
                     </td>
                     <td className="py-3.5 px-4">
                       <StatusBadge status={order.status} />

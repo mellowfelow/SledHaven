@@ -9,6 +9,7 @@ interface WhatsAppSendPanelProps {
   orderNumber: string;
   customerName: string;
   paymentMethod: string;
+  paymentPlan?: 'full' | 'pay_in_4';
   total: number;
   rawDetail: string;
   paymentPageUrl: string;
@@ -22,6 +23,7 @@ export default function WhatsAppSendPanel(props: WhatsAppSendPanelProps) {
     orderNumber: props.orderNumber,
     customerName: props.customerName,
     paymentMethod: props.paymentMethod,
+    paymentPlan: props.paymentPlan,
     total: props.total,
     rawDetail: props.rawDetail,
     paymentPageUrl: props.paymentPageUrl,
@@ -32,6 +34,7 @@ export default function WhatsAppSendPanel(props: WhatsAppSendPanelProps) {
     orderNumber: props.orderNumber,
     customerName: props.customerName,
     paymentMethod: props.paymentMethod,
+    paymentPlan: props.paymentPlan,
     total: props.total,
     rawDetail: props.rawDetail,
     paymentPageUrl: props.paymentPageUrl,

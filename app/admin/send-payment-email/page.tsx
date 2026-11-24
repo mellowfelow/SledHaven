@@ -212,7 +212,7 @@ function SendPaymentComposerInner() {
             >
               {orders.map((o) => (
                 <option key={o.orderNumber} value={o.orderNumber}>
-                  {o.orderNumber} — {o.customer.name} ({money(o.total)} · {paymentMethodParts(o.paymentMethod).label})
+                  {o.orderNumber} — {o.customer.name} ({money(o.total)} · {paymentMethodParts(o.paymentMethod).label}{o.paymentPlan === 'pay_in_4' ? ' · Pay-in-4' : ''})
                 </option>
               ))}
             </select>
@@ -314,7 +314,8 @@ function SendPaymentComposerInner() {
                     {paymentTermsLines(
                       activeOrder.paymentMethod,
                       activeOrder.total,
-                      activeOrder.orderNumber
+                      activeOrder.orderNumber,
+                      activeOrder.paymentPlan
                     ).map((line) => (
                       <p key={line}>{line}</p>
                     ))}
@@ -330,6 +331,7 @@ function SendPaymentComposerInner() {
               orderNumber={activeOrder.orderNumber}
               customerName={activeOrder.customer.name}
               paymentMethod={activeOrder.paymentMethod}
+              paymentPlan={activeOrder.paymentPlan}
               total={activeOrder.total}
               rawDetail={rawDetail}
               paymentPageUrl={result?.paymentPageUrl || previewPaymentUrl}

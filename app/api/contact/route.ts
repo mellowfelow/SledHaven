@@ -45,6 +45,7 @@ export async function POST(req: NextRequest) {
       const zip = String(body?.zip || '').trim().slice(0, 16);
       const notes = String(body?.notes || '').trim().slice(0, 600);
       const paymentMethod = String(body?.paymentMethod || '').trim().slice(0, 40);
+      const paymentPlan = body?.paymentPlan === 'pay_in_4' ? 'pay_in_4' : 'full';
       const channel = body?.channel === 'whatsapp' ? 'whatsapp' : 'email';
       const rawItems = Array.isArray(body?.items) ? body.items : [];
 
@@ -63,7 +64,7 @@ export async function POST(req: NextRequest) {
       }
 
       const validMethod = SITE.reply.paymentMethods.find(
-        (m) => m.id === paymentMethod && m.available
+        (m) => m.id === paymentMethod && m.available && !m.hidden
       );
       if (!validMethod) {
         return NextResponse.json(
@@ -72,7 +73,7 @@ export async function POST(req: NextRequest) {
         );
       }
 
-      const calc = calculateOrderTotals(rawItems, state, paymentMethod);
+      const calc = calculateOrderTotals(rawItems, state, paymentMethod, paymentPlan);
       if (calc.items.length === 0) {
         return NextResponse.json(
           { error: 'Your bag contains no valid inventory items.' },
@@ -99,6 +100,7 @@ export async function POST(req: NextRequest) {
         channel,
         customer: { name, email, phone, address, city, state, zip, notes: notes || undefined },
         paymentMethod,
+        paymentPlan,
         items: calc.items,
         subtotal: calc.subtotal,
         cryptoDiscount: calc.cryptoDiscount,

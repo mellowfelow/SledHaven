@@ -1,4 +1,4 @@
-import { SITE } from '@/config/site';
+import { SITE, getPaymentPlanConfig } from '@/config/site';
 import {
   escapeHtml,
   money,
@@ -162,12 +162,13 @@ export function customerOrderConfirmationEmail(order: StoredOrder): {
     ${emailField('Delivery Destination', `${order.customer.address}, ${order.customer.city}, ${order.customer.state} ${order.customer.zip}`)}
     ${emailField('Estimated Transit', order.transitDays)}
     ${emailField('Selected Payment Method', method.label)}
+    ${emailField('Payment Plan', getPaymentPlanConfig(order.paymentPlan).label)}
   `;
 
   return {
     subject,
     html: emailShell(subject, body),
-    text: `Thank you for your ${SITE.name} order ${order.orderNumber}. Total: ${money(order.total)}. Payment method: ${method.label}. Watch for your payment-details email shortly.`,
+    text: `Thank you for your ${SITE.name} order ${order.orderNumber}. Total: ${money(order.total)}. Payment method: ${method.label} (${getPaymentPlanConfig(order.paymentPlan).label}). Watch for your payment-details email shortly.`,
   };
 }
 
@@ -185,6 +186,7 @@ export function shopOrderNotificationEmail(
     ${emailField('Phone', order.customer.phone)}
     ${emailField('Shipping Address', `${order.customer.address}, ${order.customer.city}, ${order.customer.state} ${order.customer.zip}`)}
     ${emailField('Payment Method', method.label)}
+    ${emailField('Payment Plan', getPaymentPlanConfig(order.paymentPlan).label)}
     ${order.customer.notes ? emailField('Customer Notes', order.customer.notes) : ''}
     ${orderItemsTableHtml(order)}
     ${emailButton('Open in Reply Portal', adminOrderUrl)}
@@ -233,7 +235,7 @@ export function paymentDetailsEmail(params: {
       Already sent payment? <a href="${escapeHtml(confirmPageUrl)}" style="color:${BRAND.primary};font-weight:600;">Upload your payment confirmation screenshot</a>.
     </p>
     ${emailDivider()}
-    ${paymentTermsHtml(order.paymentMethod, order.total, order.orderNumber)}
+    ${paymentTermsHtml(order.paymentMethod, order.total, order.orderNumber, order.paymentPlan)}
   `;
 
   return {

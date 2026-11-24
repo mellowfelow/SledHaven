@@ -46,6 +46,7 @@ export function waPaymentDetailsMessage(params: {
   orderNumber: string;
   customerName: string;
   paymentMethod: string;
+  paymentPlan?: 'full' | 'pay_in_4';
   total: number;
   rawDetail: string;
   paymentPageUrl: string;
@@ -53,10 +54,10 @@ export function waPaymentDetailsMessage(params: {
 }): string {
   const method = paymentMethodParts(params.paymentMethod);
   const fields = parsePaymentDetail(params.rawDetail);
-  const dueNow =
-    params.paymentMethod === 'pay_in_4'
-      ? `${money(Math.round((params.total / 4) * 100) / 100)} (Installment 1 of 4 — Total ${money(params.total)})`
-      : money(params.total);
+  const isPayIn4 = params.paymentPlan === 'pay_in_4';
+  const dueNow = isPayIn4
+    ? `${money(Math.round((params.total / 4) * 100) / 100)} (Installment 1 of 4 — Total ${money(params.total)})`
+    : money(params.total);
 
   const detailLines = fields.map((f) => `${f.label}: ${f.value}`).join('\n');
 
@@ -68,6 +69,7 @@ export function waPaymentDetailsMessage(params: {
     '',
     `Order Reference: ${params.orderNumber}`,
     `Method: ${method.label}`,
+    `Plan: ${isPayIn4 ? 'Pay-in-4 Financing' : 'Pay in Full (100%)'}`,
     `Amount Due: ${dueNow}`,
     '',
     detailLines,

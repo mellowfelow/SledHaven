@@ -2,7 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CheckCircle2, Mail } from 'lucide-react';
-import { SITE, getPaymentMethodConfig } from '@/config/site';
+import { SITE, getPaymentMethodConfig, getPaymentPlanConfig } from '@/config/site';
 import { money } from '@/lib/order';
 
 export const metadata: Metadata = {
@@ -16,13 +16,15 @@ export const metadata: Metadata = {
  * Only directs the buyer to watch for their payment-details email.
  */
 export default async function ThankYouOrderPage(context: {
-  searchParams: Promise<{ order?: string; total?: string; method?: string }>;
+  searchParams: Promise<{ order?: string; total?: string; method?: string; plan?: string }>;
 }) {
   const params = await context.searchParams;
   const orderNumber = (params?.order || '').trim();
   const totalNum = params?.total ? Number(params.total) : null;
   const methodId = (params?.method || '').trim();
   const methodLabel = methodId ? getPaymentMethodConfig(methodId).label : '';
+  const planId = (params?.plan || '').trim();
+  const planLabel = planId === 'pay_in_4' ? getPaymentPlanConfig(planId).label : '';
 
   return (
     <main className="flex-1 max-w-xl w-full mx-auto px-4 py-16 sm:py-24">
@@ -56,7 +58,10 @@ export default async function ThankYouOrderPage(context: {
                 <span className="text-xs uppercase tracking-wider text-[#646D78] block">
                   Payment Method
                 </span>
-                <span className="font-medium text-[#111418]">{methodLabel}</span>
+                <span className="font-medium text-[#111418]">
+                  {methodLabel}
+                  {planLabel ? ` · ${planLabel}` : ''}
+                </span>
               </div>
             )}
             {totalNum && Number.isFinite(totalNum) && (

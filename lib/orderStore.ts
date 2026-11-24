@@ -26,6 +26,9 @@ export interface StoredOrder {
     notes?: string;
   };
   paymentMethod: string;
+  /** 'full' (pay 100% upfront) or 'pay_in_4' (25% today + 3 installments). Older orders predating
+   *  this field had Pay-in-4 selected as if it were a payment method — treat a missing value as 'full'. */
+  paymentPlan: 'full' | 'pay_in_4';
   items: OrderItemSnapshot[];
   subtotal: number;
   cryptoDiscount: number;

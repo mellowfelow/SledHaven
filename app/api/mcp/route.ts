@@ -45,7 +45,8 @@ const TOOLS = [
       properties: {
         state: { type: 'string', description: '2-letter US state code (e.g. CO, MT, NY).' },
         productSlug: { type: 'string' },
-        paymentMethod: { type: 'string', description: 'crypto, bank_transfer, zelle, apple_pay, chime, or pay_in_4' },
+        paymentMethod: { type: 'string', description: 'crypto, bank_transfer, zelle, apple_pay, or chime' },
+        paymentPlan: { type: 'string', description: 'full (pay 100% upfront) or pay_in_4 (25% today + 3 installments). Defaults to full.' },
       },
       required: ['state', 'productSlug'],
     },
@@ -142,6 +143,7 @@ export async function POST(req: NextRequest) {
         const state = String(args.state || 'CO').toUpperCase();
         const slug = String(args.productSlug || '');
         const paymentMethod = String(args.paymentMethod || 'bank_transfer');
+        const paymentPlan = args.paymentPlan === 'pay_in_4' ? 'pay_in_4' : 'full';
         const product = getProductBySlug(slug);
         if (!product) {
           return NextResponse.json({
@@ -150,7 +152,7 @@ export async function POST(req: NextRequest) {
             result: { content: [{ type: 'text', text: JSON.stringify({ error: 'Product not found' }) }] },
           });
         }
-        const totals = calculateOrderTotals([{ id: product.id, quantity: 1 }], state, paymentMethod);
+        const totals = calculateOrderTotals([{ id: product.id, quantity: 1 }], state, paymentMethod, paymentPlan);
         const stateRule = getStateShippingRule(state);
         return NextResponse.json({
           jsonrpc: '2.0',

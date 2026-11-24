@@ -240,6 +240,12 @@ export default function AdminOrderDetailPage() {
                   {paymentMethodParts(order.paymentMethod).label}
                 </span>
               </div>
+              <div>
+                <span className="text-[#646D78] block">Payment Plan</span>
+                <span className="font-medium text-[#111418]">
+                  {order.paymentPlan === 'pay_in_4' ? 'Pay-in-4 Financing' : 'Pay in Full (100%)'}
+                </span>
+              </div>
               {order.customer.notes && (
                 <div>
                   <span className="text-[#646D78] block">Delivery Notes</span>

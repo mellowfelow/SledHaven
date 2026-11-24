@@ -14,9 +14,11 @@
   - Snowmobile vehicle freight & applicable state tax: calculated transparently at checkout by destination US state
   - Cryptocurrency discount: `10%` instant subtotal discount for BTC / USDT
 - **Checkout & Settlement:**
-  - Channel: Email order form checkout (full required legal name, email, phone, US street address, city, state, ZIP, payment method)
-  - Active payment methods: Crypto (BTC/USDT -10%), Bank Transfer (Wire/ACH), Apple Pay, Chime, Zelle, Pay-in-4 Financing
+  - Flow: clicking the Bag icon opens a cart-only drawer (`CartDrawer.tsx` — items, quantities, totals preview, "Proceed to Checkout" button only); checkout happens on its own page, `/checkout/` (`CheckoutClient.tsx`), which has the full buyer-info/address/payment form and submits to `/api/contact/`
+  - Channel: Email order form checkout (full required legal name, email, phone, US street address, city, state, ZIP, payment method, payment plan)
+  - Active payment methods (channel — how the money moves): Crypto (BTC/USDT -10%), Bank Transfer (Wire/ACH), Apple Pay, Chime, Zelle
   - Disabled method: Credit Card (explicitly labeled Temporarily Unavailable)
+  - **⚠️ Payment Plan restructure (2026-11-24):** Pay-in-4 was previously listed as if it were its own payment *method* (alongside Crypto/Bank Transfer/etc.), which meant choosing it gave no actual settlement channel. Fixed: Pay-in-4 is now a separate **Payment Plan** choice (`full` vs `pay_in_4`) selected *after* the payment method, via `SITE.reply.paymentPlans` (`config/site.ts`) and a new `paymentPlan` field threaded through `calculateOrderTotals()`, `StoredOrder`, the order API, admin order pages, payment-details page, and WhatsApp/email templates. The old `pay_in_4` entry in `SITE.reply.paymentMethods` is kept with `hidden: true` only so any pre-existing stored order that referenced it as a method still resolves; it is not selectable in the UI.
   - Customer order confirmation email fires unconditionally on every order submission using LIGHT email shell
 - **Reply Portal (`/admin/*`):**
   - Passcode-gated via `X-Admin-Passcode` header (`ADMIN_PASSCODE` env var or secure first-run scrypt claim)

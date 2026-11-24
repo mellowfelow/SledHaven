@@ -1,4 +1,4 @@
-import { SITE, getPaymentMethodConfig } from '@/config/site';
+import { SITE, getPaymentMethodConfig, getPaymentPlanConfig } from '@/config/site';
 import { PRODUCTS, getStateShippingRule } from '@/config/catalog';
 
 export interface ParsedPaymentField {
@@ -132,28 +132,43 @@ export function paymentMethodParts(methodId: string) {
   };
 }
 
-export function paymentTermsLines(methodId: string, orderTotal: number, orderNumber: string): string[] {
+export function paymentTermsLines(
+  methodId: string,
+  orderTotal: number,
+  orderNumber: string,
+  paymentPlanId: string = 'full'
+): string[] {
   const parts = paymentMethodParts(methodId);
+  const plan = getPaymentPlanConfig(paymentPlanId);
+  const isPayIn4 = plan.id === 'pay_in_4';
+  const installment = Math.round((orderTotal / 4) * 100) / 100;
+  const amountDueNow = isPayIn4 ? installment : orderTotal;
+
   const lines: string[] = [
     `Order Reference: ${orderNumber}`,
     `Payment Method: ${parts.label}`,
-    `Amount Due: ${money(orderTotal)}`,
+    `Payment Plan: ${plan.label}`,
+    `Amount Due Today: ${money(amountDueNow)}`,
   ];
 
   if (methodId === 'crypto') {
     lines.push(`Includes ${SITE.orderRules.cryptoDiscountPercent}% Cryptocurrency Discount.`);
   }
-  if (methodId === 'pay_in_4') {
-    const installment = Math.round((orderTotal / 4) * 100) / 100;
-    lines.push(`Pay-in-4 Initial Installment (25% due today): ${money(installment)}`);
+  if (isPayIn4) {
+    lines.push(`Order Total: ${money(orderTotal)} — 3 remaining installments of ${money(installment)} follow every 30 days at 0% interest.`);
   }
 
   lines.push(SITE.reply.dispatchLogisticsLine);
   return lines;
 }
 
-export function paymentTermsHtml(methodId: string, orderTotal: number, orderNumber: string): string {
-  return paymentTermsLines(methodId, orderTotal, orderNumber)
+export function paymentTermsHtml(
+  methodId: string,
+  orderTotal: number,
+  orderNumber: string,
+  paymentPlanId: string = 'full'
+): string {
+  return paymentTermsLines(methodId, orderTotal, orderNumber, paymentPlanId)
     .map((line) => `<p style="margin:0 0 6px 0;color:#334155;font-size:13px;line-height:1.5;">${escapeHtml(line)}</p>`)
     .join('');
 }
@@ -173,7 +188,8 @@ export function escapeHtml(input: string): string {
 export function calculateOrderTotals(
   rawItems: OrderItemInput[],
   stateCode: string,
-  paymentMethodId: string
+  paymentMethodId: string,
+  paymentPlanId: string = 'full'
 ): CalculatedOrderTotals {
   const items: OrderItemSnapshot[] = [];
 
@@ -220,7 +236,7 @@ export function calculateOrderTotals(
   const estimatedTax = Math.round(discountedSubtotal * stateRule.estimatedTaxRate * 100) / 100;
   const total = Math.round((discountedSubtotal + shippingFee + estimatedTax) * 100) / 100;
   const payIn4Installment =
-    paymentMethodId === 'pay_in_4' ? Math.round((total / 4) * 100) / 100 : null;
+    paymentPlanId === 'pay_in_4' ? Math.round((total / 4) * 100) / 100 : null;
 
   return {
     items,

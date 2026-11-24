@@ -32,6 +32,7 @@ export async function GET(req: NextRequest) {
       opening: method.opening,
       closing: method.closing,
     },
+    paymentPlan: order.paymentPlan || 'full',
     items: order.items.map((i) => ({
       name: i.name,
       sku: i.sku,
