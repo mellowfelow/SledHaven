@@ -110,7 +110,7 @@ export default function AboutPage() {
               Verified Direct Settlement
             </h2>
             <p className="text-sm text-[#5C636E] leading-relaxed">
-              We verify unit allocation first, then send individualized payment details for Cryptocurrency (10% discount), Bank Transfer, Zelle, Apple Pay, Chime, or Pay-in-4.
+              We verify unit allocation first, then send individualized payment details for Cryptocurrency (10% discount), Bank Transfer, Zelle, Apple Pay, or Chime — paid in full or split with Pay-in-4 financing.
             </p>
           </div>
         </div>
@@ -151,9 +151,9 @@ export default function AboutPage() {
               Flexible, Verified Settlement
             </h2>
             <p className="text-sm sm:text-base text-[#4F5863] leading-relaxed">
-              Beyond traditional bank transfer, {SITE.name} supports Zelle, Apple Pay, Chime, a 10% instant
-              discount for Bitcoin/USDT settlement, and Pay-in-4 interest-free financing — so riders can choose
-              the settlement method that fits them, not the other way around.
+              Beyond traditional bank transfer, {SITE.name} supports Zelle, Apple Pay, Chime, and a 10% instant
+              discount for Bitcoin/USDT settlement — paid in full or split into four interest-free Pay-in-4
+              installments — so riders can choose the settlement method and plan that fits them, not the other way around.
             </p>
           </div>
         </div>

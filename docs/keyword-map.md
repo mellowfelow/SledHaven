@@ -197,3 +197,39 @@ Fixed the cross-brand image mismatch flagged in `docs/PROJECT.md` for all 16 rea
 Brand cards (BRANDS array in catalog.ts) now reuse each brand's own flagship product photo above: Ski-Doo → Summit X Expert, Polaris → RMK Khaos 155, Arctic Cat → ZR 858 Sno Pro, Lynx → XTerrain. Taiga → its existing Nomad Performance photo (sourced in the brand-addition pass above). Polaris's site (polaris.com) blocks direct navigation with a Cloudflare challenge on most pages; the `-specs/` subpage path loads without the challenge and was used for its CDN image.
 
 **Hero slider (slides 2-4) + category grid tiles:** sourced separately from Unsplash (free-license stock, no manufacturer claim) since these are atmospheric/category imagery, not specific-product photos — no watermarks, full commercial-use license. Files: `hero-mountain-powder.jpg`, `hero-trail-action.jpg`, `hero-touring-lake.jpg` (hero, 1376×768) and `category-mountain.jpg`, `category-trail.jpg`, `category-crossover.jpg`, `category-touring.jpg`, `category-utility.jpg`, `category-youth.jpg` (category grid, 1200×900). The Electric category tile reuses the real `sled-ski-doo-gt-electric.jpg` product photo instead of stock, since Unsplash has no electric-snowmobile-specific imagery. Parts & Gear category tile unchanged (`gear-carbon-helmet.jpg` was already an accurate in-house gear photo, not a mismatch).
+
+## Parts & Gear image fix (2026-11-24) — full source list
+
+All 28 Parts & Gear products were using the identical `gear-carbon-helmet.jpg` photo. Sourced a distinct real photo for each of the other 27 (helmet keeps its original photo), processed identically to the vehicle photos: flattened onto `#F3F1ED` (the exact background `ProductCard.tsx` already uses for the image frame), resized to 1200×896, `contain` fit.
+
+| Product | File | Source |
+|---|---|---|
+| Race-Spec Carbide Runner | `gear-carbide-race.jpg` | ski-doo-shop.brp.com — Trail Blazer IV Carbides (official product photo) |
+| Precision Carbide Runner — Narrow Mountain | `gear-carbide-narrow.jpg` | ski-doo-shop.brp.com — Pilot R Carbides |
+| Precision Carbide Runner — Wide Crossover | `gear-carbide-wide.jpg` | ski-doo-shop.brp.com — Pilot TS Carbide Runners |
+| Tunnel Ice Scratcher Kit | `gear-ice-scratcher-tunnel.jpg` | ski-doo-shop.brp.com — Ice Scratchers Tips |
+| Performance Straight-Line Ice Scratchers | `gear-ice-scratcher-perf.jpg` | ski-doo-shop.brp.com — Rail Ice Scratchers |
+| LED Auxiliary Light Bar | `gear-led-standard.jpg` | ski-doo-shop.brp.com — Auxiliary LED Light |
+| Premium Dual-Row LED Light Bar | `gear-led-premium.jpg` | ski-doo-shop.brp.com — Auxiliary LED Wide Light |
+| Heated Touring Seat | `gear-seat-heated.jpg` | ski-doo-shop.brp.com — Trail Wide Heated Seat With Storage |
+| Seat Cover & Cushion Kit | `gear-seat-cover.jpg` | eBay listing image (retailer product photo; small manufacturer tag visible — accepted, no cleaner real photo found) |
+| Alpine Riding Jacket | `gear-jacket.jpg` | bowinsgarment.com (OEM/blank apparel manufacturer — no third-party logo) |
+| Alpine Riding Bibs | `gear-bibs.jpg` | northsidemotorsports-shop.ca product photo (no visible logo) |
+| Anti-Fog Riding Goggles | `gear-goggles.jpg` | Freepik stock product photo (no logo) |
+| Insulated Riding Boots | `gear-boots.jpg` | retailer product photo (faint tone-on-tone "X-PLORE" embossing — accepted as incidental, not a dominant brand) |
+| Heavy-Duty Tow Strap | `gear-tow-strap.jpg` | Uline product photo (no logo) |
+| Aluminum Loading Ramp | `gear-loading-ramp.jpg` | Northern Tool product photo (no logo) |
+| Portable Level 2 Home Charging Kit | `gear-ev-charger.jpg` | Walmart marketplace listing (generic "Car charger" text only, no real brand) |
+| DC Fast-Charge Adapter Cable | `gear-ev-dc-cable.jpg` | evsegroup.com product photo (no logo) |
+| Expedition Cargo Trailer Hitch Kit | `gear-trailer-hitch.jpg` | Amazon marketplace listing image (no logo) |
+| Trail & Crossover Stud Kit — 96-Stud | `gear-stud-96.jpg` | gripstuds.com product photo (no logo) |
+| Deep-Powder Stud Kit — 120-Stud | `gear-stud-120.jpg` | gripstuds.com product photo, alternate angle (no logo) |
+| Mid-Rise Windshield — 15" | `gear-windshield-mid.jpg` | ski-doo-shop.brp.com — Adjustable Windshield Medium to High (no brand text visible) |
+| Tall Touring Windshield — 19" | `gear-windshield-tall.jpg` | brplynx.com accessories catalog image, mounted on a generic/unbranded front-end mockup |
+| Severe-Duty Drive Belt | `gear-drive-belt.jpg` | generic manufacturer stock photo (switched away from an initial candidate that had a large "Ultimax" brand label covering most of the belt) |
+| Performance Clutch Kit | `gear-clutch-kit.jpg` | ibexx.com product photo (no logo) |
+| Trailerable Cover — Trail & Crossover | `gear-cover-trail.jpg` | Freepik stock product photo (no logo) |
+| Trailerable Cover — Mountain | `gear-cover-mountain.jpg` | Freepik stock product photo, alternate angle (no logo) |
+| Heated Alpine Gauntlet Gloves | `gear-gloves.jpg` | basecamp.ie product photo (switched away from an initial candidate with a visible "Fly" brand logo) |
+
+**Rejected candidates worth noting:** several real jacket/boot/belt photos from Klim, Fly, Dayco, and Ultimax were found and discarded specifically because the competing brand's logo was the dominant visual element — the same standard applied to the vehicle-photo fix (a photo may show *a* real product of that general type, but not visibly claim to be a *named competitor's* branded item under a SledHaven listing). Amazon's product pages refused automated access outright ("Access restricted... violates Amazon's Conditions of Use") and were not used as a source.

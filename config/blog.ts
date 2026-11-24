@@ -135,13 +135,13 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: 'Zero-Interest Pay-in-4 Installments',
         paragraphs: [
-          'Riders who prefer to preserve cash liquidity across the winter season can select Pay in 4 at checkout. Your total is split into four equal 25% payments: Installment 1 locks your unit allocation and triggers pre-delivery crating, followed by three equal payments every 30 days at 0% interest.',
+          'Riders who prefer to preserve cash liquidity across the winter season can select the Pay-in-4 payment plan at checkout, after choosing any payment method. Your total is split into four equal 25% payments: Installment 1 locks your unit allocation and triggers pre-delivery crating, followed by three equal payments every 30 days at 0% interest.',
         ],
       },
       {
         heading: 'Verified Desk Settlement Security',
         paragraphs: [
-          'Regardless of whether you choose Crypto, Domestic Bank Transfer, Zelle, Apple Pay, Chime, or Pay in 4, no funds are captured on the checkout form. Once our allocation desk verifies your unit, we email your personalized tap-to-copy settlement page and receipt confirmation link.',
+          'Regardless of which payment method you choose — Crypto, Domestic Bank Transfer, Zelle, Apple Pay, or Chime — and whether you pay in full or split it with Pay-in-4, no funds are captured on the checkout form. Once our allocation desk verifies your unit, we email your personalized tap-to-copy settlement page and receipt confirmation link.',
         ],
       },
     ],

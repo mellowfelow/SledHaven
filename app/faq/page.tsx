@@ -18,7 +18,7 @@ const FAQS = [
   },
   {
     q: 'What payment methods does SledHaven currently accept?',
-    a: 'We currently accept Cryptocurrency (Bitcoin / USDT) with an automatic 10% instant subtotal discount, Domestic Bank Transfer (Wire / ACH), Zelle, Apple Pay, Chime, and Pay-in-4 Financing. Credit card processing is temporarily unavailable.',
+    a: 'We currently accept Cryptocurrency (Bitcoin / USDT) with an automatic 10% instant subtotal discount, Domestic Bank Transfer (Wire / ACH), Zelle, Apple Pay, and Chime. Credit card processing is temporarily unavailable. After choosing your payment method at checkout, you also choose a payment plan — pay the full total upfront, or split it with Pay-in-4 financing.',
   },
   {
     q: 'How does the order and payment confirmation process work?',
@@ -26,7 +26,7 @@ const FAQS = [
   },
   {
     q: 'How does Pay-in-4 snowmobile financing work?',
-    a: 'Pay in 4 divides your total order into four equal interest-free installments. Remit the first 25% installment upon receiving your verified settlement instructions to lock your unit and begin crated freight dispatch. The remaining three payments follow every 30 days.',
+    a: 'Pay-in-4 is a payment plan you select at checkout after choosing your payment method (Crypto, Bank Transfer, Zelle, Apple Pay, or Chime). It divides your total order into four equal interest-free installments. Remit the first 25% installment upon receiving your verified settlement instructions to lock your unit and begin crated freight dispatch. The remaining three payments follow every 30 days.',
   },
   {
     q: 'Do snowmobiles arrive with title / registration documentation for my state?',

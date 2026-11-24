@@ -47,12 +47,14 @@ export default function TermsPage() {
         </section>
 
         <section className="space-y-2">
-          <h2 className="font-serif text-xl font-semibold text-[#111418]">Payment Methods</h2>
+          <h2 className="font-serif text-xl font-semibold text-[#111418]">Payment Methods &amp; Plans</h2>
           <p>
             We accept Cryptocurrency (Bitcoin / USDT — with an automatic {SITE.orderRules.cryptoDiscountPercent}%
-            instant subtotal discount), domestic Bank Transfer (Wire / ACH), Zelle, Apple Pay, Chime, and Pay-in-4
-            installment financing. Credit card processing is temporarily unavailable. No funds are charged
-            automatically at checkout — payment is settled directly with our dealership desk after order
+            instant subtotal discount), domestic Bank Transfer (Wire / ACH), Zelle, Apple Pay, and Chime. Credit
+            card processing is temporarily unavailable. After selecting a payment method at checkout, you also
+            choose a payment plan: pay the full order total upfront, or split it with Pay-in-4 installment
+            financing (25% due today, then three equal interest-free installments every 30 days). No funds are
+            charged automatically at checkout — payment is settled directly with our dealership desk after order
             verification.
           </p>
         </section>
