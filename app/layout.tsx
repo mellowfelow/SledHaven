@@ -10,7 +10,7 @@ import Footer from '@/components/Footer';
 import CartDrawer from '@/components/CartDrawer';
 import ChatHub from '@/components/ChatHub';
 import JsonLd from '@/components/JsonLd';
-import { REVIEW_SUMMARY } from '@/config/reviews';
+import { CUSTOMER_REVIEWS, REVIEW_SUMMARY } from '@/config/reviews';
 import { CATEGORIES, PRODUCTS } from '@/config/catalog';
 
 const playfair = Playfair_Display({
@@ -107,6 +107,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       bestRating: 5,
       worstRating: 1,
     },
+    review: CUSTOMER_REVIEWS.map((r) => ({
+      '@type': 'Review',
+      author: { '@type': 'Person', name: r.author },
+      datePublished: new Date(r.dateOfExperience).toISOString().slice(0, 10),
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: r.rating,
+        bestRating: 5,
+        worstRating: 1,
+      },
+      name: r.title,
+      reviewBody: r.body,
+    })),
   };
 
   const websiteSchema = {

@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { SITE } from '@/config/site';
-import { PRODUCTS, getProductBySlug } from '@/config/catalog';
+import { PRODUCTS, getProductBySlug, getCategoryBySlug } from '@/config/catalog';
 import ProductDetailClient from '@/components/ProductDetailClient';
 import ProductCard from '@/components/ProductCard';
 import JsonLd from '@/components/JsonLd';
@@ -18,9 +18,10 @@ export async function generateMetadata(context: {
   const { slug } = await context.params;
   const product = getProductBySlug(slug);
   if (!product) return { title: 'Listing Not Found' };
+  const shortCat = getCategoryBySlug(product.category)?.shortTitle || product.categoryName;
 
   return {
-    title: `${product.name} (${product.year}) — ${product.categoryName}`,
+    title: `${product.name} — ${shortCat}`,
     description: product.shortDescription,
     alternates: { canonical: `/shop/${product.category}/${product.slug}/` },
     openGraph: {
