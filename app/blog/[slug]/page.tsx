@@ -57,9 +57,7 @@ export default async function BlogArticlePage(context: {
       name: SITE.name,
     },
     publisher: {
-      '@type': 'Organization',
-      name: SITE.name,
-      url: SITE.url,
+      '@id': `${SITE.url}/#organization`,
     },
     mainEntityOfPage: `${SITE.url}/blog/${post.slug}/`,
   };

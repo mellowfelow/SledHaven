@@ -7,12 +7,43 @@ import SmartImage from '@/components/SmartImage';
 import ProductCard from '@/components/ProductCard';
 import TrustpilotReviewSlider from '@/components/TrustpilotReviewSlider';
 import HeroSlider from '@/components/HeroSlider';
+import JsonLd from '@/components/JsonLd';
+
+const HOME_FAQS = [
+  {
+    q: 'What payment methods does SledHaven accept?',
+    a: 'Cryptocurrency (BTC/USDT, 10% instant discount), Bank Transfer, Zelle, Apple Pay, and Chime. After choosing a method at checkout, you also pick a payment plan — pay in full, or split it with Pay-in-4 financing.',
+  },
+  {
+    q: 'How is snowmobile freight shipping calculated?',
+    a: 'Freight is calculated automatically at checkout based on your delivery state. Every snowmobile ships insured inside a protective crate, and gear orders over $500 qualify for free US parcel shipping.',
+  },
+  {
+    q: 'How does Pay-in-4 financing work?',
+    a: 'Pay-in-4 splits your order into four equal interest-free installments — the first 25% due immediately to lock your unit, then three more every 4 weeks, with no credit check and zero interest.',
+  },
+  {
+    q: 'Do snowmobiles ship with title and registration paperwork?',
+    a: 'Yes. Every unit ships with its Manufacturer Certificate of Origin, itemized bill of sale, and pre-delivery inspection record, so you can complete state trail registration in your home state.',
+  },
+];
 
 export default function HomePage() {
   const featured = PRODUCTS.slice(0, 8);
 
+  const homeFaqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: HOME_FAQS.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
+  };
+
   return (
     <main className="flex-1">
+      <JsonLd data={homeFaqSchema} />
       {/* Section 1: Storefront Campaign Hero Slider */}
       <HeroSlider />
 
@@ -202,6 +233,36 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+        </div>
+      </section>
+
+      {/* Section 6: Homepage FAQ (direct-answer, matches homeFaqSchema above) */}
+      <section className="bg-[#F7F7F5] border-t border-[#E4E6E8]">
+        <div className="max-w-[860px] mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="max-w-xl space-y-2 mb-10">
+            <p className="text-xs font-medium tracking-widest uppercase text-[#9A6B3E]">
+              Common Questions
+            </p>
+            <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-[#111418]">
+              Freight, Payments &amp; Title — Answered
+            </h2>
+          </div>
+          <div className="divide-y divide-[#E4E6E8] bg-white border border-[#E4E6E8] rounded-lg">
+            {HOME_FAQS.map((item) => (
+              <div key={item.q} className="p-6 sm:p-7 space-y-2">
+                <h3 className="font-serif text-base sm:text-lg font-semibold text-[#111418]">
+                  {item.q}
+                </h3>
+                <p className="text-sm text-[#5C636E] leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-6 text-sm text-[#47505B]">
+            Have a different question?{' '}
+            <Link href="/faq/" className="font-medium text-[#9A6B3E] hover:text-[#111418] underline">
+              Read the full Freight, Title &amp; Payment FAQ →
+            </Link>
+          </div>
         </div>
       </section>
     </main>

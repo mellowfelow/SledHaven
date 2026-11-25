@@ -52,7 +52,7 @@ export default async function ProductPage(context: {
     category: `${product.categoryName} > ${product.subcategory}`,
     brand: {
       '@type': 'Brand',
-      name: SITE.name,
+      name: product.brand,
     },
     offers: {
       '@type': 'Offer',

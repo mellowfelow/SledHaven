@@ -508,6 +508,19 @@ const wellKnownTypeRules = [
   ],
 }));
 
+const cspDirectives = [
+  `default-src 'self'`,
+  `script-src 'self' 'unsafe-inline' https://embed.tawk.to`,
+  `style-src 'self' 'unsafe-inline'`,
+  `img-src 'self' data: https:`,
+  `font-src 'self' data:`,
+  `connect-src 'self' https://embed.tawk.to wss://*.tawk.to`,
+  `frame-src https://*.tawk.to`,
+  `object-src 'none'`,
+  `base-uri 'self'`,
+  `form-action 'self'`,
+].join('; ');
+
 const linkHeader = [
   `<${ORIGIN}/.well-known/api-catalog>; rel="api-catalog"`,
   `<${ORIGIN}/.well-known/agent-skills/index.json>; rel="describedby"`,
@@ -539,6 +552,7 @@ writeFile(
             { key: 'X-Content-Type-Options', value: 'nosniff' },
             { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
             { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
+            { key: 'Content-Security-Policy', value: cspDirectives },
             { key: 'Link', value: linkHeader },
           ],
         },
