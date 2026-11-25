@@ -16,6 +16,7 @@ export interface BrandInfo {
   discipline: string;
   summary: string;
   image: string;
+  logo: string;
 }
 
 export interface Product {
@@ -167,6 +168,7 @@ export const BRANDS: BrandInfo[] = [
     summary:
       'The snowmobile brand of BRP Inc., covering the full range from the Summit deep-snow line and MXZ trail performance sleds to Grand Touring two-up models, Skandic and Expedition utility/crossover, and the Grand Touring Electric.',
     image: '/images/sled-ski-doo-summit-x-expert.jpg',
+    logo: '/images/logo-ski-doo.png',
   },
   {
     slug: 'polaris',
@@ -176,6 +178,7 @@ export const BRANDS: BrandInfo[] = [
     summary:
       'A Minnesota-based powersports manufacturer whose RMK line is a long-standing benchmark in mountain/deep-snow performance, alongside the INDY trail and Switchback crossover families.',
     image: '/images/sled-polaris-rmk-khaos-155.jpg',
+    logo: '/images/logo-polaris.png',
   },
   {
     slug: 'arctic-cat',
@@ -185,6 +188,7 @@ export const BRANDS: BrandInfo[] = [
     summary:
       'An independent manufacturer based in Thief River Falls, Minnesota — sold by Textron to an investor group led by former Arctic Cat/Argo executive Brad Darling in April 2025 — known for the ZR trail performance line and the Bearcat utility/wide-track family.',
     image: '/images/sled-arctic-cat-zr-858-sno-pro.jpg',
+    logo: '/images/logo-arctic-cat.png',
   },
   {
     slug: 'lynx',
@@ -194,6 +198,7 @@ export const BRANDS: BrandInfo[] = [
     summary:
       'BRP’s long-running European snowmobile brand, newly expanded into North American distribution for model year 2026, including the XTerrain crossover.',
     image: '/images/sled-lynx-xterrain.jpg',
+    logo: '/images/logo-lynx.png',
   },
   {
     slug: 'taiga',
@@ -203,6 +208,7 @@ export const BRANDS: BrandInfo[] = [
     summary:
       'A Canadian electric-powersports manufacturer and the only snowmobile maker building 100% electric sleds from the ground up — the MY27 Nomad lineup (Pro, Performance, Scout) ships with up to 120 kW drive units, CCS fast charging, and onboard power for off-grid use, sold through a growing North American and European dealer network.',
     image: '/images/sled-taiga-nomad-performance.jpg',
+    logo: '/images/logo-taiga.png',
   },
   {
     slug: 'sledhaven-gear',
@@ -212,6 +218,7 @@ export const BRANDS: BrandInfo[] = [
     summary:
       'DOT/ECE aerospace 3K carbon-fiber helmets and sub-zero heated visor protection qualifying for free US parcel shipping.',
     image: '/images/gear-carbon-helmet.jpg',
+    logo: '/images/logo.jpg',
   },
 ];
 

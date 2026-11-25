@@ -71,7 +71,7 @@ export default function FinancingPage() {
             },
             {
               step: '04. Three Monthly Payments',
-              desc: 'Settle the remaining three equal 25% installments every 30 days with 0% interest and zero prepayment penalties.',
+              desc: 'Settle the remaining three equal 25% installments every 4 weeks with 0% interest and zero prepayment penalties.',
               Icon: CalendarCheck,
             },
           ].map(({ step, desc, Icon }) => (

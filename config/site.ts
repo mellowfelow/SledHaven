@@ -154,11 +154,11 @@ export const SITE = {
         label: 'Pay in 4 Financing',
         available: true,
         hidden: true,
-        note: '4 equal installments — 25% due today to reserve allocation.',
+        note: '4 equal installments — 25% due immediately to reserve allocation.',
         opening:
           'Your Pay-in-4 reservation has been reviewed. To lock your snowmobile allocation and initiate crating, remit the first 25% installment using the verified details below.',
         closing:
-          'Remaining three installments follow every 30 days with 0% interest. Upload your initial installment receipt below to begin pre-delivery inspection.',
+          'Remaining three installments follow every 4 weeks with 0% interest. Upload your initial installment receipt below to begin pre-delivery inspection.',
       },
       {
         id: 'credit_card',
@@ -178,7 +178,7 @@ export const SITE = {
       {
         id: 'pay_in_4',
         label: 'Pay-in-4 Financing',
-        note: '25% due today to reserve your allocation, then 3 equal interest-free installments every 30 days.',
+        note: '25% due immediately to reserve your allocation, then 3 equal interest-free installments every 4 weeks.',
       },
     ] as PaymentPlanConfig[],
   },

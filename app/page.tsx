@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { ArrowRight, Coins, CreditCard, Scale, ShieldCheck, Truck } from 'lucide-react';
 import { SITE } from '@/config/site';
-import { CATEGORIES, PRODUCTS } from '@/config/catalog';
+import { BRANDS, CATEGORIES, PRODUCTS } from '@/config/catalog';
 import SmartImage from '@/components/SmartImage';
 import ProductCard from '@/components/ProductCard';
 import TrustpilotReviewSlider from '@/components/TrustpilotReviewSlider';
@@ -62,8 +62,36 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Section 2b: Authorized Dealer Brand Strip */}
+      <section className="bg-[#F7F7F5] border-b border-[#E4E6E8]">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <p className="text-center text-xs font-medium tracking-widest uppercase text-[#9A6B3E] mb-8">
+            Authorized US Dealer For
+          </p>
+          <div className="grid grid-cols-3 sm:grid-cols-5 gap-6 sm:gap-10 items-center justify-center">
+            {BRANDS.filter((b) => b.slug !== 'sledhaven-gear').map((brand) => (
+              <Link
+                key={brand.slug}
+                href={`/brands/?brand=${brand.slug}`}
+                className="group relative aspect-[3/2] flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity"
+                aria-label={`${brand.name} — view models`}
+              >
+                <SmartImage
+                  src={brand.logo}
+                  alt={`${brand.name} logo`}
+                  fill
+                  sizes="(max-width: 640px) 33vw, 20vw"
+                  className="object-contain"
+                />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Section 3: Featured Inventory Grid (8 products in 4/4 desktop layout) */}
-      <section className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <section className="bg-white">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-8 border-b border-[#E4E6E8]">
           <div className="space-y-2">
             <p className="text-xs font-medium tracking-widest uppercase text-[#9A6B3E]">
@@ -90,6 +118,7 @@ export default function HomePage() {
           {featured.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
+        </div>
         </div>
       </section>
 

@@ -26,7 +26,7 @@ const FAQS = [
   },
   {
     q: 'How does Pay-in-4 snowmobile financing work?',
-    a: 'Pay-in-4 is a payment plan you select at checkout after choosing your payment method (Crypto, Bank Transfer, Zelle, Apple Pay, or Chime). It divides your total order into four equal interest-free installments. Remit the first 25% installment upon receiving your verified settlement instructions to lock your unit and begin crated freight dispatch. The remaining three payments follow every 30 days.',
+    a: 'Pay-in-4 is a payment plan you select at checkout after choosing your payment method (Crypto, Bank Transfer, Zelle, Apple Pay, or Chime). It divides your total order into four equal interest-free installments. Remit the first 25% installment upon receiving your verified settlement instructions to lock your unit and begin crated freight dispatch. The remaining three payments follow every 4 weeks.',
   },
   {
     q: 'Do snowmobiles arrive with title / registration documentation for my state?',

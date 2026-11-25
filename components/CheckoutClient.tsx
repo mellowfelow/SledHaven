@@ -451,7 +451,7 @@ export default function CheckoutClient() {
             </div>
             {totals.payIn4Installment && (
               <div className="flex justify-between text-xs text-[#9A6B3E] font-medium pt-1">
-                <span>Pay-in-4 Initial Installment (25% due today)</span>
+                <span>Pay-in-4 Initial Installment (25% due immediately)</span>
                 <span>{money(totals.payIn4Installment)}</span>
               </div>
             )}

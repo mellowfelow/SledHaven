@@ -53,7 +53,7 @@ export default function TermsPage() {
             instant subtotal discount), domestic Bank Transfer (Wire / ACH), Zelle, Apple Pay, and Chime. Credit
             card processing is temporarily unavailable. After selecting a payment method at checkout, you also
             choose a payment plan: pay the full order total upfront, or split it with Pay-in-4 installment
-            financing (25% due today, then three equal interest-free installments every 30 days). No funds are
+            financing (25% due immediately, then three equal interest-free installments every 4 weeks). No funds are
             charged automatically at checkout — payment is settled directly with our dealership desk after order
             verification.
           </p>
@@ -64,7 +64,7 @@ export default function TermsPage() {
           <p>
             Pay-in-4 divides the total order into four equal, interest-free installments. The first 25%
             installment is due to reserve your unit allocation and begin crated freight preparation; the remaining
-            three installments are due at 30-day intervals.
+            three installments are due at 4-week intervals.
           </p>
         </section>
 

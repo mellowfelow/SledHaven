@@ -155,7 +155,7 @@ export function paymentTermsLines(
     lines.push(`Includes ${SITE.orderRules.cryptoDiscountPercent}% Cryptocurrency Discount.`);
   }
   if (isPayIn4) {
-    lines.push(`Order Total: ${money(orderTotal)} — 3 remaining installments of ${money(installment)} follow every 30 days at 0% interest.`);
+    lines.push(`Order Total: ${money(orderTotal)} — 3 remaining installments of ${money(installment)} follow every 4 weeks at 0% interest.`);
   }
 
   lines.push(SITE.reply.dispatchLogisticsLine);

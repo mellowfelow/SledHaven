@@ -94,10 +94,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
   const cart = parseCart(rawCart);
 
   const [isCartOpen, setIsCartOpen] = useState(false);
-  const [compareIds, setCompareIds] = useState<string[]>([
-    'sh-mtn-850tr',
-    'sh-trl-900gt',
-  ]);
+  const [compareIds, setCompareIds] = useState<string[]>([]);
 
   const openCart = useCallback(() => setIsCartOpen(true), []);
   const closeCart = useCallback(() => setIsCartOpen(false), []);

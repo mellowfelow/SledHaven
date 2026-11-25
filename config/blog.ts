@@ -135,7 +135,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: 'Zero-Interest Pay-in-4 Installments',
         paragraphs: [
-          'Riders who prefer to preserve cash liquidity across the winter season can select the Pay-in-4 payment plan at checkout, after choosing any payment method. Your total is split into four equal 25% payments: Installment 1 locks your unit allocation and triggers pre-delivery crating, followed by three equal payments every 30 days at 0% interest.',
+          'Riders who prefer to preserve cash liquidity across the winter season can select the Pay-in-4 payment plan at checkout, after choosing any payment method. Your total is split into four equal 25% payments: Installment 1 locks your unit allocation and triggers pre-delivery crating, followed by three equal payments every 4 weeks at 0% interest.',
         ],
       },
       {
