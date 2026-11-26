@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   description:
     'Search SledHaven snowmobiles for sale by model name, engine displacement, riding discipline, or SKU.',
   alternates: { canonical: '/search/' },
+  robots: { index: false, follow: true },
 };
 
 export default function SearchPage() {

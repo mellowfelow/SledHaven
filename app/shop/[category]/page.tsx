@@ -19,7 +19,7 @@ export async function generateMetadata(context: {
   if (!cat) return { title: 'Category Not Found' };
 
   return {
-    title: `${cat.name} for Sale in the USA`,
+    title: `${cat.seoH1 || cat.name} for Sale in the USA`,
     description: cat.description,
     alternates: { canonical: `/shop/${cat.slug}/` },
   };
@@ -67,7 +67,7 @@ export default async function CategoryPage(context: {
         </nav>
 
         <h1 className="font-serif text-3xl sm:text-4xl font-semibold text-[#111418]">
-          {cat.name}
+          {cat.seoH1 || cat.name}
         </h1>
         <p className="text-sm sm:text-base text-[#4F5863] max-w-2xl leading-relaxed">
           {cat.description}

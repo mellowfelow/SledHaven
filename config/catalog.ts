@@ -47,6 +47,9 @@ export interface Category {
   slug: string;
   name: string;
   shortTitle: string;
+  /** Overrides `name` in the generated H1/title when the display name doesn't
+   *  itself contain the category's assigned SEO keyword (see docs/keyword-map.md). */
+  seoH1?: string;
   description: string;
   image: string;
   subcategories: { slug: string; name: string }[];
@@ -93,6 +96,7 @@ export const CATEGORIES: Category[] = [
     slug: 'touring',
     name: 'Touring & Luxury',
     shortTitle: 'Touring',
+    seoH1: '2-Up Touring Snowmobiles',
     description:
       'Real two-up grand touring sleds from Ski-Doo, with heated two-up seating and integrated luggage for long groomed-corridor days.',
     image: '/images/category-touring.jpg',
