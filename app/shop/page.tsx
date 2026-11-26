@@ -7,9 +7,9 @@ import ShopCatalogClient from '@/components/ShopCatalogClient';
 import JsonLd from '@/components/JsonLd';
 
 export const metadata: Metadata = {
-  title: 'Snowmobiles for Sale — Full 2026 USA Inventory',
+  title: 'Snowmobile Inventory — Full 2026 USA Listings',
   description:
-    'Browse SledHaven mountain, trail, crossover, touring & utility snowmobiles for sale with crated freight, Pay-in-4 financing & a 10% crypto discount.',
+    'Browse the full SledHaven snowmobile inventory: mountain, trail, crossover, touring & utility snowmobile for sale with crated freight, Pay-in-4 financing & a 10% crypto discount.',
   alternates: { canonical: '/shop/' },
 };
 
@@ -37,10 +37,10 @@ export default function ShopPage() {
         </nav>
 
         <h1 className="font-serif text-3xl sm:text-4xl font-semibold text-[#111418]">
-          Snowmobiles for Sale
+          Snowmobile Inventory
         </h1>
         <p className="text-sm sm:text-base text-[#4F5863] max-w-2xl leading-relaxed">
-          Every unit is pre-delivery inspected and ships crated nationwide across the United States. Select a riding discipline and subcategory below or add up to three sleds to compare specifications.
+          Browse every snowmobile for sale in our current lineup. Every unit is pre-delivery inspected and ships crated nationwide across the United States. Select a riding discipline and subcategory below or add up to three sleds to compare specifications.
         </p>
       </div>
 

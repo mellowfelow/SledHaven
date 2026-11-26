@@ -39,8 +39,8 @@ The client flagged that the sled lineup used fictional in-house brands with no r
 
 | Keyword | Volume | KD | Intent | Assigned URL |
 |---|---|---|---|---|
-| `snowmobiles for sale` | 6,600 | 13% | Transactional/Commercial | `/` & `/shop/` |
-| `snowmobile for sale` | 6,600 | 19% | Transactional | `/shop/` |
+| `snowmobiles for sale` | 6,600 | 13% | Transactional/Commercial | `/` (exact-match H1/title) |
+| `snowmobile for sale` | 6,600 | 19% | Transactional | `/shop/` (H1 "Snowmobile Inventory" + singular variant in body copy/meta description — de-duplicated from homepage 2026-11-26, see note below) |
 | `utility snowmobile` | 590 | 9% | Informational/Commercial | `/shop/utility/` |
 | `mountain snowmobile` | 480 | 20% | Commercial | `/shop/mountain/` |
 | `snowmobile financing` | 480 | 7% | Informational | `/financing/` |
@@ -53,6 +53,10 @@ The client flagged that the sled lineup used fictional in-house brands with no r
 | `2 seater snowmobiles` | 70 | 7% | Commercial | `/shop/touring/` (supporting) |
 | `crossover snowmobiles for sale` | 50 | 12% | Transactional | `/shop/crossover/` (supporting) |
 | `2 up snowmobiles` | 50 | 7% | Commercial | `/shop/touring/` (supporting) |
+
+## Home vs. Shop de-duplication (2026-11-26)
+
+Audit found the homepage H1 ("Snowmobiles for Sale. Engineered for American Winter.") and the `/shop/` H1 ("Snowmobiles for Sale") were near-identical verbatim strings — both competing for the exact same plural phrase with no real content differentiation at the H1 level, risking Google picking either page inconsistently for `snowmobiles for sale` queries. Fixed without new keyword research — both figures were already real, validated Semrush data on file, just not implemented on-page: homepage keeps the plural exact-match as its brand-entry term; `/shop/` H1 changed to "Snowmobile Inventory" (title: "Snowmobile Inventory — Full 2026 USA Listings"), with the singular `snowmobile for sale` kept naturally in body copy and meta description instead of the H1, so the two pages no longer share an identical H1 string.
 
 ## Replaced / corrected from the previous (unvalidated) version
 
