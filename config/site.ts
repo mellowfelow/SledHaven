@@ -46,7 +46,7 @@ export const SITE = {
   },
   checkout: {
     emailCheckout: true,
-    whatsappCheckout: false,
+    whatsappCheckout: true,
     financingPage: true,
     financingTerms: 'Pay in 4',
   },

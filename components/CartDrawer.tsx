@@ -3,9 +3,10 @@
 import React, { useEffect, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { AlertCircle, Minus, Plus, ShoppingBag, Trash2, Truck, X } from 'lucide-react';
+import { AlertCircle, MessageCircle, Minus, Plus, ShoppingBag, Trash2, Truck, X } from 'lucide-react';
 import { SITE } from '@/config/site';
 import { calculateOrderTotals, money } from '@/lib/order';
+import { waCheckoutLink } from '@/lib/whatsapp';
 import { useStore } from '@/components/StoreProvider';
 import SmartImage from '@/components/SmartImage';
 
@@ -213,6 +214,40 @@ export default function CartDrawer() {
             >
               Proceed to Checkout &middot; {money(totals.total)}
             </button>
+            {SITE.checkout.whatsappCheckout && (
+              <a
+                href={
+                  totals.meetsMinOrder
+                    ? waCheckoutLink(
+                        totals.items.map((i) => ({
+                          name: i.name,
+                          quantity: i.quantity,
+                          lineTotal: i.lineTotal,
+                        })),
+                        totals.total
+                      )
+                    : undefined
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-disabled={!totals.meetsMinOrder}
+                onClick={(e) => {
+                  if (!totals.meetsMinOrder) {
+                    e.preventDefault();
+                    return;
+                  }
+                  closeCart();
+                }}
+                className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-md text-sm font-medium text-white transition-colors cursor-pointer disabled:opacity-45"
+                style={{
+                  backgroundColor: totals.meetsMinOrder ? '#25D366' : '#9CA3AF',
+                  pointerEvents: totals.meetsMinOrder ? 'auto' : 'none',
+                }}
+              >
+                <MessageCircle className="w-4 h-4" />
+                <span>Checkout via WhatsApp</span>
+              </a>
+            )}
             <p className="text-[11px] text-center text-[#646D78]">
               No payment is taken on this form. Verified payment instructions arrive via email.
             </p>

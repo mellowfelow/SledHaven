@@ -5,6 +5,15 @@ function cleanPhone(num: string): string {
   return String(num || '').replace(/[^\d]/g, '');
 }
 
+/**
+ * Every customer-originated WhatsApp message carries the site name as a bold
+ * header line first, so the dealer desk can see at a glance which business
+ * the chat is about — regardless of which page/link the customer tapped.
+ */
+function customerMessage(lines: string[]): string {
+  return [`*${SITE.name}*`, ...lines].join('\n');
+}
+
 export function waLink(message: string): string {
   const phone = cleanPhone(SITE.contact.whatsapp);
   return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
@@ -19,23 +28,50 @@ export function waLinkTo(phoneNumber: string, message: string): string {
  * Customer-originated WhatsApp links ALWAYS start with literal "Hi {SITE.name},"
  */
 export function waGeneralInquiryLink(topic?: string): string {
-  const text = topic
-    ? `Hi ${SITE.name}, I have a question regarding ${topic}.`
-    : `Hi ${SITE.name}, I would like assistance with selecting a snowmobile.`;
+  const text = customerMessage([
+    topic
+      ? `Hi, I have a question regarding ${topic}.`
+      : `Hi, I would like assistance with selecting a snowmobile.`,
+  ]);
   return waLink(text);
 }
 
 export function waOrderLink(orderNumber: string, customerName: string, total: number): string {
-  const text = [
-    `Hi ${SITE.name}, I just placed order ${orderNumber} (${money(total)}).`,
+  const text = customerMessage([
+    `Hi, I just placed order ${orderNumber} (${money(total)}).`,
     `Name: ${customerName}`,
     `Please let me know once payment instructions are ready.`,
-  ].join('\n');
+  ]);
   return waLink(text);
 }
 
 export function waPaymentConfirmationLink(orderNumber: string): string {
-  const text = `Hi ${SITE.name}, I have completed payment for order ${orderNumber} and uploaded my confirmation screenshot.`;
+  const text = customerMessage([
+    `Hi, I have completed payment for order ${orderNumber}. Here is my confirmation screenshot.`,
+  ]);
+  return waLink(text);
+}
+
+export interface WhatsAppCheckoutItem {
+  name: string;
+  quantity: number;
+  lineTotal: number;
+}
+
+/**
+ * Pre-filled WhatsApp checkout message listing the customer's cart so a
+ * human at the dealership desk can pick up the order and send payment
+ * instructions, without the customer filling the web checkout form.
+ */
+export function waCheckoutLink(items: WhatsAppCheckoutItem[], total: number): string {
+  const text = customerMessage([
+    `Hi, I'd like to check out with the following:`,
+    '',
+    ...items.map((item) => `${item.quantity}x ${item.name} — ${money(item.lineTotal)}`),
+    '',
+    `Estimated Total: ${money(total)}`,
+    `Please send me payment instructions to complete my order.`,
+  ]);
   return waLink(text);
 }
 
