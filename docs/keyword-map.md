@@ -56,7 +56,17 @@ The client flagged that the sled lineup used fictional in-house brands with no r
 
 ## Home vs. Shop de-duplication (2026-11-26)
 
-Audit found the homepage H1 ("Snowmobiles for Sale. Engineered for American Winter.") and the `/shop/` H1 ("Snowmobiles for Sale") were near-identical verbatim strings — both competing for the exact same plural phrase with no real content differentiation at the H1 level, risking Google picking either page inconsistently for `snowmobiles for sale` queries. Fixed without new keyword research — both figures were already real, validated Semrush data on file, just not implemented on-page: homepage keeps the plural exact-match as its brand-entry term; `/shop/` H1 changed to "Snowmobile Inventory" (title: "Snowmobile Inventory — Full 2026 USA Listings"), with the singular `snowmobile for sale` kept naturally in body copy and meta description instead of the H1, so the two pages no longer share an identical H1 string.
+Audit found the homepage H1 ("Snowmobiles for Sale. Engineered for American Winter.") and the `/shop/` H1 ("Snowmobiles for Sale") were near-identical verbatim strings — both competing for the exact same plural phrase with no real content differentiation at the H1 level, risking Google picking either page inconsistently for `snowmobiles for sale` queries.
+
+**Final fix, confirmed with fresh Semrush data (refreshed 2026-11-26, Keyword Magic Tool, US database):** `/shop/` now targets `new snowmobiles for sale` (Vol 720, KD 5%, Transactional) as its H1/title keyword instead. This is a genuinely distinct search query from the homepage's exact-match `snowmobiles for sale` — zero cannibalization — while staying fully transactional and actually true (SledHaven stocks new units only). The same data run surfaced heavy `used snowmobiles for sale` volume (3.6K, KD 16%) which is deliberately NOT targeted, since the site has no used inventory — would be a false claim.
+
+| Keyword | Volume | KD | Intent | Assigned URL |
+|---|---|---|---|---|
+| `snowmobiles for sale` | 6,600 | 13%→14% (re-confirmed) | Transactional | `/` (exact-match H1/title, brand-entry page) |
+| `new snowmobiles for sale` | 720 | 5% | Transactional | `/shop/` (H1 + title, replaces prior "Snowmobile Inventory" interim fix) |
+| `new snowmobile for sale` (singular) | 590 | 9% | Transactional | `/shop/` (supporting, body copy) |
+
+**Brand-level volumes surfaced in the same pull** (for later product/brand-page work, not yet assigned): `polaris snowmobiles for sale` 2.4K/KD22%, `ski doo snowmobiles for sale` 1.3K/KD10%, `arctic cat snowmobiles for sale` 720/KD13%, `lynx snowmobiles for sale` 260/KD10%. These map naturally to `/brands/?brand=...` filtered views.
 
 ## Replaced / corrected from the previous (unvalidated) version
 
