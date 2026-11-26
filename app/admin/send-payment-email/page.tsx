@@ -6,7 +6,6 @@ import Link from 'next/link';
 import {
   AlertCircle,
   CheckCircle2,
-  ExternalLink,
   Loader2,
   Send,
 } from 'lucide-react';
@@ -180,17 +179,6 @@ function SendPaymentComposerInner() {
               {!result.emailSent && result.mailReason && (
                 <p className="text-emerald-800">Mailer note: {result.mailReason}</p>
               )}
-              <div className="flex flex-wrap gap-3 pt-1">
-                <a
-                  href={result.paymentPageUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 font-medium text-emerald-900 underline"
-                >
-                  <span>Open Tap-to-Copy Payment Page</span>
-                  <ExternalLink className="w-3 h-3" />
-                </a>
-              </div>
             </div>
           )}
 
@@ -309,6 +297,11 @@ function SendPaymentComposerInner() {
                       ))}
                     </div>
                   )}
+
+                  <div className="p-3 rounded border border-[#E4E6E8] bg-[#F9FAFB] text-xs text-[#334155] leading-relaxed">
+                    <span className="font-semibold text-[#111418]">Once You&apos;ve Paid: </span>
+                    Just reply to this email with a screenshot of your payment confirmation — we&apos;ll verify it and begin dispatch.
+                  </div>
 
                   <div className="pt-3 border-t border-[#ECEEF0] space-y-1 text-[11px] text-[#5C636E]">
                     {paymentTermsLines(

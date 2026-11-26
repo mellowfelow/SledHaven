@@ -74,9 +74,6 @@ export function waPaymentDetailsMessage(params: {
     '',
     detailLines,
     '',
-    `Tap-to-copy payment page: ${params.paymentPageUrl}`,
-    `Upload payment receipt: ${params.confirmPageUrl}`,
-    '',
     method.closing,
   ].join('\n');
 }

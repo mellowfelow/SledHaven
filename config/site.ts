@@ -107,7 +107,7 @@ export const SITE = {
         opening:
           'Your SledHaven order has been verified with the 10% cryptocurrency discount applied. Please send the exact total below to the verified wallet address provided.',
         closing:
-          'Once your transaction is broadcast on-chain, upload your confirmation screenshot using the link below so our dispatch desk can lock your build slot and freight crate.',
+          'Once your transaction is broadcast on-chain, just reply to this message with a screenshot so our dispatch desk can lock your build slot and freight crate.',
       },
       {
         id: 'bank_transfer',
@@ -117,7 +117,7 @@ export const SITE = {
         opening:
           'Your SledHaven allocation is reserved. Please initiate a domestic wire or ACH transfer using the verified dealership settlement details below and include your order reference in the memo.',
         closing:
-          'Upload your transfer receipt via the confirmation link below to expedite freight scheduling and MCO title preparation.',
+          'Just reply to this message with a screenshot of your transfer receipt to expedite freight scheduling and MCO title preparation.',
       },
       {
         id: 'apple_pay',
@@ -127,7 +127,7 @@ export const SITE = {
         opening:
           'Your SledHaven order is ready for Apple Pay settlement. Use the verified Apple Pay recipient details below and include your order number in the payment note.',
         closing:
-          'After completing your Apple Pay transfer, submit your confirmation screenshot below so we can immediately trigger fulfillment.',
+          'After completing your Apple Pay transfer, just reply to this message with a screenshot so we can immediately trigger fulfillment.',
       },
       {
         id: 'chime',
@@ -137,7 +137,7 @@ export const SITE = {
         opening:
           'Your SledHaven order is confirmed and ready for Chime transfer. Send the verified amount to the Chime tag listed below with your order number in the note.',
         closing:
-          'Once sent, upload your Chime receipt screenshot using the button below to finalize dispatch.',
+          'Once sent, just reply to this message with a screenshot of your Chime receipt to finalize dispatch.',
       },
       {
         id: 'zelle',
@@ -147,7 +147,7 @@ export const SITE = {
         opening:
           'Your SledHaven reservation is ready for Zelle settlement. Transfer the exact amount to the verified recipient below and include your order reference.',
         closing:
-          'Upload your Zelle confirmation screenshot below so our logistics desk can schedule crated delivery.',
+          'Just reply to this message with a screenshot of your Zelle confirmation so our logistics desk can schedule crated delivery.',
       },
       {
         id: 'pay_in_4',
@@ -158,7 +158,7 @@ export const SITE = {
         opening:
           'Your Pay-in-4 reservation has been reviewed. To lock your snowmobile allocation and initiate crating, remit the first 25% installment using the verified details below.',
         closing:
-          'Remaining three installments follow every 4 weeks with 0% interest. Upload your initial installment receipt below to begin pre-delivery inspection.',
+          'Remaining three installments follow every 4 weeks with 0% interest. Just reply to this message with a screenshot of your initial installment receipt to begin pre-delivery inspection.',
       },
       {
         id: 'credit_card',
