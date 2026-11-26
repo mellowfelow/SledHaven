@@ -157,6 +157,16 @@ Real competitors confirmed in the live SERP: 509 (ride509.com), Polaris's own ap
 
 **Net result:** Parts & Gear grew from 13 products / 7 subcategories to **28 products / 11 subcategories**. Three items across this expansion (boots exact volume, loading ramp price, DC fast-charge cable price) are reasonable estimates rather than directly-cited figures — flagged above rather than presented as equally verified.
 
+## Sitewide cannibalization sweep + Touring fix (2026-11-26)
+
+Full pass over every indexable page's title/H1 pair, triggered by the client's request to confirm a "clean build" before moving to product pages. Findings:
+
+- **Touring category was a real bug**, not just an open item: `/shop/touring/` H1/title used the display name "Touring & Luxury," which contains neither "snowmobile" nor the assigned `2 up snowmobile` keyword at all. Fixed by adding a `seoH1` override field to the category config (`config/catalog.ts`) — H1/title now read "2-Up Touring Snowmobiles" / "2-Up Touring Snowmobiles for Sale in the USA," while the nav/breadcrumb display name stays "Touring & Luxury" unchanged.
+- **`/search/` was indexable and in the sitemap** with no unique ranking value (thin, client-rendered, duplicate of catalog content) — standard SEO practice is to noindex internal search-results pages. Added `robots: { index: false, follow: true }` and removed it from `sitemap.xml`. Does not affect agent/MCP search discoverability — `/api/search/` (the JSON endpoint agents actually use per `llms.txt`) is untouched.
+- **About/FAQ dual-assignment of `snowmobile dealership` / `nationwide snowmobile freight delivery`** checked and confirmed low-risk: both only appear as supporting eyebrow/body copy, not as H1s, so there's no literal duplicate-H1 cannibalization — left as-is.
+- Homepage's category-grid links to each `/shop/{category}/` page using the category display name (e.g. "Mountain Snowmobiles" as an `<h3>`) is standard internal-linking/anchor-text practice, not cannibalization — the homepage's own H1/title target only the sitewide `snowmobiles for sale` term, not any category-level keyword as a primary.
+- Build + `npm run crosscheck` both pass clean after these fixes.
+
 ## Open item — Trail category keyword
 
 Neither `trail snowmobile` (Vol 260, dominated by trail-riding-conditions/informational intent — "Wisconsin snowmobile trails open") nor `performance trail snowmobile` (no measurable volume) gave a clean transactional keyword for `/shop/trail/`. The page currently relies on the strong site-wide `snowmobiles for sale` / `snowmobile for sale` terms plus its own product names. Needs a follow-up Semrush check against more specific variants (e.g. brand-model-style long-tail, "performance sled for sale") before a dedicated trail-category keyword can be assigned with confidence.
