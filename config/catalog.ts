@@ -72,6 +72,7 @@ export const CATEGORIES: Category[] = [
     slug: 'trail',
     name: 'Trail & Performance',
     shortTitle: 'Trail',
+    seoH1: 'Trail Snowmobiles',
     description:
       'Real groomed-trail performance sleds from Ski-Doo and Arctic Cat, from value-oriented entry trims to race-ready turbocharged flagships.',
     image: '/images/category-trail.jpg',

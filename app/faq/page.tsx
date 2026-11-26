@@ -22,7 +22,7 @@ const FAQS = [
   },
   {
     q: 'How does the order and payment confirmation process work?',
-    a: 'When you place an order through our checkout form, no funds are charged immediately. You receive an immediate order confirmation email while our dealership desk verifies unit allocation. Next, we email your personalized settlement instructions along with a tap-to-copy payment page and receipt upload link.',
+    a: 'When you place an order through our checkout form, no funds are charged immediately. You receive an immediate order confirmation email while our dealership desk verifies unit allocation. Next, we email your personalized settlement instructions with your verified payment details already included. Once you’ve paid, just reply to that email, WhatsApp us, or email us a screenshot of your confirmation — whichever is easiest.',
   },
   {
     q: 'How does Pay-in-4 snowmobile financing work?',

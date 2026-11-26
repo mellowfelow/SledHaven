@@ -156,7 +156,7 @@ export function customerOrderConfirmationEmail(order: StoredOrder): {
     </p>
     ${emailCallout(
       'Next Step — Watch for Your Payment Instructions',
-      'You will receive a follow-up email shortly containing your verified settlement details and a direct tap-to-copy payment page. No payment has been charged yet.'
+      'You will receive a follow-up email shortly with your verified settlement details already included — no separate page to visit. No payment has been charged yet.'
     )}
     ${orderItemsTableHtml(order)}
     ${emailDivider()}
