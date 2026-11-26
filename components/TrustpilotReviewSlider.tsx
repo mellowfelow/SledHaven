@@ -159,15 +159,6 @@ export default function TrustpilotReviewSlider() {
     setSlideIndex((prev) => (prev - 1 + totalSlides) % totalSlides);
   }, [totalSlides]);
 
-  const goToSlide = useCallback(
-    (target: number) => {
-      if (target === safeSlideIndex) return;
-      setDirection(target > safeSlideIndex ? 1 : -1);
-      setSlideIndex(target);
-    },
-    [safeSlideIndex]
-  );
-
   // Auto-advance timer (pauses cleanly on hover or manual pause)
   useEffect(() => {
     if (!isPlaying || isHovered || totalSlides <= 1) return;
@@ -528,27 +519,23 @@ export default function TrustpilotReviewSlider() {
         {/* Bottom Slider Revolution Pagination Scrubber */}
         {totalSlides > 1 && (
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
-            <div className="flex items-center gap-1" role="tablist" aria-label="Review slides">
+            {/* Decorative progress indicator only -- the labeled Prev/Next
+                buttons above provide the actual (and keyboard-accessible)
+                navigation. With 18 slides, per-dot touch targets can't
+                reach the 24px/8px-gap minimum without either shrinking the
+                indicator row onto one line of unusably tiny gaps or
+                growing it far wider than the card -- so dots are kept
+                visual-only rather than shipping a non-compliant tap target. */}
+            <div className="flex items-center gap-1" aria-hidden="true">
               {slides.map((_, idx) => {
                 const isCurrent = idx === safeSlideIndex;
                 return (
-                  <button
+                  <span
                     key={idx}
-                    type="button"
-                    role="tab"
-                    aria-selected={isCurrent}
-                    aria-label={`Go to review slide ${idx + 1} of ${totalSlides}`}
-                    onClick={() => goToSlide(idx)}
-                    className="p-2.5 -m-2.5 inline-flex items-center justify-center cursor-pointer"
-                  >
-                    <span
-                      className={`h-2 rounded-full transition-all block ${
-                        isCurrent
-                          ? 'w-8 bg-[#00B67A]'
-                          : 'w-2.5 bg-[#CFD4DC] hover:bg-[#9AA2AE]'
-                      }`}
-                    />
-                  </button>
+                    className={`h-2 rounded-full transition-all block ${
+                      isCurrent ? 'w-8 bg-[#00B67A]' : 'w-2.5 bg-[#CFD4DC]'
+                    }`}
+                  />
                 );
               })}
             </div>

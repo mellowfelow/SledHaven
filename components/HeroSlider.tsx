@@ -202,7 +202,7 @@ export default function HeroSlider() {
 
         {/* Dot indicators + pause/play */}
         <div className="absolute bottom-6 left-0 right-0 z-20 flex items-center justify-center gap-3">
-          <div className="flex items-center gap-2" role="tablist" aria-label="Slide navigation">
+          <div className="flex items-center gap-6" role="tablist" aria-label="Slide navigation">
             {SLIDES.map((slide, i) => (
               <button
                 key={slide.heading}

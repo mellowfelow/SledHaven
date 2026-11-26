@@ -346,6 +346,7 @@ export default function HomePage() {
                   </p>
                   <Link
                     href={`/blog/${post.slug}/`}
+                    aria-label={`Read Article: ${post.title}`}
                     className="mt-5 pt-4 border-t border-[#E4E6E8] inline-flex items-center gap-1.5 text-xs font-medium text-[#111418] group-hover:text-[#9A6B3E] transition-colors"
                   >
                     <span>Read Article</span>
