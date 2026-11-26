@@ -15,6 +15,10 @@ export const metadata: Metadata = {
 };
 
 export default function BlogIndexPage() {
+  const sortedPosts = [...BLOG_POSTS].sort(
+    (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+  );
+
   const breadcrumb = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -46,7 +50,7 @@ export default function BlogIndexPage() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {BLOG_POSTS.map((post) => (
+        {sortedPosts.map((post) => (
           <article
             key={post.slug}
             className="group flex flex-col bg-white border border-[#E4E6E8] rounded-lg overflow-hidden hover:border-[#9A6B3E] transition-colors"

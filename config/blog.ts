@@ -1193,7 +1193,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       'Introducing a child to snowmobiling safely starts with the right size machine and realistic supervision expectations. Here is where to begin.',
     category: 'Buyer Guides',
-    publishedAt: '2026-11-25',
+    publishedAt: '2026-11-26',
     readTime: '5 min read',
     coverImage: '/images/blog-snowmobiling-with-kids.jpg',
     coverAlt: 'Rider on a snowmobile wearing full safety gear and helmet on a sunny trail',
@@ -1235,7 +1235,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       'Trail signage, right-of-way, and basic etiquette keep shared snowmobile trails safe for everyone. Here are the fundamentals every rider should know.',
     category: 'Buyer Guides',
-    publishedAt: '2026-11-25',
+    publishedAt: '2026-11-26',
     readTime: '5 min read',
     coverImage: '/images/blog-safety-101.jpg',
     coverAlt: 'Yellow directional trail sign marking a snowmobile trail through a snowy forest',
