@@ -7,16 +7,41 @@ import { Mail, MessageCircle, MessageSquare, Phone, X } from 'lucide-react';
 import { SITE } from '@/config/site';
 import { waGeneralInquiryLink } from '@/lib/whatsapp';
 
+declare global {
+  interface Window {
+    Tawk_API?: {
+      onLoad?: () => void;
+      onChatMinimized?: () => void;
+      hideWidget?: () => void;
+      showWidget?: () => void;
+      maximize?: () => void;
+    };
+    Tawk_LoadStart?: Date;
+  }
+}
+
 export default function ChatHub() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const tawkConfigured = Boolean(SITE.chat.tawkPropertyId);
 
-  // Conditionally inject Tawk.to ONLY if user configures NEXT_PUBLIC_TAWK_PROPERTY_ID
+  // Inject Tawk.to if configured, but keep its own floating bubble hidden —
+  // it's opened on demand from the "Live Chat" option in this same panel,
+  // so there's only ever one chat entry point on the page.
   useEffect(() => {
     const propId = SITE.chat.tawkPropertyId;
     const widgetId = SITE.chat.tawkWidgetId || 'default';
     if (!propId || typeof window === 'undefined') return;
     if (document.getElementById('sledhaven-tawk-script')) return;
+
+    window.Tawk_API = window.Tawk_API || {};
+    window.Tawk_API.onLoad = function () {
+      window.Tawk_API?.hideWidget?.();
+    };
+    window.Tawk_API.onChatMinimized = function () {
+      window.Tawk_API?.hideWidget?.();
+    };
+    window.Tawk_LoadStart = new Date();
 
     const script = document.createElement('script');
     script.id = 'sledhaven-tawk-script';
@@ -27,8 +52,14 @@ export default function ChatHub() {
     document.body.appendChild(script);
   }, []);
 
-  // Hide inside Reply Portal or if Tawk.to widget is active
-  if (pathname?.startsWith('/admin') || SITE.chat.tawkPropertyId) {
+  function openLiveChat() {
+    setOpen(false);
+    window.Tawk_API?.showWidget?.();
+    window.Tawk_API?.maximize?.();
+  }
+
+  // Hide inside Reply Portal
+  if (pathname?.startsWith('/admin')) {
     return null;
   }
 
@@ -51,6 +82,19 @@ export default function ChatHub() {
             </button>
           </div>
           <div className="p-3 space-y-2 text-sm">
+            {tawkConfigured && (
+              <button
+                type="button"
+                onClick={openLiveChat}
+                className="w-full flex items-center gap-3 p-2.5 rounded-md hover:bg-[#F7F7F5] text-[#111418] transition-colors cursor-pointer text-left"
+              >
+                <MessageSquare className="w-4 h-4 text-[#9A6B3E] shrink-0" />
+                <div>
+                  <div className="font-medium text-xs">Live Chat</div>
+                  <div className="text-xs text-[#5C636E]">Chat with our sales desk now</div>
+                </div>
+              </button>
+            )}
             <a
               href={waGeneralInquiryLink()}
               target="_blank"
