@@ -445,45 +445,12 @@ writeFile(
   ) + '\n'
 );
 
-// 12. public/.well-known/ucp — Universal Commerce Protocol ("ucp": "1.0" mandatory)
-writeFile(
-  'public/.well-known/ucp',
-  JSON.stringify(
-    {
-      ucp: '1.0',
-      protocol_version: '1.0',
-      spec: 'https://ucp.dev/specification/overview/',
-      schema: 'https://ucp.dev/schema/v1.json',
-      site: ORIGIN,
-      name: SITE_NAME,
-      description: TAGLINE,
-      services: [
-        { id: 'product-catalog', type: 'catalog', url: `${ORIGIN}/shop/`, description: 'Full snowmobile and gear catalog' },
-        { id: 'order', type: 'commerce', url: `${ORIGIN}/contact/`, description: 'Place orders via checkout form' },
-        { id: 'financing', type: 'commerce', url: `${ORIGIN}/financing/`, description: 'Pay-in-4 financing terms' },
-      ],
-      capabilities: ['browse', 'search', 'inquiry', 'content'],
-      endpoints: {
-        catalog: `${ORIGIN}/api/products/`,
-        contact: `${ORIGIN}/contact/`,
-        agent_skills: `${ORIGIN}/.well-known/agent-skills/index.json`,
-        mcp_server_card: `${ORIGIN}/.well-known/mcp/server-card.json`,
-        api_catalog: `${ORIGIN}/.well-known/api-catalog`,
-        llms_txt: `${ORIGIN}/llms.txt`,
-      },
-      currency: 'USD',
-      minimum_order_usd: '200',
-      payment_methods: ['crypto-BTC', 'crypto-USDT', 'bank-transfer', 'zelle', 'apple-pay', 'chime', 'pay-in-4'],
-      legal: {
-        age_restriction: 'none',
-        product_type: 'Powersports vehicles and alpine gear',
-        compliance: 'MCO documentation provided; buyer handles state registration.',
-      },
-    },
-    null,
-    2
-  ) + '\n'
-);
+// 12. public/.well-known/ucp — Universal Commerce Protocol ("ucp": "1.0" mandatory).
+//     Served by app/.well-known/ucp/route.ts (a Route Handler, not this static
+//     file) because Vercel serves extensionless public/ files as
+//     application/octet-stream, which made UCP-aware agents fail to parse the
+//     mandatory "ucp" field. Keep this generator block removed so there's no
+//     stale duplicate to drift from the route handler's own copy.
 
 // 13. public/robots.txt-style AI crawler reference is handled by app/robots.ts (Next-native);
 //     this file only needs the Content-Signal + full crawler comment reference for parity docs.
@@ -498,7 +465,8 @@ const wellKnownTypeRules = [
   { source: '/.well-known/oauth-authorization-server', type: 'application/json' },
   { source: '/.well-known/openid-configuration', type: 'application/json' },
   { source: '/.well-known/acp.json', type: 'application/json' },
-  { source: '/.well-known/ucp', type: 'application/json' },
+  // /.well-known/ucp intentionally omitted -- it's a Route Handler now
+  // (app/.well-known/ucp/route.ts), which sets its own headers directly.
 ].map((r) => ({
   source: r.source,
   headers: [

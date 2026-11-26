@@ -35,9 +35,12 @@ mustBeValidJson('public/.well-known/oauth-protected-resource');
 mustBeValidJson('public/.well-known/oauth-authorization-server');
 mustBeValidJson('public/.well-known/openid-configuration');
 mustBeValidJson('public/.well-known/acp.json');
-const ucp = mustBeValidJson('public/.well-known/ucp');
-if (ucp && ucp.ucp !== '1.0') {
-  errors.push('public/.well-known/ucp must declare "ucp": "1.0"');
+// /.well-known/ucp is served by a Route Handler (not a public/ static file)
+// so Vercel sends a real application/json Content-Type -- see
+// app/.well-known/ucp/route.ts for why.
+const ucpRouteSrc = mustExist('app/.well-known/ucp/route.ts');
+if (ucpRouteSrc && !ucpRouteSrc.includes("ucp: '1.0'")) {
+  errors.push(`app/.well-known/ucp/route.ts must declare ucp: '1.0'`);
 }
 mustBeValidJson('vercel.json');
 
