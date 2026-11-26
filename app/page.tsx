@@ -1,12 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
-import { ArrowRight, Coins, CreditCard, Scale, ShieldCheck, Truck } from 'lucide-react';
+import { ArrowRight, Award, Coins, CreditCard, Package, Scale, ShieldCheck, Star, Truck } from 'lucide-react';
 import { SITE } from '@/config/site';
 import { BRANDS, CATEGORIES, PRODUCTS } from '@/config/catalog';
+import { BLOG_POSTS } from '@/config/blog';
+import { REVIEW_SUMMARY } from '@/config/reviews';
 import SmartImage from '@/components/SmartImage';
 import ProductCard from '@/components/ProductCard';
 import TrustpilotReviewSlider from '@/components/TrustpilotReviewSlider';
 import HeroSlider from '@/components/HeroSlider';
+import HomeFaqAccordion from '@/components/HomeFaqAccordion';
 import JsonLd from '@/components/JsonLd';
 
 const HOME_FAQS = [
@@ -30,6 +33,33 @@ const HOME_FAQS = [
 
 export default function HomePage() {
   const featured = PRODUCTS.slice(0, 8);
+  const authorizedBrandCount = BRANDS.filter((b) => b.slug !== 'sledhaven-gear').length;
+  const latestPosts = [...BLOG_POSTS]
+    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
+    .slice(0, 3);
+
+  const STATS = [
+    {
+      icon: Star,
+      value: `${REVIEW_SUMMARY.averageRating}★`,
+      label: `${REVIEW_SUMMARY.totalReviews.toLocaleString()}+ Verified Rider Reviews`,
+    },
+    {
+      icon: Package,
+      value: `${PRODUCTS.length}`,
+      label: 'Models In Current Inventory',
+    },
+    {
+      icon: Award,
+      value: `${authorizedBrandCount}`,
+      label: 'Authorized Manufacturer Brands',
+    },
+    {
+      icon: Truck,
+      value: '50',
+      label: 'States — Nationwide Crated Freight',
+    },
+  ];
 
   const homeFaqSchema = {
     '@context': 'https://schema.org',
@@ -46,6 +76,27 @@ export default function HomePage() {
       <JsonLd data={homeFaqSchema} />
       {/* Section 1: Storefront Campaign Hero Slider */}
       <HeroSlider />
+
+      {/* Section 1b: Credibility Stats Bar */}
+      <section className="bg-[#111418]">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-10">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10">
+            {STATS.map((stat) => (
+              <div key={stat.label} className="flex items-center gap-3 sm:gap-4">
+                <stat.icon className="w-6 h-6 sm:w-7 sm:h-7 text-[#9A6B3E] shrink-0" strokeWidth={1.5} />
+                <div>
+                  <p className="font-serif text-xl sm:text-2xl font-semibold text-white leading-none">
+                    {stat.value}
+                  </p>
+                  <p className="mt-1 text-[11px] sm:text-xs text-[#9BA3AD] leading-snug">
+                    {stat.label}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Section 2: Shop by Riding Discipline (Structure A Categories) */}
       <section className="bg-white border-y border-[#E4E6E8]">
@@ -236,7 +287,78 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section 6: Homepage FAQ (direct-answer, matches homeFaqSchema above) */}
+      {/* Section 6: From the Field Journal (latest blog posts) */}
+      <section className="bg-white border-t border-[#E4E6E8]">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-8 border-b border-[#E4E6E8]">
+            <div className="max-w-xl space-y-2">
+              <p className="text-xs font-medium tracking-widest uppercase text-[#9A6B3E]">
+                SledHaven Field Journal
+              </p>
+              <h2
+                className="font-serif text-2xl sm:text-3xl font-semibold text-[#111418]"
+                style={{ textWrap: 'balance' }}
+              >
+                Guides for Buying, Owning &amp; Riding
+              </h2>
+            </div>
+            <Link
+              href="/blog/"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-[#111418] hover:text-[#9A6B3E] transition-colors whitespace-nowrap"
+            >
+              <span>Read the Full Journal</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+
+          <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-7">
+            {latestPosts.map((post) => (
+              <article
+                key={post.slug}
+                className="group flex flex-col bg-[#F7F7F5] border border-[#E4E6E8] rounded-lg overflow-hidden hover:border-[#9A6B3E] transition-colors"
+              >
+                <Link
+                  href={`/blog/${post.slug}/`}
+                  className="relative aspect-[16/9] w-full bg-[#EFECE7] overflow-hidden block"
+                >
+                  <SmartImage
+                    src={post.coverImage}
+                    alt={post.coverAlt}
+                    fill
+                    sizes="(max-width: 640px) 100vw, 33vw"
+                    className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                  />
+                </Link>
+                <div className="p-6 flex-1 flex flex-col">
+                  <div className="flex items-center gap-2 text-xs text-[#646D78] mb-2">
+                    <span className="text-[#9A6B3E] font-medium">{post.category}</span>
+                    <span aria-hidden="true">&middot;</span>
+                    <span>{post.readTime}</span>
+                  </div>
+                  <Link
+                    href={`/blog/${post.slug}/`}
+                    className="font-serif text-lg font-semibold text-[#111418] group-hover:text-[#9A6B3E] transition-colors leading-snug"
+                  >
+                    {post.title}
+                  </Link>
+                  <p className="mt-3 text-sm text-[#5C636E] leading-relaxed flex-1 line-clamp-3">
+                    {post.excerpt}
+                  </p>
+                  <Link
+                    href={`/blog/${post.slug}/`}
+                    className="mt-5 pt-4 border-t border-[#E4E6E8] inline-flex items-center gap-1.5 text-xs font-medium text-[#111418] group-hover:text-[#9A6B3E] transition-colors"
+                  >
+                    <span>Read Article</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 7: Homepage FAQ (collapsible, matches homeFaqSchema above) */}
       <section className="bg-[#F7F7F5] border-t border-[#E4E6E8]">
         <div className="max-w-[860px] mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-xl space-y-2 mb-10">
@@ -247,22 +369,37 @@ export default function HomePage() {
               Freight, Payments &amp; Title — Answered
             </h2>
           </div>
-          <div className="divide-y divide-[#E4E6E8] bg-white border border-[#E4E6E8] rounded-lg">
-            {HOME_FAQS.map((item) => (
-              <div key={item.q} className="p-6 sm:p-7 space-y-2">
-                <h3 className="font-serif text-base sm:text-lg font-semibold text-[#111418]">
-                  {item.q}
-                </h3>
-                <p className="text-sm text-[#5C636E] leading-relaxed">{item.a}</p>
-              </div>
-            ))}
-          </div>
+          <HomeFaqAccordion items={HOME_FAQS} />
           <div className="mt-6 text-sm text-[#47505B]">
             Have a different question?{' '}
             <Link href="/faq/" className="font-medium text-[#9A6B3E] hover:text-[#111418] underline">
               Read the full Freight, Title &amp; Payment FAQ →
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Section 8: Closing CTA Band */}
+      <section className="bg-[#111418]">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-16 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+          <div className="space-y-2">
+            <h2
+              className="font-serif text-2xl sm:text-3xl font-semibold text-white"
+              style={{ textWrap: 'balance' }}
+            >
+              Ready to Find Your Snowmobile?
+            </h2>
+            <p className="text-sm text-[#9BA3AD] max-w-md">
+              Browse {PRODUCTS.length} new models across {CATEGORIES.length - 1} riding disciplines, crated and shipped nationwide.
+            </p>
+          </div>
+          <Link
+            href="/shop/"
+            className="inline-flex items-center gap-2 bg-[#9A6B3E] hover:bg-[#835931] text-white font-medium text-sm px-6 py-3.5 rounded-lg transition-colors whitespace-nowrap"
+          >
+            <span>Browse Inventory</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       </section>
     </main>
