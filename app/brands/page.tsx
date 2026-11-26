@@ -36,7 +36,7 @@ export default function BrandsPage() {
         </nav>
 
         <h1 className="font-serif text-3xl sm:text-4xl font-semibold text-[#111418]">
-          Brands &amp; Divisions
+          Snowmobile Brands &amp; Divisions
         </h1>
         <p className="text-sm sm:text-base text-[#4F5863] max-w-2xl leading-relaxed">
           Select a performance division below to inspect dedicated mountain, trail, touring, utility, and protective equipment models available for crated US delivery.
