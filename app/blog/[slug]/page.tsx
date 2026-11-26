@@ -62,6 +62,19 @@ export default async function BlogArticlePage(context: {
     mainEntityOfPage: `${SITE.url}/blog/${post.slug}/`,
   };
 
+  const faqSchema =
+    post.faqs && post.faqs.length > 0
+      ? {
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: post.faqs.map((item) => ({
+            '@type': 'Question',
+            name: item.q,
+            acceptedAnswer: { '@type': 'Answer', text: item.a },
+          })),
+        }
+      : null;
+
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -79,7 +92,7 @@ export default async function BlogArticlePage(context: {
 
   return (
     <main className="flex-1 max-w-[1040px] w-full mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <JsonLd data={[articleSchema, breadcrumbSchema]} />
+      <JsonLd data={faqSchema ? [articleSchema, breadcrumbSchema, faqSchema] : [articleSchema, breadcrumbSchema]} />
 
       <article className="space-y-8">
         <div className="space-y-4">
@@ -161,6 +174,24 @@ export default async function BlogArticlePage(context: {
           </div>
         </div>
       </article>
+
+      {post.faqs && post.faqs.length > 0 && (
+        <section className="mt-16 pt-12 border-t border-[#E4E6E8]">
+          <h2 className="font-serif text-2xl font-semibold text-[#111418] mb-7">
+            Frequently Asked Questions
+          </h2>
+          <div className="divide-y divide-[#E4E6E8] bg-white border border-[#E4E6E8] rounded-lg">
+            {post.faqs.map((item) => (
+              <div key={item.q} className="p-6 sm:p-7 space-y-2">
+                <h3 className="font-serif text-base sm:text-lg font-semibold text-[#111418]">
+                  {item.q}
+                </h3>
+                <p className="text-sm text-[#5C636E] leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {relatedModels.length > 0 && (
         <section className="mt-16 pt-12 border-t border-[#E4E6E8]">
