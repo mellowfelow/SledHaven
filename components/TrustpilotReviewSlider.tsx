@@ -539,7 +539,7 @@ export default function TrustpilotReviewSlider() {
                     aria-selected={isCurrent}
                     aria-label={`Go to review slide ${idx + 1} of ${totalSlides}`}
                     onClick={() => goToSlide(idx)}
-                    className="py-2.5 px-1 inline-flex items-center justify-center cursor-pointer"
+                    className="p-2.5 -m-2.5 inline-flex items-center justify-center cursor-pointer"
                   >
                     <span
                       className={`h-2 rounded-full transition-all block ${

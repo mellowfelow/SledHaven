@@ -239,7 +239,7 @@ export default function CompareClient() {
                           key={`${sled.id}-${row.label}`}
                           className={`p-4 border-l border-[#ECEEF0] tabular-nums ${
                             row.label.includes('Crypto')
-                              ? 'text-[#9A6B3E] font-semibold'
+                              ? 'text-[#835931] font-semibold'
                               : row.label === 'Retail Price'
                               ? 'text-[#111418] font-semibold'
                               : 'text-[#2B313A]'

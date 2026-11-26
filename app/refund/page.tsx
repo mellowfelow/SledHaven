@@ -75,7 +75,7 @@ export default function RefundPage() {
           <h2 className="font-serif text-xl font-semibold text-[#111418]">How to Request a Refund</h2>
           <p>
             Email{' '}
-            <a href={`mailto:${SITE.contact.email}`} className="font-medium text-[#9A6B3E] underline">
+            <a href={`mailto:${SITE.contact.email}`} className="font-medium text-[#835931] underline">
               {SITE.contact.email}
             </a>{' '}
             with your order reference number and reason for the request. Our dealership desk will respond with

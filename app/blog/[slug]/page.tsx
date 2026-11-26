@@ -105,7 +105,7 @@ export default async function BlogArticlePage(context: {
           </Link>
 
           <div className="flex flex-wrap items-center gap-2 text-xs text-[#646D78]">
-            <span className="text-[#9A6B3E] font-medium">{post.category}</span>
+            <span className="text-[#835931] font-medium">{post.category}</span>
             <span aria-hidden="true">&middot;</span>
             <span>Published {post.publishedAt}</span>
             <span aria-hidden="true">&middot;</span>

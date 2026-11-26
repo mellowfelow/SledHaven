@@ -102,7 +102,7 @@ export default function HomePage() {
       <section className="bg-white border-y border-[#E4E6E8]">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-xl space-y-2 mb-10">
-            <p className="text-xs font-medium tracking-widest uppercase text-[#9A6B3E]">
+            <p className="text-xs font-medium tracking-widest uppercase text-[#835931]">
               Riding Disciplines
             </p>
             <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-[#111418]">
@@ -147,7 +147,7 @@ export default function HomePage() {
       {/* Section 2b: Authorized Dealer Brand Strip */}
       <section className="bg-[#F7F7F5] border-b border-[#E4E6E8]">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <p className="text-center text-xs font-medium tracking-widest uppercase text-[#9A6B3E] mb-8">
+          <p className="text-center text-xs font-medium tracking-widest uppercase text-[#835931] mb-8">
             Authorized US Dealer For
           </p>
           <div className="grid grid-cols-3 sm:grid-cols-5 gap-6 sm:gap-10 items-center justify-center">
@@ -176,7 +176,7 @@ export default function HomePage() {
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-8 border-b border-[#E4E6E8]">
           <div className="space-y-2">
-            <p className="text-xs font-medium tracking-widest uppercase text-[#9A6B3E]">
+            <p className="text-xs font-medium tracking-widest uppercase text-[#835931]">
               2026 Showroom Allocation
             </p>
             <h2
@@ -212,7 +212,7 @@ export default function HomePage() {
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-5 space-y-4">
-            <p className="text-xs font-medium tracking-widest uppercase text-[#9A6B3E]">
+            <p className="text-xs font-medium tracking-widest uppercase text-[#835931]">
               The SledHaven Standard
             </p>
             <h2
@@ -227,7 +227,7 @@ export default function HomePage() {
             <div className="pt-2 flex flex-wrap gap-4 text-sm">
               <Link
                 href="/financing/"
-                className="font-medium text-[#9A6B3E] hover:text-[#111418] inline-flex items-center gap-1.5"
+                className="font-medium text-[#835931] hover:text-[#111418] inline-flex items-center gap-1.5"
               >
                 <span>Explore Pay-in-4 Financing</span>
                 <ArrowRight className="w-4 h-4" />
@@ -292,7 +292,7 @@ export default function HomePage() {
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-8 border-b border-[#E4E6E8]">
             <div className="max-w-xl space-y-2">
-              <p className="text-xs font-medium tracking-widest uppercase text-[#9A6B3E]">
+              <p className="text-xs font-medium tracking-widest uppercase text-[#835931]">
                 SledHaven Field Journal
               </p>
               <h2
@@ -331,7 +331,7 @@ export default function HomePage() {
                 </Link>
                 <div className="p-6 flex-1 flex flex-col">
                   <div className="flex items-center gap-2 text-xs text-[#646D78] mb-2">
-                    <span className="text-[#9A6B3E] font-medium">{post.category}</span>
+                    <span className="text-[#835931] font-medium">{post.category}</span>
                     <span aria-hidden="true">&middot;</span>
                     <span>{post.readTime}</span>
                   </div>
@@ -362,7 +362,7 @@ export default function HomePage() {
       <section className="bg-[#F7F7F5] border-t border-[#E4E6E8]">
         <div className="max-w-[860px] mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-xl space-y-2 mb-10">
-            <p className="text-xs font-medium tracking-widest uppercase text-[#9A6B3E]">
+            <p className="text-xs font-medium tracking-widest uppercase text-[#835931]">
               Common Questions
             </p>
             <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-[#111418]">
@@ -372,7 +372,7 @@ export default function HomePage() {
           <HomeFaqAccordion items={HOME_FAQS} />
           <div className="mt-6 text-sm text-[#47505B]">
             Have a different question?{' '}
-            <Link href="/faq/" className="font-medium text-[#9A6B3E] hover:text-[#111418] underline">
+            <Link href="/faq/" className="font-medium text-[#835931] hover:text-[#111418] underline">
               Read the full Freight, Title &amp; Payment FAQ →
             </Link>
           </div>

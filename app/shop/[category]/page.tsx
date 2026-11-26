@@ -18,17 +18,30 @@ export async function generateMetadata(context: {
   const cat = getCategoryBySlug(category);
   if (!cat) return { title: 'Category Not Found' };
 
+  const title = `${cat.seoH1 || cat.name} for Sale in the USA`;
+
   return {
-    title: `${cat.seoH1 || cat.name} for Sale in the USA`,
+    title,
     description: cat.description,
     alternates: { canonical: `/shop/${cat.slug}/` },
+    openGraph: {
+      title: `${title} | ${SITE.name}`,
+      description: cat.description,
+      url: `${SITE.url}/shop/${cat.slug}/`,
+    },
+    twitter: {
+      title: `${title} | ${SITE.name}`,
+      description: cat.description,
+    },
   };
 }
 
 export default async function CategoryPage(context: {
   params: Promise<{ category: string }>;
+  searchParams: Promise<{ sub?: string }>;
 }) {
   const { category } = await context.params;
+  const { sub } = await context.searchParams;
   const cat = getCategoryBySlug(category);
   if (!cat) notFound();
 
@@ -74,7 +87,7 @@ export default async function CategoryPage(context: {
         </p>
       </div>
 
-      <ShopCatalogClient products={items} activeCategorySlug={cat.slug} />
+      <ShopCatalogClient products={items} activeCategorySlug={cat.slug} initialSub={sub} />
     </main>
   );
 }

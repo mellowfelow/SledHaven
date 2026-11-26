@@ -34,7 +34,7 @@ export default async function ThankYouOrderPage(context: {
         </div>
 
         <div className="space-y-2">
-          <p className="text-xs font-medium uppercase tracking-widest text-[#9A6B3E]">
+          <p className="text-xs font-medium uppercase tracking-widest text-[#835931]">
             Reservation Confirmed
           </p>
           <h1 className="font-serif text-3xl font-semibold text-[#111418]">

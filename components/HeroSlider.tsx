@@ -211,10 +211,14 @@ export default function HeroSlider() {
                 aria-selected={i === index}
                 aria-label={`Go to slide ${i + 1}: ${slide.heading}`}
                 onClick={() => goTo(i)}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  i === index ? 'w-8 bg-[#D2A97E]' : 'w-2 bg-white/40 hover:bg-white/60'
-                }`}
-              />
+                className="p-2.5 -m-2.5 flex items-center justify-center cursor-pointer"
+              >
+                <span
+                  className={`block h-2 rounded-full transition-all duration-300 ${
+                    i === index ? 'w-8 bg-[#D2A97E]' : 'w-2 bg-white/40 hover:bg-white/60'
+                  }`}
+                />
+              </button>
             ))}
           </div>
           <button

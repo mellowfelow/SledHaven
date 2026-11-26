@@ -69,7 +69,7 @@ export default function BlogIndexPage() {
             </Link>
             <div className="p-6 flex-1 flex flex-col">
               <div className="flex items-center gap-2 text-xs text-[#646D78] mb-2">
-                <span className="text-[#9A6B3E] font-medium">{post.category}</span>
+                <span className="text-[#835931] font-medium">{post.category}</span>
                 <span aria-hidden="true">&middot;</span>
                 <span>{post.publishedAt}</span>
                 <span aria-hidden="true">&middot;</span>

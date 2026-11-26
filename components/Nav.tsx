@@ -184,7 +184,7 @@ export default function Nav() {
                     <Link
                       href="/shop/"
                       onClick={() => setShopOpen(false)}
-                      className="text-xs font-medium text-[#9A6B3E] hover:text-[#111418] underline whitespace-nowrap"
+                      className="text-xs font-medium text-[#835931] hover:text-[#111418] underline whitespace-nowrap"
                     >
                       View All Inventory &rarr;
                     </Link>
@@ -356,7 +356,7 @@ export default function Nav() {
                 <Link
                   href="/shop/"
                   onClick={() => setSearchOpen(false)}
-                  className="font-medium text-[#9A6B3E] hover:text-[#111418] underline whitespace-nowrap"
+                  className="font-medium text-[#835931] hover:text-[#111418] underline whitespace-nowrap"
                 >
                   Browse Full Inventory &rarr;
                 </Link>
@@ -370,7 +370,7 @@ export default function Nav() {
                   <Link
                     href={`/search/?q=${encodeURIComponent(searchQuery.trim())}`}
                     onClick={() => setSearchOpen(false)}
-                    className="inline-flex items-center gap-1 font-medium text-[#9A6B3E] hover:text-[#111418]"
+                    className="inline-flex items-center gap-1 font-medium text-[#835931] hover:text-[#111418]"
                   >
                     <span>View full search results</span>
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -435,7 +435,7 @@ export default function Nav() {
                 <Link
                   href="/shop/"
                   onClick={() => setMobileOpen(false)}
-                  className="block py-1.5 text-xs font-semibold text-[#9A6B3E]"
+                  className="block py-1.5 text-xs font-semibold text-[#835931]"
                 >
                   All Inventory
                 </Link>

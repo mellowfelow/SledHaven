@@ -173,7 +173,7 @@ export default function PaymentDetailsClient() {
                 <p className="text-2xl font-semibold text-[#111418] mt-0.5">
                   {money(amountDueNow)}
                 </p>
-                <p className="text-xs text-[#9A6B3E] font-medium">
+                <p className="text-xs text-[#835931] font-medium">
                   {data.paymentMethod.label}
                   {data.paymentPlan === 'pay_in_4' ? ' · Pay-in-4' : ''}
                 </p>
@@ -195,7 +195,7 @@ export default function PaymentDetailsClient() {
             </ul>
             <div className="pt-3 border-t border-[#ECEEF0] text-xs space-y-1 text-[#5C636E] tabular-nums">
               {data.cryptoDiscount > 0 && (
-                <div className="flex justify-between text-[#9A6B3E] font-medium">
+                <div className="flex justify-between text-[#835931] font-medium">
                   <span>10% Crypto Discount</span>
                   <span>-{money(data.cryptoDiscount)}</span>
                 </div>
@@ -254,7 +254,7 @@ export default function PaymentDetailsClient() {
 
               {data.paymentDetails.customNote && (
                 <div className="p-4 rounded-lg bg-[#FAF6F1] border border-[#E8DACB] text-sm text-[#3F3123]">
-                  <span className="text-xs font-semibold uppercase tracking-wider text-[#9A6B3E] block mb-1">
+                  <span className="text-xs font-semibold uppercase tracking-wider text-[#835931] block mb-1">
                     Note from SledHaven Desk
                   </span>
                   {data.paymentDetails.customNote}

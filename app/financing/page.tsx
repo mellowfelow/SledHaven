@@ -99,7 +99,7 @@ export default function FinancingPage() {
             </div>
             <Link
               href="/shop/"
-              className="inline-flex items-center gap-1.5 text-xs font-medium text-[#9A6B3E] hover:text-[#111418] whitespace-nowrap"
+              className="inline-flex items-center gap-1.5 text-xs font-medium text-[#835931] hover:text-[#111418] whitespace-nowrap"
             >
               <span>Browse All Inventory</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -123,7 +123,7 @@ export default function FinancingPage() {
                     <td className="py-4 px-6 font-semibold text-[#111418]">{sled.name}</td>
                     <td className="py-4 px-6 text-[#5C636E]">{sled.categoryName}</td>
                     <td className="py-4 px-6 text-right text-[#111418]">{money(sled.price)}</td>
-                    <td className="py-4 px-6 text-right font-semibold text-[#9A6B3E]">
+                    <td className="py-4 px-6 text-right font-semibold text-[#835931]">
                       {money(Math.round((sled.price / 4) * 100) / 100)} &times; 4
                     </td>
                     <td className="py-4 px-6 text-right">

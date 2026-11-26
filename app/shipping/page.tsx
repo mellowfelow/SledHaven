@@ -79,11 +79,11 @@ export default function ShippingPage() {
           <h2 className="font-serif text-xl font-semibold text-[#111418]">Contact</h2>
           <p>
             For a state-specific freight quote or shipment status, contact{' '}
-            <a href={`mailto:${SITE.contact.email}`} className="font-medium text-[#9A6B3E] underline">
+            <a href={`mailto:${SITE.contact.email}`} className="font-medium text-[#835931] underline">
               {SITE.contact.email}
             </a>{' '}
             or{' '}
-            <a href={SITE.contact.phoneHref} className="font-medium text-[#9A6B3E] underline">
+            <a href={SITE.contact.phoneHref} className="font-medium text-[#835931] underline">
               {SITE.contact.phone}
             </a>
             .

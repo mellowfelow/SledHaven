@@ -101,7 +101,7 @@ export default function ProductDetailClient({ product }: { product: Product }) {
               {money(product.price)}
             </div>
             <div className="flex flex-col gap-1.5 text-xs">
-              <div className="inline-flex items-center gap-1.5 text-[#9A6B3E] font-medium">
+              <div className="inline-flex items-center gap-1.5 text-[#835931] font-medium">
                 <Coins className="w-3.5 h-3.5 shrink-0" />
                 <span>
                   {money(cryptoPrice)} with {SITE.orderRules.cryptoDiscountPercent}% BTC / USDT crypto discount (Save{' '}

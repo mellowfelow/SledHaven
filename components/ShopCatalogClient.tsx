@@ -1,8 +1,7 @@
 'use client';
 
-import React, { Suspense, useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
-import { useSearchParams } from 'next/navigation';
 import { ChevronLeft, ChevronRight, Scale } from 'lucide-react';
 import { CATEGORIES, type Product } from '@/config/catalog';
 import ProductCard from '@/components/ProductCard';
@@ -13,11 +12,15 @@ const PAGE_SIZE = 16;
 interface ShopCatalogClientProps {
   products: Product[];
   activeCategorySlug?: string;
+  initialSub?: string;
 }
 
-function ShopCatalogInner({ products, activeCategorySlug }: ShopCatalogClientProps) {
-  const searchParams = useSearchParams();
-  const urlSub = searchParams?.get('sub') || 'all';
+export default function ShopCatalogClient({
+  products,
+  activeCategorySlug,
+  initialSub,
+}: ShopCatalogClientProps) {
+  const urlSub = initialSub || 'all';
 
   const { compareIds } = useStore();
   const [selectedCategory, setSelectedCategory] = useState(activeCategorySlug || 'all');
@@ -182,7 +185,7 @@ function ShopCatalogInner({ products, activeCategorySlug }: ShopCatalogClientPro
               setUserSubOverride('all');
               if (!activeCategorySlug) setSelectedCategory('all');
             }}
-            className="text-xs font-medium text-[#9A6B3E] underline cursor-pointer"
+            className="text-xs font-medium text-[#835931] underline cursor-pointer"
           >
             Reset Filters
           </button>
@@ -241,17 +244,5 @@ function ShopCatalogInner({ products, activeCategorySlug }: ShopCatalogClientPro
         </>
       )}
     </div>
-  );
-}
-
-export default function ShopCatalogClient(props: ShopCatalogClientProps) {
-  return (
-    <Suspense
-      fallback={
-        <div className="py-12 text-sm text-[#5C636E]">Loading snowmobile inventory...</div>
-      }
-    >
-      <ShopCatalogInner {...props} />
-    </Suspense>
   );
 }

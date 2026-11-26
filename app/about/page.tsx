@@ -39,7 +39,7 @@ export default function AboutPage() {
       <section className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
           <div className="lg:col-span-6 space-y-6 flex flex-col justify-center">
-            <p className="text-xs font-medium tracking-widest uppercase text-[#9A6B3E]">
+            <p className="text-xs font-medium tracking-widest uppercase text-[#835931]">
               United States Snowmobile Dealership
             </p>
             <h1

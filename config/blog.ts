@@ -145,7 +145,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: 'Verified Desk Settlement Security',
         paragraphs: [
-          'Regardless of which payment method you choose — Crypto, Domestic Bank Transfer, Zelle, Apple Pay, or Chime — and whether you pay in full or split it with Pay-in-4, no funds are captured on the checkout form. Once our allocation desk verifies your unit, we email your personalized tap-to-copy settlement page and receipt confirmation link.',
+          'Regardless of which payment method you choose — Crypto, Domestic Bank Transfer, Zelle, Apple Pay, or Chime — and whether you pay in full or split it with Pay-in-4, no funds are captured on the checkout form. Once our allocation desk verifies your unit, we email your personalized settlement details with everything already included — once you’ve paid, just reply to that email, WhatsApp us, or email us a screenshot of your confirmation.',
         ],
       },
     ],

@@ -12,7 +12,7 @@ export default function CheckoutPage() {
     <main className="flex-1 bg-[#F7F7F5]">
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
         <div className="mb-8 space-y-1.5">
-          <p className="text-xs font-medium uppercase tracking-widest text-[#9A6B3E]">
+          <p className="text-xs font-medium uppercase tracking-widest text-[#835931]">
             Email Order Checkout
           </p>
           <h1 className="font-serif text-3xl font-semibold text-[#111418]">

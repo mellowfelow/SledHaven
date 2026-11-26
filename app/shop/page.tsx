@@ -6,11 +6,23 @@ import { PRODUCTS } from '@/config/catalog';
 import ShopCatalogClient from '@/components/ShopCatalogClient';
 import JsonLd from '@/components/JsonLd';
 
+const TITLE = 'New Snowmobiles for Sale — Full 2026 USA Inventory';
+const DESCRIPTION =
+  'Browse new snowmobiles for sale: mountain, trail, crossover, touring & utility models with crated freight, Pay-in-4 financing & a 10% crypto discount.';
+
 export const metadata: Metadata = {
-  title: 'New Snowmobiles for Sale — Full 2026 USA Inventory',
-  description:
-    'Browse new snowmobiles for sale: mountain, trail, crossover, touring & utility models with crated freight, Pay-in-4 financing & a 10% crypto discount.',
+  title: TITLE,
+  description: DESCRIPTION,
   alternates: { canonical: '/shop/' },
+  openGraph: {
+    title: `${TITLE} | ${SITE.name}`,
+    description: DESCRIPTION,
+    url: `${SITE.url}/shop/`,
+  },
+  twitter: {
+    title: `${TITLE} | ${SITE.name}`,
+    description: DESCRIPTION,
+  },
 };
 
 export default function ShopPage() {

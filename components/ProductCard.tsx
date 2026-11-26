@@ -70,7 +70,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             <div className="text-base font-semibold text-[#111418] tabular-nums">
               {money(product.price)}
             </div>
-            <div className="text-[11px] text-[#9A6B3E] tabular-nums truncate">
+            <div className="text-[11px] text-[#835931] tabular-nums truncate">
               {money(cryptoPrice)} crypto
             </div>
           </div>
@@ -104,6 +104,7 @@ export default function ProductCard({ product }: ProductCardProps) {
 
         <Link
           href={`/shop/${product.category}/${product.slug}/`}
+          aria-label={`Full Specifications for ${product.name}`}
           className="mt-2.5 inline-flex items-center gap-1 text-[11px] font-medium text-[#47505B] hover:text-[#9A6B3E] transition-colors"
         >
           <span>Full Specifications</span>

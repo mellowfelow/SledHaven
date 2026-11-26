@@ -261,7 +261,7 @@ function SendPaymentComposerInner() {
             </div>
 
             <div className="p-5 space-y-4 bg-white text-[#111418]">
-              <p className="text-xs font-semibold uppercase tracking-wider text-[#9A6B3E]">
+              <p className="text-xs font-semibold uppercase tracking-wider text-[#835931]">
                 Live Light-Email &amp; CopyField Preview
               </p>
 

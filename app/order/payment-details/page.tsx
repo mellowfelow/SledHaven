@@ -11,7 +11,7 @@ export default function OrderPaymentDetailsPage() {
   return (
     <main className="flex-1 max-w-2xl w-full mx-auto px-4 sm:px-6 py-12 sm:py-16">
       <div className="mb-8 space-y-2">
-        <p className="text-xs font-medium uppercase tracking-widest text-[#9A6B3E]">
+        <p className="text-xs font-medium uppercase tracking-widest text-[#835931]">
           Verified Settlement Portal
         </p>
         <h1 className="font-serif text-3xl font-semibold text-[#111418]">

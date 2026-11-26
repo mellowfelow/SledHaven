@@ -10,7 +10,7 @@ export default function NotFound() {
   return (
     <main className="flex-1 flex items-center justify-center px-4 py-24">
       <div className="max-w-md text-center space-y-5">
-        <p className="text-xs font-medium uppercase tracking-widest text-[#9A6B3E]">
+        <p className="text-xs font-medium uppercase tracking-widest text-[#835931]">
           404 &middot; Route Not Found
         </p>
         <h1 className="font-serif text-3xl font-semibold text-[#111418]">

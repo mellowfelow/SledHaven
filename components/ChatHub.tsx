@@ -48,7 +48,6 @@ export default function ChatHub() {
     script.async = true;
     script.src = `https://embed.tawk.to/${encodeURIComponent(propId)}/${encodeURIComponent(widgetId)}`;
     script.charset = 'UTF-8';
-    script.setAttribute('crossorigin', '*');
     document.body.appendChild(script);
   }, []);
 

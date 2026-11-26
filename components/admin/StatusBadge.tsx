@@ -11,7 +11,7 @@ const STATUS_MAP: Record<
   string,
   { label: string; textClass: string; Icon: React.ComponentType<{ className?: string }> }
 > = {
-  new: { label: 'New', textClass: 'text-[#9A6B3E]', Icon: Clock },
+  new: { label: 'New', textClass: 'text-[#835931]', Icon: Clock },
   payment_sent: { label: 'Payment Sent', textClass: 'text-sky-700', Icon: MailCheck },
   payment_confirmed: { label: 'Payment Confirmed', textClass: 'text-emerald-700', Icon: CheckCircle2 },
   dispatched: { label: 'Dispatched', textClass: 'text-slate-900', Icon: PackageCheck },

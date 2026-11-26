@@ -321,7 +321,7 @@ export default function CheckoutClient() {
                           {method.label}
                         </span>
                         {method.discountPercent ? (
-                          <span className="text-xs font-semibold text-[#9A6B3E]">
+                          <span className="text-xs font-semibold text-[#835931]">
                             Save {method.discountPercent}%
                           </span>
                         ) : !method.available ? (
@@ -430,7 +430,7 @@ export default function CheckoutClient() {
               <span className="text-[#111418]">{money(totals.subtotal)}</span>
             </div>
             {totals.cryptoDiscount > 0 && (
-              <div className="flex justify-between text-[#9A6B3E] font-semibold">
+              <div className="flex justify-between text-[#835931] font-semibold">
                 <span>Crypto Discount ({SITE.orderRules.cryptoDiscountPercent}%)</span>
                 <span>-{money(totals.cryptoDiscount)}</span>
               </div>
@@ -450,7 +450,7 @@ export default function CheckoutClient() {
               <span>{money(totals.total)}</span>
             </div>
             {totals.payIn4Installment && (
-              <div className="flex justify-between text-xs text-[#9A6B3E] font-medium pt-1">
+              <div className="flex justify-between text-xs text-[#835931] font-medium pt-1">
                 <span>Pay-in-4 Initial Installment (25% due immediately)</span>
                 <span>{money(totals.payIn4Installment)}</span>
               </div>

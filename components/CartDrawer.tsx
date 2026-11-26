@@ -186,7 +186,7 @@ export default function CartDrawer() {
                   <span>Estimated Total</span>
                   <span>{money(totals.total)}</span>
                 </div>
-                <div className="flex justify-between text-xs text-[#9A6B3E] pt-0.5">
+                <div className="flex justify-between text-xs text-[#835931] pt-0.5">
                   <span>Save 10% with BTC / USDT at checkout</span>
                   <span>-{money(Math.round(totals.subtotal * 0.1 * 100) / 100)}</span>
                 </div>
