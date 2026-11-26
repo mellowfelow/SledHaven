@@ -510,11 +510,11 @@ const wellKnownTypeRules = [
 
 const cspDirectives = [
   `default-src 'self'`,
-  `script-src 'self' 'unsafe-inline' https://embed.tawk.to`,
-  `style-src 'self' 'unsafe-inline'`,
+  `script-src 'self' 'unsafe-inline' https://*.tawk.to`,
+  `style-src 'self' 'unsafe-inline' https://*.tawk.to`,
   `img-src 'self' data: https:`,
-  `font-src 'self' data:`,
-  `connect-src 'self' https://embed.tawk.to wss://*.tawk.to`,
+  `font-src 'self' data: https://*.tawk.to`,
+  `connect-src 'self' https://*.tawk.to wss://*.tawk.to`,
   `frame-src https://*.tawk.to`,
   `object-src 'none'`,
   `base-uri 'self'`,
