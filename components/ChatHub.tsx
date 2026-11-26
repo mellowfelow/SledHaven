@@ -3,8 +3,9 @@
 import React, { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { Mail, MessageSquare, Phone, X } from 'lucide-react';
+import { Mail, MessageCircle, MessageSquare, Phone, X } from 'lucide-react';
 import { SITE } from '@/config/site';
+import { waGeneralInquiryLink } from '@/lib/whatsapp';
 
 export default function ChatHub() {
   const pathname = usePathname();
@@ -50,6 +51,18 @@ export default function ChatHub() {
             </button>
           </div>
           <div className="p-3 space-y-2 text-sm">
+            <a
+              href={waGeneralInquiryLink()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 p-2.5 rounded-md hover:bg-[#F7F7F5] text-[#111418] transition-colors"
+            >
+              <MessageCircle className="w-4 h-4 text-[#25D366] shrink-0" />
+              <div>
+                <div className="font-medium text-xs">Message on WhatsApp</div>
+                <div className="text-xs text-[#5C636E] tabular-nums">{SITE.contact.phone}</div>
+              </div>
+            </a>
             <a
               href={SITE.contact.phoneHref}
               className="flex items-center gap-3 p-2.5 rounded-md hover:bg-[#F7F7F5] text-[#111418] transition-colors"

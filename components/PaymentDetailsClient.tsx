@@ -3,9 +3,10 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
-import { AlertCircle, ArrowRight, CheckCircle2, Clock, Loader2, Search } from 'lucide-react';
+import { AlertCircle, ArrowRight, CheckCircle2, Clock, Loader2, MessageCircle, Search } from 'lucide-react';
 import { money } from '@/lib/order';
 import CopyField from '@/components/CopyField';
+import { waPaymentConfirmationLink } from '@/lib/whatsapp';
 
 interface PublicOrderData {
   orderNumber: string;
@@ -272,15 +273,27 @@ export default function PaymentDetailsClient() {
                 {data.paymentMethod.closing}
               </p>
 
-              <div className="pt-2">
+              <div className="pt-2 flex flex-col sm:flex-row gap-3">
+                <a
+                  href={waPaymentConfirmationLink(data.orderNumber)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-md text-sm font-medium text-white bg-[#25D366] hover:brightness-95 transition-all"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  <span>Send Screenshot on WhatsApp</span>
+                </a>
                 <Link
                   href={`/order/confirm-payment/?order=${encodeURIComponent(data.orderNumber)}`}
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-md text-sm font-medium text-white bg-[#9A6B3E] hover:bg-[#835931] transition-colors"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-md text-sm font-medium text-[#111418] border border-[#D6DBE0] hover:bg-[#F7F7F5] transition-colors"
                 >
-                  <span>I&apos;ve Sent Payment — Upload Receipt</span>
+                  <span>Or Upload Receipt Here</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
+              <p className="text-xs text-[#5C636E]">
+                Easiest option: just reply to your payment-details email with a screenshot, or send it via WhatsApp above.
+              </p>
             </div>
           )}
         </div>

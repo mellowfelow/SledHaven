@@ -6,6 +6,7 @@ import {
   paymentTermsHtml,
   type ParsedPaymentField,
 } from '@/lib/order';
+import { waPaymentConfirmationLink } from '@/lib/whatsapp';
 import type { StoredOrder } from '@/lib/orderStore';
 import type { StoredEnquiry } from '@/lib/enquiryStore';
 
@@ -83,7 +84,7 @@ export function emailCallout(title: string, text: string): string {
 }
 
 export function emailButton(label: string, href: string): string {
-  const safeHref = /^https?:\/\//i.test(href) ? href : '#';
+  const safeHref = /^(https?:|mailto:)/i.test(href) ? href : '#';
   return `<div style="margin:22px 0;">
     <a href="${escapeHtml(safeHref)}" style="display:inline-block;background-color:${BRAND.primary};color:#FFFFFF;font-size:14px;font-weight:600;text-decoration:none;padding:12px 22px;border-radius:6px;">
       ${escapeHtml(label)}
@@ -227,8 +228,22 @@ export function paymentDetailsEmail(params: {
     </div>
     ${emailCallout(
       'Once You\'ve Paid',
-      `Just reply to this email with a screenshot of your payment confirmation — we'll verify it and begin dispatch. No app, no upload, nothing else to do.`
+      `Send a screenshot of your payment confirmation any way that's easiest — reply to this email, WhatsApp, or tap a button below. No app, no upload, nothing else to do.`
     )}
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin:0 0 20px 0;">
+      <tr>
+        <td style="padding-right:10px;">
+          <a href="${escapeHtml(waPaymentConfirmationLink(order.orderNumber))}" style="display:inline-block;background-color:#25D366;color:#FFFFFF;font-size:13px;font-weight:600;text-decoration:none;padding:11px 18px;border-radius:6px;">
+            Send on WhatsApp
+          </a>
+        </td>
+        <td>
+          <a href="${escapeHtml(`mailto:${SITE.contact.email}?subject=${encodeURIComponent(`Payment Confirmation — Order ${order.orderNumber}`)}`)}" style="display:inline-block;background-color:${BRAND.headerDark};color:#FFFFFF;font-size:13px;font-weight:600;text-decoration:none;padding:11px 18px;border-radius:6px;">
+            Email Screenshot
+          </a>
+        </td>
+      </tr>
+    </table>
     ${emailDivider()}
     ${paymentTermsHtml(order.paymentMethod, order.total, order.orderNumber, order.paymentPlan)}
   `;
@@ -236,7 +251,7 @@ export function paymentDetailsEmail(params: {
   return {
     subject,
     html: emailShell(subject, body),
-    text: `Payment details for ${SITE.name} order ${order.orderNumber}:\n\n${fields.map((f) => `${f.label}: ${f.value}`).join('\n')}\n\nOnce you've paid, just reply to this email with a screenshot of your confirmation — we'll verify it and begin dispatch.`,
+    text: `Payment details for ${SITE.name} order ${order.orderNumber}:\n\n${fields.map((f) => `${f.label}: ${f.value}`).join('\n')}\n\nOnce you've paid, send a screenshot of your confirmation any way that's easiest:\n- Reply to this email\n- WhatsApp: ${waPaymentConfirmationLink(order.orderNumber)}\n- Email: ${SITE.contact.email}\n\nWe'll verify it and begin dispatch.`,
   };
 }
 

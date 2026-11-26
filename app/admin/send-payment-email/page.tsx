@@ -298,9 +298,19 @@ function SendPaymentComposerInner() {
                     </div>
                   )}
 
-                  <div className="p-3 rounded border border-[#E4E6E8] bg-[#F9FAFB] text-xs text-[#334155] leading-relaxed">
-                    <span className="font-semibold text-[#111418]">Once You&apos;ve Paid: </span>
-                    Just reply to this email with a screenshot of your payment confirmation — we&apos;ll verify it and begin dispatch.
+                  <div className="p-3 rounded border border-[#E4E6E8] bg-[#F9FAFB] text-xs text-[#334155] leading-relaxed space-y-2">
+                    <div>
+                      <span className="font-semibold text-[#111418]">Once You&apos;ve Paid: </span>
+                      Send a screenshot any way that&apos;s easiest — reply to this email, WhatsApp, or tap a button below.
+                    </div>
+                    <div className="flex gap-2">
+                      <span className="inline-flex items-center px-3 py-1.5 rounded text-[11px] font-semibold text-white" style={{ backgroundColor: '#25D366' }}>
+                        Send on WhatsApp
+                      </span>
+                      <span className="inline-flex items-center px-3 py-1.5 rounded text-[11px] font-semibold text-white" style={{ backgroundColor: SITE.reply.brand.headerDark }}>
+                        Email Screenshot
+                      </span>
+                    </div>
                   </div>
 
                   <div className="pt-3 border-t border-[#ECEEF0] space-y-1 text-[11px] text-[#5C636E]">
