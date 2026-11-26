@@ -203,10 +203,8 @@ export function paymentDetailsEmail(params: {
   order: StoredOrder;
   fields: ParsedPaymentField[];
   customNote?: string;
-  paymentPageUrl: string;
-  confirmPageUrl: string;
 }): { subject: string; html: string; text: string } {
-  const { order, fields, customNote, paymentPageUrl, confirmPageUrl } = params;
+  const { order, fields, customNote } = params;
   const method = paymentMethodParts(order.paymentMethod);
   const subject = `Payment Details for ${SITE.name} Order ${order.orderNumber}`;
 
@@ -223,17 +221,14 @@ export function paymentDetailsEmail(params: {
     ${customNote ? emailCallout('Dealership Desk Note', customNote) : ''}
     <div style="border:1px solid #E2E8F0;border-radius:8px;padding:16px 20px;margin:18px 0;background-color:#FFFFFF;">
       <div style="font-size:12px;font-weight:700;color:${BRAND.primary};text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px;">
-        Verified ${escapeHtml(method.label)} Details
+        Pay To — ${escapeHtml(method.label)}
       </div>
       ${fieldsHtml}
     </div>
-    ${emailButton('Open Tap-to-Copy Payment Page', paymentPageUrl)}
-    <p style="margin:0 0 14px 0;font-size:13px;color:#334155;line-height:1.6;">
-      ${escapeHtml(method.closing)}
-    </p>
-    <p style="margin:0 0 16px 0;font-size:13px;">
-      Already sent payment? <a href="${escapeHtml(confirmPageUrl)}" style="color:${BRAND.primary};font-weight:600;">Upload your payment confirmation screenshot</a>.
-    </p>
+    ${emailCallout(
+      'Once You\'ve Paid',
+      `Just reply to this email with a screenshot of your payment confirmation — we'll verify it and begin dispatch. No app, no upload, nothing else to do.`
+    )}
     ${emailDivider()}
     ${paymentTermsHtml(order.paymentMethod, order.total, order.orderNumber, order.paymentPlan)}
   `;
@@ -241,7 +236,7 @@ export function paymentDetailsEmail(params: {
   return {
     subject,
     html: emailShell(subject, body),
-    text: `Payment details for ${SITE.name} order ${order.orderNumber}. Open tap-to-copy page: ${paymentPageUrl}. Confirm payment: ${confirmPageUrl}.`,
+    text: `Payment details for ${SITE.name} order ${order.orderNumber}:\n\n${fields.map((f) => `${f.label}: ${f.value}`).join('\n')}\n\nOnce you've paid, just reply to this email with a screenshot of your confirmation — we'll verify it and begin dispatch.`,
   };
 }
 

@@ -32,8 +32,8 @@ export const SITE = {
     display: 'United States — Nationwide Delivery',
   },
   contact: {
-    email: 'concierge@sledhaven.com',
-    orderEmail: 'orders@sledhaven.com',
+    email: 'sales@sledhaven.com',
+    orderEmail: 'sales@sledhaven.com',
     phone: '+1 (626) 686-4650',
     phoneHref: 'tel:+16266864650',
     whatsapp: '16266864650',

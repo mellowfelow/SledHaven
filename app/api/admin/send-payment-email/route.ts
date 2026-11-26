@@ -54,8 +54,6 @@ export async function POST(req: NextRequest) {
       order,
       fields,
       customNote: customNote || undefined,
-      paymentPageUrl,
-      confirmPageUrl,
     });
 
     const replyTo = process.env.ORDER_EMAIL?.trim() || SITE.contact.orderEmail;
