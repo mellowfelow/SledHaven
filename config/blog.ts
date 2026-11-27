@@ -277,24 +277,79 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: 'This Is a Real Market Segment, Not a Concept',
         paragraphs: [
           'Major listing platforms now carry a dedicated electric category for snowmobiles, and more than one manufacturer is shipping production electric models rather than prototypes. Ski-Doo\'s Grand Touring Electric and Taiga Motors\' Nomad lineup represent two different approaches to the same basic idea: zero local emissions and dramatically quieter operation than a traditional two-stroke or four-stroke engine.',
+          'The two approaches reflect different engineering starting points, and SledHaven carries both so a buyer can compare them directly. Ski-Doo\'s Grand Touring Electric takes the brand\'s established REV Gen5 touring platform and replaces the internal combustion drivetrain with a Rotax E-Power motor, purpose-built for guided tour operations and other groomed-trail commercial use rather than unrestricted personal riding. Taiga Motors, a Montreal-based manufacturer, went the opposite direction: its MY27 Nomad lineup — Pro, Performance, and Scout — is engineered from the ground up around the electric drive unit, with battery placement, chassis balance, and suspension tuning designed around an electric powertrain from the first sketch rather than retrofitted onto an existing gas chassis. Neither approach is objectively better; they are built for different buyers, which is exactly why a side-by-side comparison matters more here than with most gas-sled shopping decisions.',
+        ],
+      },
+      {
+        heading: 'Real-World Use Cases Already Running on Electric',
+        paragraphs: [
+          'Ski resorts and guided tour operators are the most mature use case for electric snowmobiles today, and it is easy to see why: a fleet of Grand Touring Electric units running fixed, groomed-corridor routes all day can be charged overnight at a central facility, eliminates the fuel smell and noise that some guests specifically ask to avoid, and gives an operator predictable per-unit running costs without fluctuating gas prices factored into the math.',
+          'Backcountry outfitters and utility fleets are the newer use case, and Taiga\'s Nomad Pro and Scout trims are built specifically around it. A groomer crew, a ski patrol unit, or a hunting or fishing outfitter running the same general territory every day can plan charging around a predictable schedule the same way they would plan fuel stops for a gas fleet — and the OS-5 platform\'s geofencing and remote fleet tools make it realistic to manage several machines at once without needing a rider physically present at every charge cycle.',
+          'Individual backcountry and trail riders are the segment still deciding, and that is a fair position to be in. The Nomad Performance trim is Taiga\'s clearest pitch to this rider — genuine trail-capable performance rather than a fleet-oriented utility focus — but committing to any electric sled as a personal daily driver still means planning your riding day around a charge cycle in a way gas ownership simply does not require.',
+        ],
+      },
+      {
+        heading: 'How an Electric Drivetrain Actually Differs From a Belt-and-Clutch System',
+        paragraphs: [
+          'A gas snowmobile\'s continuously variable transmission uses a drive belt running between a primary and secondary clutch, with weighted rollers pushing the belt outward as engine RPM climbs to change the effective gear ratio. An electric drive unit skips that mechanical step entirely — power goes from the motor to the track drive with the output modulated electronically rather than through springs, rollers, and belt tension. That is also why electric specifications are published in kilowatts rather than horsepower at a given RPM: Taiga rates its Nomad Performance and Scout trims at 120 kW peak output, while the Nomad Pro, tuned for steady fleet and utility duty rather than peak performance, runs a smaller 67 kW drive unit.',
+          'Most current electric snowmobiles also offer selectable drive modes that reshape power delivery rather than changing top speed alone. Taiga\'s Nomad lineup offers Range, Sport, and Wild modes on the Performance and Scout trims, and Range and Sport modes on the Pro, letting a rider trade peak acceleration for extended range on a given charge at the press of a button. That is a software-level tradeoff with no real equivalent on a gas sled, where the only way to meaningfully extend range is to ride more conservatively on the throttle and accept slower acceleration as a side effect rather than a deliberate setting.',
+          'The battery pack is the single heaviest component in an electric snowmobile, and unlike an engine block, it sits low in the chassis rather than up front over the skis. Taiga\'s Nomad Performance and Pro trims carry a published curb weight of 355 kg (783 lb), while the reinforced-suspension Scout trim is actually lighter at 344 kg (758 lb) despite its backcountry-focused upgrades. Both figures run heavier than a comparable gas trail sled, but the weight sits lower and more centrally, which changes how the chassis settles into a turn rather than simply making the sled feel heavier in a straight line.',
         ],
       },
       {
         heading: 'Range and Where Electric Makes the Most Sense Today',
         paragraphs: [
           'Current electric sleds are range-limited compared to a full tank of gas — figures in the 30-to-80-mile range depending on the model and riding style are typical of what manufacturers currently publish, with speed often electronically governed to protect that range. That makes electric models a strong fit for groomed-corridor touring, resort and tour-operator fleets, and shorter backcountry outings, rather than all-day, multi-tank trail-riding marathons.',
+          'The two models SledHaven carries show just how wide that range band really is in practice. Ski-Doo\'s Grand Touring Electric is rated for up to 31.1 miles (50 km) on a single charge, but that number comes paired with a governed top speed of 15.5 mph (25 km/h) — a deliberate tradeoff Ski-Doo built specifically for guided tour routes where predictable, repeatable range matters more than outright speed. Taiga\'s Nomad lineup takes a different approach entirely: all three trims are rated for an estimated 100 km (62 mi) of range, roughly double the Grand Touring Electric\'s published figure, without the same hard speed governor — part of why Taiga positions its Performance trim as genuinely trail-capable rather than tour-only.',
+          'Actual range on any electric sled, like actual fuel burn on a gas sled, moves with rider weight, trail grade, snow depth, ambient temperature, and how aggressively the throttle gets used. A manufacturer\'s published figure reflects a specific test condition, not a guarantee across every ride. Treat it as the ceiling for a best-case outing, and build a more conservative real-world expectation into your riding plan — especially in deep cold or heavy powder, where the motor works harder to hold speed and the battery has less margin to begin with.',
+        ],
+      },
+      {
+        heading: 'Charging: Level 2 Home Charging vs. DC Fast Charging',
+        paragraphs: [
+          'The two manufacturers also take different charging approaches, and the difference matters more than it might first appear. Ski-Doo\'s Grand Touring Electric uses an integrated Level 2 automotive-standard charger built directly into the sled, reaching 80% in about 1.5 hours and a full charge in under 3 hours — fast enough to top off a unit between guided tour shifts without taking it fully offline for the day. Taiga\'s Nomad lineup instead ships with a 6.6 kW onboard charger and cable sized for overnight home charging, plus a CCS1 fast-charge port (CCS2 in European markets) that reaches 80% in under 20 minutes at a public DC fast charger.',
+          'A home Level 2 setup is the realistic baseline for electric snowmobile ownership either way, since dedicated public charging infrastructure built specifically for snowmobiles does not yet exist the way it does for passenger EVs. Taiga\'s CCS1 port is a genuine practical advantage here, since it is compatible with the same DC fast-charger network many electric cars already use — meaning a Nomad owner traveling away from home charging is not entirely dependent on finding a dedicated snowmobile charging point. Even so, build overnight charging time into your normal riding routine rather than treating it as an afterthought you will deal with later.',
+          'Taiga\'s Nomad lineup also outputs up to 3 kW of onboard power (120V/220V) directly from the battery pack, letting a rider run tools, lighting, or charge other gear off-grid. That is a genuinely useful feature for a backcountry camp or a fleet operator working away from a power source, and it is simply not something a gas sled\'s charging system is built to replicate at that output level.',
         ],
       },
       {
         heading: 'What Actually Feels Different on the Trail',
         paragraphs: [
           'Instant torque delivery without a clutch engagement point is the first thing most riders notice — there is no belt shift feel, just continuous, quiet acceleration. The absence of engine noise also changes the riding experience in a way few other upgrades can: you hear the track, the snow, and the wind, not a two-stroke at full throttle.',
+          'That silence changes more than the soundtrack of a ride. Riders on electric sleds routinely report being able to talk at a normal volume while riding side by side, noticing wildlife that would scatter at the sound of an idling two-stroke, and holding a conversation at a trailhead stop without raising their voice over engine noise. For guided tour operations — the exact use case Ski-Doo built the Grand Touring Electric around — that quieter ride is also a real guest-experience advantage, not just a line item on an emissions spec sheet.',
         ],
       },
       {
-        heading: 'Charging Considerations Before You Buy',
+        heading: 'Cold Weather and Battery Performance',
         paragraphs: [
-          'A home Level 2 charging setup is the realistic baseline for electric snowmobile ownership, since public charging infrastructure built for snowmobiles specifically does not yet exist the way it does for cars. Factor in overnight charging time as part of your riding routine rather than an afterthought.',
+          'Cold weather affects any lithium-ion battery pack\'s usable capacity and power delivery — the same physics that reduces a passenger EV\'s winter range on the road. Liquid-cooled battery packs, used on both the Grand Touring Electric and the Nomad lineup, apply active thermal management to keep cells in an efficient operating temperature band rather than letting them cold-soak down to ambient temperature. That helps recover some of the capacity a pack would otherwise lose in deep cold, but it does not eliminate the effect — physics still wins at the margins.',
+          'Practically, that means a published range figure measured under moderate test conditions will typically run shorter on a genuinely cold riding day, the same way a gas sled\'s real-world fuel economy shifts with temperature and snow conditions. Anyone considering an electric sled for sustained sub-zero riding should ask a dealer directly about a specific model\'s cold-weather range data rather than assuming the published figure holds at every temperature you might actually ride in.',
+        ],
+      },
+      {
+        heading: 'Maintenance: What Changes and What Doesn\'t',
+        paragraphs: [
+          'Electric drivetrains remove an entire category of gas-engine maintenance outright: no oil changes, no spark plugs, no air-fuel mixture to tune, and no drive belt or clutch kit gradually wearing out of calibration over a season. That is a real reduction in routine maintenance line items, not a marketing talking point — belts, clutches, and engine oil are consumable wear parts by design on a gas sled, and an electric drivetrain simply has no direct mechanical equivalent to replace.',
+          'It is not a lower maintenance profile across the entire machine, though. Track tension and alignment, suspension components, ski carbides, and brakes wear and need regular inspection on an electric sled exactly the way they do on a gas sled, since none of that is powertrain-specific. Budget for the same chassis and running-gear upkeep you would on any snowmobile — the real savings show up specifically in the engine and drivetrain categories, not across the whole ownership picture.',
+        ],
+      },
+      {
+        heading: 'Fleet Use, Towing, and How the Three Nomad Trims Differ',
+        paragraphs: [
+          'Taiga built real fleet-management tooling into the Nomad lineup through its OS-5 platform: remote fleet management, geofenced speed zones, and digital key access that let an operator managing multiple machines set boundaries and monitor usage without standing up a dedicated IT system. That is a meaningfully different ownership model from a personally-owned gas sled, and it is a large part of why the Nomad Pro — priced as the lineup\'s entry point — is positioned specifically for resort, tour-operator, and utility fleet use rather than solo backcountry riding.',
+          'All three Nomad trims also share a 511 kg (1,125 lb) towing capacity, a meaningful number for anyone planning to pull a utility sled or cargo trailer rather than ride solo. The Scout trim goes further with a 2-inch deeper-lug all-terrain track, Alpine Dual Coilover rear suspension with an optional Elka Stage 3 upgrade, an integrated gear rack, and ski/snowboard mounts — purpose-built for backcountry use rather than groomed-corridor touring, and the clearest functional difference between the three Nomad trims on paper.',
+          'Lined up side by side, the Nomad trims map cleanly onto three different jobs rather than three price tiers of the same sled. The Pro\'s 67 kW drive unit and OS-5 fleet tools make it the obvious choice for a resort or outfitter running several machines on a known route. The Performance trim\'s 120 kW output and lack of a fleet-management focus make it the one built for an individual rider who wants real trail capability. The Scout shares the Performance\'s power output but swaps in a deeper-lug track, upgraded rear suspension, and backcountry cargo mounts, aimed squarely at riders leaving the groomed corridor behind.',
+          'None of the three is a strict upgrade over the others — picking between them is a use-case decision, not a budget decision, even though their prices do happen to scale in that order. A full specification comparison of all three trims, including towing, range, and suspension differences, is covered in more depth in SledHaven\'s dedicated Nomad trim comparison guide.',
+        ],
+      },
+      {
+        heading: 'Pricing, Ownership Costs, and Where This Leaves a Buyer Today',
+        paragraphs: [
+          'Electric pricing currently sits at a premium over most of SledHaven\'s comparable gas trail and crossover models, though the gap is narrower than many shoppers expect. The Ski-Doo Grand Touring Electric starts at $17,499, close to the gas-powered Ski-Doo Grand Touring LE with Platinum Package at $17,699. Taiga\'s Nomad lineup starts higher: Nomad Pro at $19,499, Nomad Performance at $21,999, and Nomad Scout at $22,249 — pricing that reflects the battery pack\'s cost and the ground-up electric engineering across the lineup, not a generic premium tacked onto a familiar gas platform.',
+          'Ongoing energy cost is the other side of that comparison. Charging at home overnight on standard residential electricity rates is typically far cheaper per mile than running gasoline through a two- or four-stroke engine, though the exact gap depends heavily on local electricity prices and how often a rider relies on public DC fast charging, which commands a premium over home charging almost everywhere it is available. That operating-cost advantage is a real factor in the total cost of ownership, even though it rarely shows up on a sticker price comparison.',
+          'Every SledHaven order, electric or gas, follows the same purchase structure: a $200 minimum order, nationwide crated and insured freight calculated by destination state at checkout, and a Manufacturer Certificate of Origin plus dealership bill of sale for state registration. The same 10% instant discount for paying in Bitcoin or USDT, and the same Pay-in-4 installment plan — 25% due immediately with three more equal payments every 4 weeks at 0% interest — apply to an electric snowmobile exactly as they do to any other unit in the catalog.',
+          'None of this makes an electric snowmobile a strict upgrade or a downgrade from a gas sled — it is a different machine with a different set of strengths. Groomed-corridor touring, resort and tour-operator fleets running predictable daily routes, and backcountry riders who value quiet operation and do not need unplanned all-day range are the clearest fits today. Riders who need maximum range flexibility for long, unplanned backcountry days, or who simply want the fastest possible refuel, are still generally better served by a gas platform — at least until charging infrastructure and battery range close that gap further.',
+          'If you are weighing an electric model against a gas equivalent in the same price bracket, treat the comparison the same way you would any other major sled purchase: match the machine to your actual riding pattern first, confirm the specific model\'s published range and charging specs directly, and factor nationwide crated freight, state-calculated shipping, and registration paperwork into your timeline the same way you would for a gas order. An electric snowmobile from SledHaven ships crated and insured with the same Manufacturer Certificate of Origin and bill of sale as every other unit in the catalog, so the ownership paperwork and delivery experience are identical — the only real decision is the drivetrain underneath.',
         ],
       },
     ],
@@ -857,18 +912,57 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: 'Tow Hitch Basics',
         paragraphs: [
           'A dedicated cargo trailer hitch kit mounted to the rear bumper or tunnel gives you a secure point for a utility sled to pull a small cargo trailer or sled-mounted accessory — distinct from the straps and ramps used to load the snowmobile itself onto a highway trailer.',
+          'It is worth being precise about which "trailer" a given piece of hardware refers to, since the two jobs use entirely different gear. A tow hitch lets your snowmobile pull something — a cargo trailer, a toboggan, an ice-fishing sled — behind it on the snow. A highway trailer, by contrast, is what carries your snowmobile behind your truck or SUV to the trailhead, and that side of the equation depends on ramps, straps, and tie-down points rather than a hitch at all. Mixing up the two when shopping for parts is a common and easily avoidable mistake.',
+        ],
+      },
+      {
+        heading: 'Choosing the Right Hitch Setup',
+        paragraphs: [
+          'A universal hitch kit that bolts to factory tunnel mounting points — SledHaven\'s Expedition Cargo Trailer Hitch Kit is built this way — avoids drilling into the tunnel and keeps the mounting hardware compatible across a wide range of models and track lengths. Drilling new mounting holes into a tunnel is occasionally necessary for a non-standard setup, but it is a last resort, not a first step, since it can affect tunnel strength and resale value if done poorly.',
+          'Match the hitch and trailer combination to what you are actually hauling. A lightweight cargo shell for camp gear, fuel cans, or ice-fishing equipment puts far less strain on a hitch than attempting to tow another machine or a heavily loaded utility sled, and a flotation-ski-equipped trailer chassis — rather than a wheeled cart — is what keeps a pull-behind trailer tracking true in soft or ungroomed snow instead of sinking and dragging.',
         ],
       },
       {
         heading: 'Loading Ramp Technique',
         paragraphs: [
           'A wide, grippy aluminum loading ramp at a shallow angle reduces the risk of the skis sliding sideways off the ramp edge during loading — a common cause of minor trailer-loading damage. Loading slowly, under control, beats using momentum to "power up" a steep ramp.',
+          'A folding aluminum ramp designed for one-person loading, like SledHaven\'s Aluminum Loading Ramp, gives a solo rider a stable, non-slip surface to walk the sled up under its own power rather than needing a second person to spot or push. Keep the ramp\'s full width on the trailer deck lip rather than letting one edge hang unsupported, and recheck that the ramp has not shifted before committing to the climb — a ramp that kicks sideways mid-load is far more dangerous once the sled is already halfway up it.',
+        ],
+      },
+      {
+        heading: 'Common Loading Mistakes to Avoid',
+        paragraphs: [
+          'Loading too fast and relying on throttle to "jump" the transition from ground to ramp is one of the most common causes of a ski sliding off the ramp edge or the sled bouncing hard enough to shift a pre-set tie-down point. A slow, steady approach with the rider standing and ready to put a foot down gives far more control than committing to momentum.',
+          'Loading at an angle instead of squarely in line with the ramp is another frequent mistake, especially in a cramped parking lot or trailhead lot. Even a slight angle multiplies the chance of a ski catching the ramp edge. Reposition the trailer or the approach, even if it takes an extra minute, rather than forcing an angled load because the available space is tight.',
         ],
       },
       {
         heading: 'Securing the Sled for Transport',
         paragraphs: [
           'Four-point tie-down strapping — front two points pulling forward-and-down, rear two points pulling rearward-and-down — is the standard approach for keeping a sled from shifting under highway braking and cornering loads. Checking strap tension after the first few miles catches any initial settling before it becomes a problem.',
+          'Attach front straps to a structural point rated for tie-down use, like a bumper or a specific tie-down loop called out in your owner\'s manual, rather than a plastic trim panel or a windshield mount that was never designed to carry load. The same applies to rear straps — a rear bumper or tunnel-mounted loop, not the taillight housing or a rear rack rated only for light cargo.',
+          'Suspension compression during transport is a detail riders often miss. A sled strapped down too aggressively can compress its own suspension well past its normal travel, which over a long highway trip can occasionally cause minor seal or shock wear. Snug tie-downs that fully prevent shifting are correct; tie-downs cranked down hard enough to visibly bottom out the suspension are tighter than necessary.',
+        ],
+      },
+      {
+        heading: 'Trailer and Tow Vehicle Considerations',
+        paragraphs: [
+          'Tongue weight — the downward force the loaded trailer exerts on your tow vehicle\'s hitch — changes with how far forward or back a snowmobile sits on the trailer deck, not just with the sled\'s total weight. Too much tongue weight makes a tow vehicle\'s rear end squat and can affect steering and braking; too little can let a trailer sway at highway speed. Most single-sled utility trailers are designed with a sweet spot marked on the deck — use it rather than guessing by eye.',
+          'Confirm your tow vehicle\'s rated towing capacity and your trailer\'s own gross vehicle weight rating before assuming a given combination is safe, especially if you are hauling more than one sled or adding a loaded cargo trailer on top of the snowmobile\'s own weight. This is a tow-vehicle and trailer question independent of the snowmobile brand or model, and it is worth confirming against your vehicle\'s owner\'s manual rather than a rough estimate.',
+        ],
+      },
+      {
+        heading: 'Winter-Specific Hazards When Trailering',
+        paragraphs: [
+          'Ice buildup on a loading ramp is a cold-weather-specific hazard a summer trailering guide will not mention — a ramp that looked grippy in the driveway can turn genuinely slick after a few miles of road spray and refreeze. Knock off visible ice and compacted snow from the ramp surface before each use, not just the first time you load for the season.',
+          'Tie-down straps and ratchets can also stiffen and become harder to cinch fully in deep cold, which sometimes leads to a strap that feels tight but is not actually at full rated tension. Road salt and slush spray accelerate corrosion on hitch hardware and ratchet mechanisms faster in winter than in other seasons, so rinsing and lightly lubricating moving hardware after repeated winter trailering trips is a cheap way to avoid a seized ratchet or a corroded pin right when you need it to work.',
+        ],
+      },
+      {
+        heading: 'A Pre-Trip Checklist Worth Keeping in the Truck',
+        paragraphs: [
+          'A short, consistent pre-trip routine catches most of the problems covered above before they turn into a roadside delay. Before pulling out of the driveway: confirm the ramp surface is clear of ice, check that all four tie-down points are rated for the load and routed away from sharp tunnel or bumper edges, verify the hitch pin or coupler is fully seated and locked, and give the trailer lights and signals a quick check now that they are wired into a cold electrical connector rather than sitting in a garage.',
+          'Keep a spare strap, a basic ratchet or socket set, and a tow strap like SledHaven\'s Heavy-Duty Tow Strap in the truck rather than assuming you will not need backup gear. A strap that snaps mid-trip or a pin that will not seat correctly is a far easier fix with a spare on hand than it is standing at a gas station an hour from home trying to improvise a solution.',
         ],
       },
     ],
@@ -899,18 +993,63 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: 'How the Belt-and-Clutch System Works',
         paragraphs: [
           'A snowmobile\'s continuously variable transmission uses a drive belt running between a primary (engine-side) clutch and a secondary (track-side) clutch. As engine RPM rises, the primary clutch\'s weighted rollers push the belt outward, effectively changing the gear ratio smoothly rather than through fixed, discrete gears.',
+          'This continuously variable design is what lets a snowmobile accelerate smoothly from a stop to top speed without shifting through discrete gears the way a car does. The tradeoff is that the belt itself absorbs a lot of heat and mechanical stress doing that job, which is exactly why it is treated as a scheduled wear item rather than a part expected to last the life of the machine.',
+        ],
+      },
+      {
+        heading: 'Primary vs. Secondary Clutch: What Each One Actually Does',
+        paragraphs: [
+          'The primary clutch, mounted on the engine\'s crankshaft, is the half that responds to RPM. Its weighted rollers — sometimes called flyweights — move outward under centrifugal force as engine speed rises, squeezing the belt and pushing it toward a larger effective diameter on that side.',
+          'The secondary clutch, mounted on the jackshaft that drives the track, works opposite the primary: a calibrated spring resists the belt\'s push, and as the primary clutch forces the belt outward, the secondary clutch\'s effective diameter shrinks. Together the two clutches continuously vary the drive ratio between them — low ratio for initial acceleration, progressively higher as RPM and speed climb — which is the entire mechanical basis of a snowmobile\'s CVT.',
         ],
       },
       {
         heading: 'Signs Your Belt Needs Replacing',
         paragraphs: [
           'Visible cracking, a shiny glazed surface, or frayed edges are all signs a belt is near end of life. Inconsistent engagement — a delay or shudder before the sled takes off from a stop — often shows up before a belt fails outright.',
+          'A belt that looks fine from a quick glance can still be past its service life on the inside — rubber compound breaks down gradually under heat cycling even before visible cracking appears. Checking belt width against your owner\'s manual\'s minimum spec with a caliper, not just eyeballing it, catches a belt that has worn thin without showing the obvious warning signs yet.',
+        ],
+      },
+      {
+        heading: 'Belt Material and Heat: Why Turbo Engines Are Harder on Belts',
+        paragraphs: [
+          'A turbocharged engine cycles belt temperature harder than a naturally aspirated one, because boost adds load and heat to the drivetrain on top of whatever the engine itself is already producing. That is why a stock-grade belt on a turbocharged triple tends to glaze earlier than the same style of belt on a comparable naturally aspirated engine doing similar mileage.',
+          'Aramid-reinforced belts, built specifically to handle sustained heat cycling, are the common upgrade path for turbo-engine owners who are replacing a belt proactively rather than waiting for a failure. SledHaven\'s Severe-Duty Drive Belt is built for exactly this case — sized for the 849cc-899cc turbo triple engines across the lineup, with a precision cog profile intended to hold consistent clutch engagement longer under repeated boost than a basic replacement belt.',
         ],
       },
       {
         heading: 'When a Clutch Kit Rebuild Makes Sense',
         paragraphs: [
           'Spring tension and roller weights in the primary clutch wear and change over a sled\'s service life, which gradually shifts engagement RPM and shift feel away from factory spec. A clutch kit rebuild restores that original engagement behavior — a worthwhile service item on an older or high-mileage sled rather than a performance-only upgrade.',
+          'A rebuild is most clearly worth doing when shift feel has noticeably drifted from how the sled rode when new — a later or mushier engagement, inconsistent shift points between warm and cold starts, or a sense that the engine is working harder than it should at a given speed. Those are signs the spring tension and roller weights are no longer matched to the engine\'s actual power curve, not necessarily a sign anything is broken.',
+        ],
+      },
+      {
+        heading: 'Altitude, Load, and Clutch Calibration',
+        paragraphs: [
+          'Factory clutch calibration is tuned for sea-level, unloaded riding conditions, which means both altitude and a loaded cargo rack shift a turbo engine\'s effective powerband away from that factory baseline. Thinner air at elevation changes how efficiently a turbo engine makes boost, and the clutch calibration that felt correct at sea level can feel soft or oddly timed at 8,000 feet without any mechanical fault at all.',
+          'A re-calibration kit that swaps primary and secondary weights and springs — SledHaven\'s Performance Clutch Kit is built this way for the 849cc-899cc turbo triple lineup, and includes a printed shim chart for fine-tuning by elevation — restores crisp engagement at altitude or under load rather than leaving a rider to simply get used to a powerband that no longer matches the engine\'s actual output at that elevation.',
+        ],
+      },
+      {
+        heading: 'DIY vs. Dealer Service: What to Know Before You Start',
+        paragraphs: [
+          'A straightforward belt swap is within reach of a mechanically confident owner with the correct hand tools and the owner\'s manual\'s torque specs in front of them — it is a field-replaceable job by design, which is exactly why carrying a spare belt is common practice for backcountry riders. A full clutch kit rebuild, by contrast, involves correctly matching weight and spring combinations to the engine\'s power curve, which is a more specialized job worth having a dealer or experienced tuner handle unless you are confident reading a clutch calibration chart yourself.',
+          'Either way, keep the old belt and any swapped clutch components until you have confirmed the new setup performs as expected over a few real rides. A shift-feel problem that shows up only under load or at a specific RPM band sometimes points to a different root cause than the part you just replaced, and having the old components on hand makes that diagnosis easier rather than starting over from scratch.',
+        ],
+      },
+      {
+        heading: 'Belt Deflection and Clutch Alignment After a Swap',
+        paragraphs: [
+          'A new belt installed with incorrect deflection — too loose or too tight against the clutch sheaves — will not deliver the performance or lifespan either the belt or clutch kit is capable of, even if every other part of the job was done correctly. Check deflection against your owner\'s manual\'s specification with the correct gauge or tool rather than estimating it by feel, since a belt that feels "about right" by hand is a common source of premature glazing on an otherwise properly installed belt.',
+          'Clutch alignment — making sure the primary and secondary clutches sit in the same plane, with the belt tracking straight between them — matters just as much as deflection. Misalignment concentrates wear on one edge of the belt rather than spreading it evenly across the belt\'s full width, which shows up as uneven glazing or fraying on one side well before the belt would otherwise be due for replacement. This is a quick check with a straightedge or alignment tool and worth doing any time a clutch is removed for service, not just after a full rebuild.',
+        ],
+      },
+      {
+        heading: 'Break-In Expectations for a New Belt',
+        paragraphs: [
+          'A brand-new belt does not deliver its final, settled shift feel on the first ride. The belt\'s surface and the clutch sheaves need a short break-in period — typically a handful of easy, progressive-throttle miles — to seat properly against each other, and shift feel during that window can be slightly different from how the belt will behave once it is fully broken in.',
+          'Avoid repeated hard, full-throttle launches during that first short stretch of riding, since aggressive heat cycling before the belt has fully seated can shorten its useful life before it ever gets the chance to perform at its best. After that initial break-in window, a properly installed and aligned belt should settle into a consistent, predictable shift feel that holds for the bulk of its service life, which is also the easiest baseline to compare against later if engagement ever starts to feel off.',
         ],
       },
     ],
@@ -941,18 +1080,57 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: 'The Main Financing Paths Buyers Consider',
         paragraphs: [
           'Snowmobile buyers generally weigh three paths: a dealer-structured installment plan, a personal loan from a bank or credit union, or paying in full (sometimes with a settlement-method discount). Each has a different tradeoff between approval speed, total cost, and flexibility.',
+          'None of these paths is universally "best" — the right one depends on how quickly you need an answer, how much flexibility you want in the payment schedule, and whether you would rather avoid a credit check altogether. A rider who wants to lock in a build slot today with minimal paperwork is solving a different problem than a rider comparing interest rates across three lenders over a week of shopping.',
+        ],
+      },
+      {
+        heading: 'Dealer Installment Plans vs. Bank or Credit Union Loans',
+        paragraphs: [
+          'A dealer-structured installment plan, like SledHaven\'s own Pay-in-4 program, is a settlement arrangement between you and the dealership directly — there is no third party underwriting the purchase, which generally means a faster decision and no credit application. A bank or credit union loan, by contrast, involves a lender evaluating your creditworthiness, which can take longer to arrange but may offer a longer repayment term than a dealer installment plan is designed to cover.',
+          'The practical tradeoff is term length and structure. A dealer installment plan is typically built around a short, fixed schedule — SledHaven\'s Pay-in-4 spans four installments over roughly three months — while a bank or credit union loan can stretch over several years with a correspondingly different monthly payment size. Neither structure is right or wrong; they solve for different buyer priorities, and it is worth being clear with yourself about which one — speed and simplicity, or a lower monthly payment over a longer term — matters more before you commit to either.',
         ],
       },
       {
         heading: 'What to Compare Across Options',
         paragraphs: [
           'Total cost over the full term — not just the size of each payment — is the number that matters most. A longer term with a smaller payment can cost more overall than a shorter term with a larger one, depending on the interest structure attached to each option.',
+          'Also compare what happens if your plans change mid-payment. A dealer installment plan\'s terms are typically fixed and short, so there is less room to renegotiate a payment date than there might be with a bank loan\'s servicing options. Ask directly how a missed or delayed installment is handled under any plan you are considering, rather than assuming it works the same way as a different type of financing you have used before.',
+          'Approval speed is the other variable worth weighing honestly. A dealer-structured plan with no credit application can move from decision to a locked allocation the same day, while a bank or credit union loan typically takes longer to underwrite — sometimes meaningfully longer during a busy pre-season ordering window when a specific model or color is in limited supply. If timing matters as much as total cost, factor that into the comparison rather than treating every option as equally fast to arrange.',
         ],
       },
       {
         heading: 'How SledHaven Structures Its Own Plan',
         paragraphs: [
           'SledHaven\'s own Pay-in-4 program splits an order into four equal installments at 0% interest — 25% due immediately to reserve your allocation, then three more every 4 weeks — alongside a straight pay-in-full option that also qualifies for the 10% instant cryptocurrency discount. It is a dealer settlement structure, not a third-party loan, so there is no credit application or interest calculation involved.',
+          'In practice, that means a $20,000 order under Pay-in-4 breaks into an immediate $5,000 payment to reserve the allocation and begin pre-delivery crating, followed by three more $5,000 installments spaced four weeks apart, with no interest added to any of the three follow-up payments. The schedule is fixed once it starts — there is no revolving balance or variable interest rate to track, which is the main structural difference between this and a traditional loan.',
+        ],
+      },
+      {
+        heading: 'The 10% Cryptocurrency Discount, Explained',
+        paragraphs: [
+          'Separately from Pay-in-4, SledHaven applies an automatic 10% discount to your order subtotal when you pay in Bitcoin (BTC) or Tether (USDT). The discount reflects the lower settlement overhead of crypto payments compared to card-network processing, and it is applied automatically once that payment method is selected — there is no code to enter or separate approval step.',
+          'The crypto discount and the Pay-in-4 plan are two different mechanisms. The discount is a reduction on your order total; Pay-in-4 is a way of spreading that total (discounted or not) across four payments instead of one. Choosing crypto as your payment method still works whether you pay the discounted total in full or split it across the Pay-in-4 schedule — the two are not mutually exclusive.',
+        ],
+      },
+      {
+        heading: 'Combining Payment Method and Payment Plan',
+        paragraphs: [
+          'SledHaven\'s checkout separates the payment method question (Crypto, Bank Transfer, Zelle, Apple Pay, or Chime) from the payment plan question (pay in full, or Pay-in-4). You choose a payment method first, and then decide whether to settle the full total at once or split it into the four-installment schedule — the 10% crypto discount applies to your subtotal regardless of which plan you choose afterward.',
+          'Every order, however it is financed, is still subject to the same $200 minimum order and the same freight structure: vehicles ship crated and insured with freight calculated by destination state at checkout, while parcel and accessory orders of $500 or more qualify for free shipping. None of that changes based on which payment method or payment plan you select.',
+        ],
+      },
+      {
+        heading: 'Settlement Security: How Payment Actually Gets Verified',
+        paragraphs: [
+          'Regardless of which payment method or plan you choose, no funds are ever captured directly through SledHaven\'s checkout form — the form reserves your allocation and triggers a verification step rather than processing a live charge. Once the allocation desk confirms your order, you receive personalized settlement details by email covering whichever method you selected: a wallet address for crypto, verified account details for a bank transfer, Zelle, Apple Pay, or Chime, or the first installment amount if you chose Pay-in-4.',
+          'After sending payment through your chosen method, the fastest way to move your order forward is to reply directly to that settlement email, message SledHaven on WhatsApp, or email a screenshot of your payment confirmation. That confirmation step is what actually triggers pre-delivery inspection and crating to begin, so it is worth doing immediately after payment rather than assuming the order will progress automatically in the background.',
+        ],
+      },
+      {
+        heading: 'A Practical Way to Decide',
+        paragraphs: [
+          'If approval speed and simplicity matter most, SledHaven\'s own Pay-in-4 plan — no credit application, a fixed four-payment schedule, 0% interest — is the most direct path. If you are also comparing against a bank or credit union loan for a longer repayment term, get a real rate quote from that lender first, then weigh it against Pay-in-4\'s fixed short schedule and the separate 10% savings available if you pay in crypto. The right choice is rarely about which option sounds more sophisticated — it is about which payment shape actually fits your cash flow this winter.',
+          'Whichever path you choose, confirm the specific terms directly before you commit: the exact installment amounts and dates for Pay-in-4, the rate and term for any bank or credit union loan you are comparing against, and whether a given payment method qualifies for the 10% crypto discount. Snowmobile financing decisions are not especially complicated once the terms are actually in front of you — most of the apparent complexity comes from comparing options without first getting the real numbers for each one side by side.',
         ],
       },
     ],
@@ -983,18 +1161,57 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: 'Taiga Motors: A Dedicated Electric Builder',
         paragraphs: [
           'Taiga Motors is a Montreal-based manufacturer building ground-up electric snowmobiles rather than retrofitting a gas platform — the Nomad lineup is purpose-engineered around its electric drivetrain from the start, which shows up in how the weight and power delivery are balanced across the chassis.',
+          'All three Nomad trims are part of the MY27 lineup and are currently available to order directly rather than sitting on a future release date — a meaningful distinction in a market where several electric-powersports announcements have taken years to reach actual delivery. Taiga builds the battery, drive unit, and chassis together as one system, which is part of why the three trims share so much of their underlying platform despite being tuned for different jobs.',
         ],
       },
       {
-        heading: 'Scout and Pro: Fleet and Backcountry Focus',
+        heading: 'Shared Platform: What All Three Nomad Trims Have in Common',
         paragraphs: [
-          'The Scout and Pro trims are positioned toward fleet, tour-operator, and backcountry use cases, where consistent, repeatable range and durability matter more than outright performance — a natural fit for operators running the same routes daily.',
+          'Strip away the trim-specific tuning and all three Nomad models share the same underlying numbers. Each is rated for an estimated 100 km (62 mi) of range, a 511 kg (1,125 lb) towing capacity, and up to 3 kW of onboard power output (120V/220V) for running tools or charging gear off-grid. Charging is identical across the line too: a 6.6 kW onboard charger and cable for overnight home charging, plus a CCS1 fast-charge port (CCS2 in European markets) that brings any Nomad to 80% in under 20 minutes at a public DC fast charger.',
+          'That shared foundation is exactly why choosing between the three trims is a use-case decision rather than a question of which one is simply "more sled." The differences that actually separate Pro, Performance, and Scout are drive unit output, suspension tuning, and a handful of trim-specific features — not range, towing, or charging speed, which stay constant across the lineup.',
         ],
       },
       {
-        heading: 'Performance: The Trail-Capable Trim',
+        heading: 'Nomad Pro: Built for Fleets',
         paragraphs: [
-          'The Performance trim leans toward serious trail-capable riding, positioned for individual riders who want genuine electric performance rather than a fleet-oriented utility focus — the closest of the three trims to how a gas trail-performance rider would cross-shop.',
+          'The Pro trim runs a 67 kW drive unit with Range and Sport drive modes — the smallest motor in the lineup, tuned for steady, repeatable duty rather than peak acceleration. That choice makes sense once you see where Taiga positions it: ski resorts, tour operators, and utility fleets running the same general routes every day, where consistent range and durability matter more than outright performance.',
+          'Taiga\'s OS-5 platform is the Pro\'s real differentiator on top of the smaller drive unit. Remote fleet management, geofenced speed zones, and digital key access let an operator managing several machines set usage boundaries and monitor the fleet without a rider physically present at every handoff. At $19,499, the Pro is also the lowest starting price in the Nomad lineup, which lines up with its positioning as the fleet/utility entry point rather than the performance flagship.',
+        ],
+      },
+      {
+        heading: 'Nomad Performance: The Trail-Capable Trim',
+        paragraphs: [
+          'The Performance trim steps up to the lineup\'s larger 120 kW drive unit with Range, Sport, and Wild drive modes, and drops the fleet-management focus in favor of being the trim built for an individual rider rather than an operator managing multiple units. That makes it the closest of the three trims to how a gas trail-performance rider would cross-shop a sled.',
+          'Starting at $21,999, the Performance carries a published curb weight of 355 kg (783 lb) on a 154-inch x 15-inch x 1.6-inch track — a conventional trail-length footprint rather than the Scout\'s deeper-lug backcountry setup. Its Sport Dual Coilover rear suspension is tuned for groomed-to-moderate trail use rather than the Scout\'s Alpine-tuned, optional-Elka setup, which is the clearest spec-sheet signal of where Taiga expects this trim to spend most of its time.',
+        ],
+      },
+      {
+        heading: 'Nomad Scout: Built for Backcountry',
+        paragraphs: [
+          'The Scout shares the Performance\'s 120 kW drive unit and full Range, Sport, and Wild drive-mode set, but it is the trim built specifically for leaving the groomed corridor. A 2-inch deeper-lug 154-inch x 15-inch x 2-inch all-terrain track replaces the Performance\'s trail track, and the rear suspension steps up to an Alpine Dual Coilover setup with an optional Elka Stage 3 shock upgrade for serious backcountry use.',
+          'An integrated gear rack and ski/snowboard mounts round out the Scout\'s backcountry-specific equipment — practical additions for a rider hauling touring gear rather than riding light on a groomed trail. Despite the reinforced suspension, the Scout\'s published curb weight of 344 kg (758 lb) is actually the lightest of the three trims, and at $22,249 it is also the most expensive, a combination that reflects its specialized componentry rather than raw bulk.',
+        ],
+      },
+      {
+        heading: 'Comparing Drive Modes and Power Output',
+        paragraphs: [
+          'Drive modes are a software-level tool for trading acceleration against range, and the three trims are not equipped identically. The Pro offers Range and Sport modes only, matching its smaller 67 kW drive unit and fleet-oriented tuning. The Performance and Scout both add a third Wild mode on top of the larger 120 kW drive unit, unlocking the fullest acceleration either trim can deliver at the cost of faster battery drain.',
+          'In practice, that means a Pro owner managing a predictable daily route has less need for a Wild-mode-style power ceiling than a Performance or Scout rider who might want maximum acceleration for a shorter, more demanding stretch of trail or backcountry terrain. The drive-mode spread across the lineup is really just Taiga\'s software mirroring the same use-case split that shows up in the hardware differences.',
+        ],
+      },
+      {
+        heading: 'How the Nomad Lineup Prices Against Ski-Doo\'s Electric Model',
+        paragraphs: [
+          'All three Nomad trims sit above Ski-Doo\'s Grand Touring Electric on price — Pro at $19,499, Performance at $21,999, and Scout at $22,249, versus the Grand Touring Electric\'s $17,499 — but the two product lines are not really built for the same buyer in the first place. Ski-Doo\'s model is governed to 15.5 mph and purpose-built for guided tour-operation routes, while the Nomad lineup trades that lower price for roughly double the range and no hard speed governor on the Performance and Scout trims.',
+          'That makes a direct price-per-dollar comparison between the two lines somewhat beside the point. A tour operator running fixed, short groomed loops may find the Grand Touring Electric\'s lower price and purpose-built tour tuning a better fit regardless of the Nomad\'s extra range, while a buyer who wants an electric sled capable of real trail or backcountry use will find the Nomad lineup\'s higher price justified by capability the Grand Touring Electric was never designed to offer.',
+        ],
+      },
+      {
+        heading: 'Which Trim Fits Which Rider',
+        paragraphs: [
+          'A resort, guide service, or utility operator managing multiple machines on known routes is the clearest fit for the Pro — the lowest price point in the lineup, paired with the fleet tools that actually matter for that job. An individual rider who wants genuine trail performance without a fleet-management use case is the clearest fit for the Performance, which is tuned specifically for that rider rather than an operator.',
+          'A backcountry-focused rider who regularly leaves groomed trail, carries touring gear, or wants the reinforced suspension for rougher terrain is the clearest fit for the Scout, even though it carries the highest price tag of the three. Since range, towing, and charging are identical across the lineup, the decision really does come down to drive unit output, suspension tuning, and which trim\'s extra equipment matches how you actually plan to ride — confirm current availability and any spec updates directly with a dealer before ordering.',
+          'Whichever trim fits your use case, the ordering and ownership process is identical across the Nomad lineup: a $200 minimum order, nationwide crated and insured freight calculated by destination state at checkout, and a Manufacturer Certificate of Origin plus dealership bill of sale for state registration. The 10% instant discount for paying in Bitcoin or USDT and SledHaven\'s Pay-in-4 installment plan also apply to any Nomad trim exactly as they would to a gas-powered order.',
         ],
       },
     ],
@@ -1025,18 +1242,63 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: 'Where Electric Already Makes Sense',
         paragraphs: [
           'Groomed-corridor touring, resort and tour-operator fleets with predictable daily routes, and riders prioritizing quiet operation and zero local emissions are the clearest current fits for an electric snowmobile, based on how current production models are designed and marketed.',
+          'SledHaven\'s own lineup reflects this split directly. Ski-Doo\'s Grand Touring Electric is built specifically for guided tour operations on groomed trails, with a governed top speed that trades outright pace for predictable, repeatable range. Taiga\'s Nomad lineup — Pro, Performance, and Scout — covers the fleet, backcountry, and individual-trail-rider use cases with roughly double the Grand Touring Electric\'s published range and no hard speed governor, which is why "electric" today is really a handful of distinct use cases rather than one single category of buyer.',
+        ],
+      },
+      {
+        heading: 'Matching Range to Your Actual Riding Day',
+        paragraphs: [
+          'The honest way to evaluate range is to map your typical riding day against a specific model\'s published figure, not a general sense that "electric range is improving." The Grand Touring Electric\'s 31.1-mile range at a governed 15.5 mph fits a guided tour loop or a short groomed-corridor outing comfortably; it does not fit an unplanned all-day backcountry ride with no charging access along the way.',
+          'Taiga\'s Nomad lineup, rated at an estimated 100 km (62 mi) across all three trims, covers meaningfully more ground before you would need to charge, which is part of why Taiga positions its Performance trim as genuinely trail-capable. Even so, 62 miles is still a hard ceiling compared to a gas sled\'s ability to simply refuel and keep going — the question is whether your actual riding pattern fits inside that ceiling with margin, not whether the number sounds respectable in isolation.',
         ],
       },
       {
         heading: 'Where a Gas Sled Still Makes More Sense',
         paragraphs: [
           'Long, unplanned all-day backcountry trail days without a clear charging opportunity still favor a gas sled\'s refuel speed and range flexibility. Riders who need maximum top speed without range governance also still lean toward gas platforms today.',
+          'Riders without reliable access to home or destination charging are in the same position, regardless of how much range a given model offers — an electric sled with nowhere to plug in overnight is a liability, not a convenience. If your riding routine involves truck-and-trailer trips to unfamiliar trail systems without confirmed charging access, that logistical gap matters more than any spec-sheet comparison.',
+        ],
+      },
+      {
+        heading: 'Charging Access: The Question That Decides More Than Price',
+        paragraphs: [
+          'A home Level 2 charging setup is the realistic baseline for ownership today, since dedicated public charging infrastructure built specifically for snowmobiles does not yet exist the way it does for passenger EVs. Before comparing prices or range figures, confirm you actually have — or can install — a charging setup at home or wherever the sled is stored between rides.',
+          'Taiga\'s CCS1 fast-charge port is a genuine advantage here, since it taps into the same DC fast-charger network many electric cars already use, meaning a Nomad owner traveling away from home is not entirely dependent on a dedicated snowmobile-specific charging point. Ski-Doo\'s Grand Touring Electric, by contrast, relies on its integrated Level 2 charger and is built around a fixed-base tour-operation model rather than long-distance travel between charging points, which is a meaningful difference if your plans involve traveling to ride rather than riding from a fixed home base.',
+        ],
+      },
+      {
+        heading: 'Cold-Weather Performance Considerations',
+        paragraphs: [
+          'Cold weather reduces usable battery capacity and power delivery on any lithium-ion pack, the same physics that shortens a passenger EV\'s winter range on the road. Both the Grand Touring Electric and the Nomad lineup use liquid-cooled battery packs with active thermal management, which helps recover some of that lost capacity compared to an unmanaged pack, but does not eliminate the effect in genuinely cold conditions.',
+          'If most of your riding happens in sustained sub-zero temperatures, ask a dealer directly about a specific model\'s cold-weather range and performance data rather than assuming the published figure holds year-round. This is a real factor, not a disqualifying one — but it is exactly the kind of detail that is easy to overlook when comparing spec sheets at room temperature.',
+        ],
+      },
+      {
+        heading: 'Maintenance and Total Ownership Differences',
+        paragraphs: [
+          'Electric drivetrains remove oil changes, spark plugs, and the drive belt and clutch kit wear cycle entirely — a real reduction in routine maintenance, not a marketing claim. That said, track tension, suspension, ski carbides, and brakes still need the same regular attention on an electric sled as on a gas sled, since none of that wear is powertrain-specific.',
+          'Ongoing energy cost is also worth factoring in. Home charging on standard residential electricity rates is typically cheaper per mile than running gasoline through an engine, though the exact gap depends on local electricity prices and how often you rely on public fast charging, which usually costs more than charging at home. None of this changes the purchase-price comparison, but it does change the total cost of ownership over several seasons.',
+        ],
+      },
+      {
+        heading: 'Matching the Buyer Profile, Not Just the Spec Sheet',
+        paragraphs: [
+          'A ski resort, guide service, or utility fleet operator running the same predictable routes every day is consistently the strongest fit for electric today, which is exactly why Taiga built dedicated fleet tooling — remote management, geofencing, digital key access — into the Nomad Pro rather than treating fleet buyers as an afterthought. If that describes your use case, the fleet-specific features matter as much as the drivetrain itself.',
+          'An individual rider deciding between the Nomad Performance and a comparable gas trail sled is answering a narrower question: whether roughly 62 miles of range with no hard speed governor covers a normal riding day, and whether you have charging access lined up at home. A backcountry rider weighing the Nomad Scout against a gas crossover or mountain sled is answering a similar range-and-charging question, just with rougher terrain and more deliberate route planning layered on top.',
+        ],
+      },
+      {
+        heading: 'Budget and Financing Work the Same Way Either Direction',
+        paragraphs: [
+          'One thing that does not change based on drivetrain: SledHaven\'s purchase structure. A $200 minimum order, nationwide crated and insured freight calculated by destination state at checkout, and a Manufacturer Certificate of Origin plus dealership bill of sale for state registration apply identically to an electric or gas order. The same is true of financing — the 10% instant discount for paying in Bitcoin or USDT, and the Pay-in-4 installment plan, work exactly the same way on a Ski-Doo Grand Touring Electric or a Taiga Nomad as they do on any gas-powered unit in the catalog.',
+          'That means the electric-versus-gas decision really can stay focused on the question that actually matters — whether the drivetrain fits your riding pattern and charging access — without the purchase mechanics themselves adding a second, unrelated layer of complexity to the comparison.',
         ],
       },
       {
         heading: 'A Practical Way to Decide',
         paragraphs: [
           'Map your typical riding day against a given electric model\'s published range and your realistic access to home or destination charging. If your riding pattern fits comfortably inside that range with charging time built in, an electric sled is a genuinely practical choice rather than a novelty purchase.',
+          'Run that comparison against a real week of riding, not a hypothetical best day. If your riding pattern — distance, route, and charging access — fits comfortably inside a specific model\'s published range with margin to spare, an electric snowmobile is a genuinely practical choice today, not a novelty purchase made on principle. If it does not fit, that is not a failure of the technology; it just means a gas sled still matches your riding pattern better for now, and that gap narrows with every model year as range and charging infrastructure continue to improve.',
         ],
       },
     ],
