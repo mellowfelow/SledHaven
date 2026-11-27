@@ -49,12 +49,13 @@ export default async function BlogArticlePage(context: {
     '@type': 'BlogPosting',
     headline: post.title,
     description: post.excerpt,
-    datePublished: post.publishedAt,
-    dateModified: post.publishedAt,
+    datePublished: `${post.publishedAt}T00:00:00Z`,
+    dateModified: `${post.publishedAt}T00:00:00Z`,
     image: `${SITE.url}${post.coverImage}`,
     author: {
       '@type': 'Organization',
       name: SITE.name,
+      url: SITE.url,
     },
     publisher: {
       '@id': `${SITE.url}/#organization`,

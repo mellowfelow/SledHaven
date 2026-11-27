@@ -91,7 +91,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'nationwide-crated-snowmobile-freight-mco-registration',
-    title: 'How Nationwide Crated Snowmobile Freight & State MCO Registration Works',
+    title: 'Nationwide Crated Snowmobile Freight & MCO Registration',
     excerpt:
       'What happens after you reserve a snowmobile online: pre-delivery inspection, steel-reinforced crating, liftgate freight, and MCO registration paperwork.',
     category: 'Freight & Ownership',
@@ -156,7 +156,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'mountain-vs-trail-vs-touring-snowmobile-specs',
-    title: 'Mountain vs. Trail vs. Touring: Track Length, Stance & Suspension Explained',
+    title: 'Mountain vs. Trail vs. Touring: Snowmobile Specs Compared',
     excerpt:
       'A technical breakdown of ski stance width, lug depth, and electronic vs. coil-over damping across our 2026 Ski-Doo, Polaris, Arctic Cat, and Lynx lineup.',
     category: 'Technical Specs',
@@ -169,7 +169,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: 'Why Ski Stance Width Dictates Cornering vs. Side-Hilling',
         paragraphs: [
-          'Mountain snowmobiles run a narrow ski stance, typically in the 34-to-36-inch range, so a rider can initiate a deep-snow carve and transition the sled’s weight from side to side with minimal counter-steering effort — narrow stance is what makes side-hilling across a steep slope manageable instead of a fight against the chassis. Widen that stance and the same maneuver becomes noticeably harder, which is exactly why mountain-specific platforms do not simply borrow a trail chassis with a deeper track bolted on.',
+          'Mountain snowmobiles run a narrow ski stance, typically in the 34-to-38-inch range, so a rider can initiate a deep-snow carve and transition the sled’s weight from side to side with minimal counter-steering effort — narrow stance is what makes side-hilling across a steep slope manageable instead of a fight against the chassis. Widen that stance and the same maneuver becomes noticeably harder, which is exactly why mountain-specific platforms do not simply borrow a trail chassis with a deeper track bolted on.',
           'Trail and touring machines move the opposite direction, widening the stance toward 42 inches on wide-stance variants to resist body roll through fast groomed sweepers at speed. Ski-Doo’s Backcountry X-RS crossover goes a step further with an available 43-inch wide ski-stance option specifically for off-trail stability, illustrating how stance width is tuned deliberately around the discipline rather than being an incidental dimension. A rider cross-shopping a mountain sled and a trail sled on spec sheets alone should treat stance width as one of the first numbers to compare, not an afterthought behind horsepower.',
         ],
       },
@@ -221,7 +221,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'pay-in-4-financing-vs-10-percent-crypto-discount',
-    title: 'Pay-in-4 Financing vs. 10% Crypto Savings: Structuring Your Acquisition',
+    title: 'Pay-in-4 Financing vs. 10% Crypto Discount',
     excerpt:
       'Compare saving up to $1,989 instantly with Bitcoin or USDT against dividing your snowmobile purchase into four equal 0% Pay-in-4 installments.',
     category: 'Financing & Settlement',
@@ -522,16 +522,16 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     faqs: [
       {
-        q: 'Do I need a one-piece suit or is a jacket and bibs enough?',
-        a: 'A jacket-and-bibs combination suits most trail and touring riders and offers more layering flexibility. One-piece suits are worth the extra cost mainly for dedicated mountain riders who need maximum snow and cold sealing in deep powder.',
+        q: 'What gear categories actually matter most for a first-season rider on a budget?',
+        a: 'Prioritize the helmet and outer shell layer first — they do the most work against wind chill and impact risk. Gloves and a base layer come next. Heated add-ons and a one-piece suit are worth considering once you know your typical riding conditions, not required on day one.',
       },
       {
-        q: 'Are heated gloves worth the extra cost?',
-        a: 'For short trail rides, insulated gloves and disposable hand warmers are usually enough. For multi-hour backcountry days in sustained sub-freezing temperatures, heated gloves pay for themselves in rider comfort and reduced hand fatigue.',
+        q: 'How much should a complete cold-weather riding kit cost?',
+        a: 'A functional starter kit — helmet, outer jacket and bibs, gloves, and a base layer — typically runs a few hundred dollars for solid entry-level gear. Heated gloves, a heated helmet shield, and a one-piece suit each add meaningfully to that budget and are worth adding as your riding frequency and conditions justify them.',
       },
       {
-        q: 'What is the difference between a modular and full-face snowmobile helmet?',
-        a: 'A full-face helmet seals better against cold air intrusion, which matters most on long sustained trail runs. A modular helmet trades a little sealing for the convenience of flipping the chin bar up at trailhead stops without removing the whole helmet.',
+        q: 'Should I buy all my gear from one brand or mix and match?',
+        a: 'Mixing brands is normal and often necessary — few riders find one brand\'s sizing and features best across every category. The one place fit consistency matters most is where pieces interface directly, like a jacket collar and helmet, or gloves and jacket cuffs.',
       },
     ],
   },
@@ -773,7 +773,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: 'Fitment First: Why Spec Numbers Matter More Than Brand Names',
         paragraphs: [
-          'Snowmobile parts shopping goes wrong fastest when a rider shops by brand name or marketing language instead of their own sled’s real numbers. Across a modern lineup spanning mountain, trail, crossover, touring, and utility platforms, ski stance typically runs from about 34 inches on a narrow mountain sled up to 42 inches on a wide-stance trail or crossover machine, track length spans roughly 120 to 174 inches depending on discipline, lug depth ranges from a shallow 1.0-inch trail paddle to a 3.0-inch deep-powder paddle, and engine displacement across a full lineup covers roughly 599cc entry-trail twins up to 899cc performance mountain and crossover engines. A carbide runner, stud kit, or drive belt sized to those real ranges fits and performs the way it was engineered to; a generic "universal" part sized outside them either does not seat cleanly or actively works against the geometry your sled was built around.',
+          'Snowmobile parts shopping goes wrong fastest when a rider shops by brand name or marketing language instead of their own sled’s real numbers. Across a modern lineup spanning mountain, trail, crossover, touring, and utility platforms, ski stance typically runs from about 34 inches on a narrow mountain sled up to 43 inches on a wide-stance crossover machine, track length spans roughly 120 to 155 inches depending on discipline, lug depth ranges from a shallow 1.0-inch trail paddle to a 3.25-inch deep-powder paddle, and engine displacement across a full lineup covers roughly 599cc entry-trail twins up to 849cc turbocharged performance mountain and crossover engines. A carbide runner, stud kit, or drive belt sized to those real ranges fits and performs the way it was engineered to; a generic "universal" part sized outside them either does not seat cleanly or actively works against the geometry your sled was built around.',
           'This matters most for traction and suspension-adjacent parts, where a mismatch is not just cosmetic. A stance-mismatched carbide runner changes steering leverage at the ski, and an undersized stud kit leaves exactly the traction gap a rider notices the moment a trail turns to glare ice. Before ordering anything, pull your model’s actual stance width, track length, and lug depth from its spec sheet or original sales paperwork rather than assuming a part that worked on a friend’s sled — even the same general class of machine — will automatically work on yours.',
           'If you are unsure of your own sled’s exact numbers, the product page for your specific model lists its real spec sheet, and SledHaven’s side-by-side comparison tool lets you pull up to three models at once to confirm stance, track, and lug figures before you order parts rather than after a shipment arrives and does not seat correctly. It is a five-minute check that avoids a return shipment and a delayed upgrade.',
         ],
@@ -781,31 +781,25 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: 'Carbide Skis: Narrow vs. Wide Runners',
         paragraphs: [
-          'A carbide insert bonded into the bottom of a ski runner bites into hardpack and ice to give a rider predictable steering feedback; without a sharp, correctly sized carbide, steering input on hard-packed trail or icy conditions becomes vague and delayed no matter how capable the chassis underneath it is. Narrow carbide runners reduce steering effort for the quick, light direction changes a mountain rider needs when side-hilling or threading tight tree lines in deep powder, where fast, low-effort steering input matters more than raw high-speed stability.',
-          'Wider carbide runners trade some of that steering quickness for more stable, planted tracking at trail speed through fast groomed sweepers — the right tradeoff for riders covering long trail mileage rather than technical deep-snow maneuvering. A race-spec carbide tier exists for riders who want maximum bite for aggressive hardpack cornering at the cost of faster wear. Whichever tier you run, inspect carbides each pre-season and mid-season; a visibly rounded or worn-flat edge is the clear signal it is time to replace rather than ride out the season on diminished steering feedback.',
+          'A carbide insert bonded into the bottom of a ski runner bites into hardpack and ice for predictable steering feedback — narrow runners suit mountain side-hilling, wider runners suit stable trail-speed tracking. Our full carbide skis guide breaks down exactly which width matches your ski stance and riding discipline, plus when to replace a worn-flat edge.',
         ],
       },
       {
         heading: 'Track Studs: Matching Count to Conditions, Not Maximizing It',
         paragraphs: [
-          'Track studs bite into ice and hardpack snow in conditions where a plain rubber track loses traction outright — frozen lakes, groomed-but-icy trail sections, and hardpack parking and staging areas. They also add real weight and drivetrain stress, which is why stud count is a genuine tradeoff decision rather than a free performance upgrade, and why a dedicated "more studs is always better" mindset leads riders to over-equip a sled that will spend most of its season on loose groomed or powder trail.',
-          'A lighter stud count, often in the 60-to-96 range depending on track size, suits riders who occasionally cross icy sections but mostly ride groomed or powder trail — this is the tier built for trail and crossover use. Riders who regularly cross frozen lakes or hardpack ice, where traction rather than trail wear is the priority, are better served by a heavier deep-ice-oriented kit in the 100-to-120-plus range. Heavily studded tracks accelerate wear on groomed trail surfaces, which is part of why some trail systems post stud-length or stud-count restrictions — checking local trail association rules before installing a high stud count is worth doing before you buy, not after a warden flags it at a trailhead.',
-          'Placement pattern matters alongside raw count. A full-width pattern spread evenly across the track gives the most consistent traction but adds the most weight and rolling resistance, while a corner-weighted pattern concentrates studs where cornering load is highest and leaves center lugs unstudded to save weight. Riders building a stud kit around mixed trail-and-lake conditions generally get more real-world benefit from a well-placed moderate pattern than from maximizing total stud count on a track that spends most of its time on loose snow.',
+          'Track studs bite into ice and hardpack where a plain rubber track loses traction outright, but more studs is not automatically better — count and placement are a real tradeoff against weight, drivetrain stress, and trail-wear rules. See our dedicated track studs buying guide for the specific count ranges and placement patterns matched to trail, crossover, and deep-ice use.',
         ],
       },
       {
         heading: 'Ice Scratchers and Snowflaps: Protecting Your Cooling System When Snow Runs Thin',
         paragraphs: [
-          'Liquid-cooled snowmobiles rely on snow being thrown up onto heat exchangers mounted under the tunnel to stay cool. Ice scratchers are small metal bars mounted near the track that intentionally dig into packed snow or ice to throw extra snow onto those heat exchangers when there is not enough loose snow being kicked up naturally — a real mechanical fix for a real cooling gap, not an accessory sold on novelty.',
-          'Late-season riding, low-snow years, and hardpacked groomed trails are exactly the conditions where a liquid-cooled engine can run hot without help, which is when ice scratchers earn their keep. In deep, loose powder there is usually already enough snow being thrown up naturally, and air-cooled engines generally do not need them at all — adding scratchers in those conditions is mostly just extra weight and drag rather than a meaningful cooling benefit. A straight-line performance tier exists for riders who want maximum scratcher contact on sustained hardpack runs, while a lighter tunnel-mounted kit covers occasional late-season exposure.',
+          'Liquid-cooled sleds rely on thrown snow to cool the heat exchangers under the tunnel, and ice scratchers add that cooling margin back on late-season, low-snow, or hardpacked runs where natural snow throw falls short. Our ice scratchers guide covers which conditions actually call for them and which tier fits your riding.',
         ],
       },
       {
         heading: 'Drive Belts and Clutch Kits: The Wear System That Matters Most',
         paragraphs: [
-          'A snowmobile’s continuously variable transmission uses a drive belt running between a primary engine-side clutch and a secondary track-side clutch. As engine RPM rises, the primary clutch’s weighted rollers push the belt outward, smoothly changing the effective gear ratio rather than shifting through fixed, discrete gears the way a car transmission does — which is why belt condition affects every aspect of how a sled accelerates and holds speed, not just top-end performance.',
-          'Visible cracking, a shiny glazed surface, or frayed edges are all signs a belt is near the end of its service life, and inconsistent engagement — a delay or shudder before the sled takes off from a stop — often shows up before a belt fails outright. Replacing a belt proactively at the first sign of glazing is far cheaper than a trailside failure miles from a trailhead. Separately, spring tension and roller weights in the primary clutch wear and change over a sled’s service life, gradually shifting engagement RPM and shift feel away from factory specification; a clutch kit rebuild restores that original behavior and is worth treating as a scheduled service item on an older or high-mileage sled rather than a performance-only upgrade.',
-          'Belt construction also matters for cold-weather reliability: a quality replacement belt uses reinforced cord construction designed to resist stretch and maintain consistent width across the temperature swings a sled experiences between a cold morning start and a hard afternoon run. A bargain belt that stretches or narrows unevenly under heat changes clutch engagement RPM in ways that feel like a tuning problem but are actually a belt problem — which is why belt quality is not a place to cut costs on a part that affects every single ride.',
+          'A CVT drive belt and its primary/secondary clutches govern how a sled accelerates and holds speed, and belt condition — cracking, glazing, fraying, or inconsistent engagement — is one of the most common causes of a trailside breakdown. Our drive belts and clutch kits guide covers wear signs, replacement timing, and when a clutch re-calibration is worth the cost.',
         ],
       },
       {
@@ -825,16 +819,13 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: 'Lighting, Electrical, and EV Charging Accessories',
         paragraphs: [
-          'Factory headlights are tuned for everyday trail visibility, not the extended-range illumination backcountry or after-dark riders often want. A single-row LED light bar is lighter, lower-profile, and draws less current — a reasonable upgrade for riders who mainly want supplemental fill light — while a dual-row bar throws significantly more total output at the cost of added weight, bulk, and a meaningfully higher current draw on the sled’s charging system.',
-          'Before adding any light bar, especially a dual-row unit, check your sled’s stock charging output against the accessory’s current draw, particularly if you are also running heated gear on the same electrical system; overloading a stock charging system is a common and entirely avoidable mistake. Owners of electric models face a related but different question: since dedicated public charging infrastructure for snowmobiles does not yet exist the way it does for cars, a portable Level 2 home charging kit is the realistic baseline for electric ownership, and a DC fast-charge adapter cable is worth adding for riders who want a faster top-up between back-to-back riding days rather than a full overnight charge every time.',
+          'Factory headlights are tuned for everyday trail visibility, not the extended-range illumination backcountry or after-dark riders often want — a single-row LED bar adds supplemental fill light at low current draw, while a dual-row bar throws significantly more output but demands more from your charging system. Our LED light bars comparison covers exact output and current-draw tradeoffs. Electric-model owners have a parallel question around home charging: a portable Level 2 kit is the realistic baseline, with a DC fast-charge adapter worth adding for back-to-back riding days.',
         ],
       },
       {
         heading: 'Covers, Trailers, and Towing: Protecting the Investment Off the Snow',
         paragraphs: [
-          'A properly fitted cover — sized to your specific model rather than a generic universal fit — protects paint, plastics, and the windshield from UV and moisture damage during both storage and transport, and resists wind flapping at highway speed in a way a loose, ill-fitting cover cannot. A plain tarp is not an adequate substitute; it traps condensation against the seat and bodywork instead of letting trapped moisture escape.',
-          'On the trailering side, a wide, grippy loading ramp at a shallow angle reduces the risk of the skis sliding sideways off the ramp edge during loading — a common and avoidable cause of minor transport damage — and loading slowly under control beats using momentum to power up a steep ramp. A heavy-duty tow strap and a dedicated cargo trailer hitch kit round out the transport and utility side: tie-down straps and loading ramps are inexpensive insurance against damage that costs far more to repair than to prevent in the first place.',
-          'A cargo trailer hitch kit is a different accessory from the straps and ramps used to load the sled onto a trailer — it mounts to the rear bumper or tunnel and gives a utility-oriented sled a secure point to pull a small cargo trailer or sled-mounted accessory, which matters for riders using a sled for hauling gear on a ranch, resort, or expedition route rather than purely for recreational riding. Keeping these two categories — loading the sled itself versus the sled hauling something else — straight when you shop avoids ordering the wrong product for the job.',
+          'A properly fitted cover — sized to your specific model, not a generic universal fit — protects paint, plastics, and the windshield far better than a tarp, which traps condensation against the bodywork instead of letting it escape; see our covers guide for trailerable versus long-term storage options. On the trailering side, a wide grippy loading ramp at a shallow angle and a heavy-duty tow strap prevent the most common loading damage, and our tow hitches and trailer loading guide covers technique plus when a dedicated cargo trailer hitch kit — a separate accessory from loading ramps, for hauling gear rather than loading the sled itself — is worth adding.',
         ],
       },
       {
@@ -871,8 +862,8 @@ export const BLOG_POSTS: BlogPost[] = [
         a: 'Look for visible cracking, glazing (a shiny, glossy surface), or fraying along the edges. A worn belt also often shows up as inconsistent clutch engagement before it fails outright — replacing it proactively is cheaper than a trailside failure.',
       },
       {
-        q: 'Will an LED light bar drain my snowmobile\'s battery?',
-        a: 'It depends on the light bar\'s current draw versus your sled\'s stock charging output. Check your model\'s electrical system capacity, especially if you are stacking multiple accessories like heated gear and auxiliary lighting on the same circuit.',
+        q: 'What\'s the most common mistake riders make when ordering parts and accessories?',
+        a: 'Shopping by brand name instead of their own sled\'s real numbers — stance width, track length, and lug depth. Pull your exact model\'s spec sheet before ordering a carbide runner, stud kit, or light bar rather than assuming a part that fit a similar-class sled will fit yours.',
       },
     ],
   },
@@ -964,7 +955,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'snowmobile-jacket-vs-bibs-vs-one-piece-suit',
-    title: 'Snowmobile Jacket vs. Bibs vs. One-Piece Suit: Which Fits Your Riding Style',
+    title: 'Snowmobile Jacket vs. Bibs vs. One-Piece Suit',
     excerpt:
       'Two-piece or one-piece? Here is how to match your riding apparel to the kind of riding you actually do, not the kind that looks best in a brochure.',
     category: 'Gear & Apparel',
@@ -1343,7 +1334,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: 'Matching Stud Length and Kit to Track Lug Depth',
         paragraphs: [
-          'A mountain sled’s deep 2.5"-to-3.0" lug is built for flotation in loose powder, which is the opposite problem a stud kit solves — but most mountain riders still cross a hardpacked, icy approach trail before reaching untouched snow, and a deep lug alone doesn’t grip that stretch well. SledHaven’s Deep-Powder Stud Kit addresses this with 120 taller studs sized to clear a 2.5"-3.0" lug profile without snagging, fitted to the track families used on the Ski-Doo Summit and Polaris RMK mountain lineups.',
+          'A mountain sled’s deep 2.5"-to-3.25" lug is built for flotation in loose powder, which is the opposite problem a stud kit solves — but most mountain riders still cross a hardpacked, icy approach trail before reaching untouched snow, and a deep lug alone doesn’t grip that stretch well. SledHaven’s Deep-Powder Stud Kit addresses this with 120 taller studs sized to clear a 2.5"-3.0" lug profile without snagging, fitting the Ski-Doo Summit X’s 3.0" lug and the Polaris RMK Khaos 155’s 2.75" (Series 8) option — riders on the RMK Khaos’s deeper 3.25" (Series 9) lug should confirm fitment before ordering, since that profile runs past this kit’s rated clearance.',
           'Installing a stud kit sized for the wrong lug depth is a common and costly mistake: a short trail-length stud on a deep mountain lug barely reaches the ice, while a tall mountain-length stud on a shallow trail lug drags against the ground constantly and wears out far faster than it should. Checking your track’s lug height against a kit’s rated fitment range before ordering avoids both outcomes.',
         ],
       },
@@ -1879,31 +1870,23 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
       {
-        heading: 'How SledHaven Structures Its Own Plan',
+        heading: 'How SledHaven\'s Own Plan Fits Into the Comparison',
         paragraphs: [
-          'SledHaven\'s own Pay-in-4 program splits an order into four equal installments at 0% interest — 25% due immediately to reserve your allocation, then three more every 4 weeks — alongside a straight pay-in-full option that also qualifies for the 10% instant cryptocurrency discount. It is a dealer settlement structure, not a third-party loan, so there is no credit application or interest calculation involved.',
-          'In practice, that means a $20,000 order under Pay-in-4 breaks into an immediate $5,000 payment to reserve the allocation and begin pre-delivery crating, followed by three more $5,000 installments spaced four weeks apart, with no interest added to any of the three follow-up payments. The schedule is fixed once it starts — there is no revolving balance or variable interest rate to track, which is the main structural difference between this and a traditional loan.',
+          'SledHaven\'s own dealer-structured option is the Pay-in-4 plan — 25% down, three more installments every 4 weeks at 0% interest, no credit application — alongside a separate 10% instant discount for paying in Bitcoin or USDT, and the same email/WhatsApp settlement-verification flow for every payment method. Our Pay-in-4 vs. 10% crypto discount guide breaks down the exact mechanics, dollar-amount math, and how to combine the two, since this post\'s job is comparing that option against bank and credit union financing rather than re-explaining it in full.',
         ],
       },
       {
-        heading: 'The 10% Cryptocurrency Discount, Explained',
+        heading: 'Credit Profile: Why "No Credit Check" Isn\'t Just About Speed',
         paragraphs: [
-          'Separately from Pay-in-4, SledHaven applies an automatic 10% discount to your order subtotal when you pay in Bitcoin (BTC) or Tether (USDT). The discount reflects the lower settlement overhead of crypto payments compared to card-network processing, and it is applied automatically once that payment method is selected — there is no code to enter or separate approval step.',
-          'The crypto discount and the Pay-in-4 plan are two different mechanisms. The discount is a reduction on your order total; Pay-in-4 is a way of spreading that total (discounted or not) across four payments instead of one. Choosing crypto as your payment method still works whether you pay the discounted total in full or split it across the Pay-in-4 schedule — the two are not mutually exclusive.',
+          'A dealer-structured plan with no credit application does more than save paperwork — it removes a hard credit inquiry from your report entirely, which matters to a buyer who is also shopping a mortgage, auto loan, or other financing in the same few months, since multiple hard inquiries in a short window can each shave a few points off a credit score. A bank or credit union loan, by contrast, requires that inquiry as part of underwriting, and the rate you are offered depends directly on your existing credit profile — a buyer with excellent credit may qualify for a rate competitive with or better than a 0%-interest short plan once extended over a longer term, while a buyer with thinner or damaged credit may find a dealer-structured plan is not just faster but the only practical option available at a reasonable cost.',
+          'This is worth being honest with yourself about before you shop lenders: if you already know your credit profile is strong, it costs little to get a rate quote from a bank or credit union and compare it directly against Pay-in-4\'s fixed short schedule. If you would rather not have that inquiry on your report, or you are not confident in how competitive a rate you would qualify for, a no-credit-check dealer plan removes that variable from the decision entirely.',
         ],
       },
       {
-        heading: 'Combining Payment Method and Payment Plan',
+        heading: 'A Worked Example: Comparing Total Cost',
         paragraphs: [
-          'SledHaven\'s checkout separates the payment method question (Crypto, Bank Transfer, Zelle, Apple Pay, or Chime) from the payment plan question (pay in full, or Pay-in-4). You choose a payment method first, and then decide whether to settle the full total at once or split it into the four-installment schedule — the 10% crypto discount applies to your subtotal regardless of which plan you choose afterward.',
-          'Every order, however it is financed, is still subject to the same $200 minimum order and the same freight structure: vehicles ship crated and insured with freight calculated by destination state at checkout, while parcel and accessory orders of $500 or more qualify for free shipping. None of that changes based on which payment method or payment plan you select.',
-        ],
-      },
-      {
-        heading: 'Settlement Security: How Payment Actually Gets Verified',
-        paragraphs: [
-          'Regardless of which payment method or plan you choose, no funds are ever captured directly through SledHaven\'s checkout form — the form reserves your allocation and triggers a verification step rather than processing a live charge. Once the allocation desk confirms your order, you receive personalized settlement details by email covering whichever method you selected: a wallet address for crypto, verified account details for a bank transfer, Zelle, Apple Pay, or Chime, or the first installment amount if you chose Pay-in-4.',
-          'After sending payment through your chosen method, the fastest way to move your order forward is to reply directly to that settlement email, message SledHaven on WhatsApp, or email a screenshot of your payment confirmation. That confirmation step is what actually triggers pre-delivery inspection and crating to begin, so it is worth doing immediately after payment rather than assuming the order will progress automatically in the background.',
+          'Take a $16,000 order. Under Pay-in-4, that breaks into a $4,000 payment to reserve the allocation, followed by three more $4,000 installments every four weeks — total cost stays $16,000 since there is no interest on any installment. A bank or credit union loan for the same amount, spread over three years at a representative rate in the high single digits to low double digits depending on the lender and your credit profile, adds real interest on top of the $16,000 principal — often a meaningfully larger total by the time the loan is paid off, in exchange for a much smaller individual monthly payment than Pay-in-4\'s four-payment schedule requires.',
+          'Neither number makes the other choice wrong — a rider who could not otherwise afford a $4,000 reservation payment genuinely needs the smaller monthly payment a multi-year loan provides, even at a real cost premium over time. The point of running this math yourself with your own lender\'s actual quoted rate, rather than assuming one option is automatically cheaper, is that the right answer depends entirely on which number — total cost, or payment size — is the actual constraint for your budget this winter.',
         ],
       },
       {
@@ -1927,7 +1910,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'taiga-nomad-pro-performance-scout-compared',
-    title: 'Taiga Nomad Pro vs. Performance vs. Scout: Which Electric Snowmobile Fits You',
+    title: 'Taiga Nomad Pro vs. Performance vs. Scout Compared',
     excerpt:
       'Taiga Motors\' three Nomad trims target different riders. Here is how the Pro, Performance, and Scout actually differ in purpose.',
     category: 'Electric',
@@ -2008,7 +1991,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'is-an-electric-snowmobile-right-for-you',
-    title: 'Is an Electric Snowmobile Right for You? A Practical Buyer\'s Breakdown',
+    title: 'Is an Electric Snowmobile Right for You?',
     excerpt:
       'Electric snowmobiles are not a universal replacement for gas sleds yet. Here is an honest breakdown of who they fit well today.',
     category: 'Electric',
@@ -2075,7 +2058,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
       {
-        heading: 'A Practical Way to Decide',
+        heading: 'A Practical Way to Decide Between Electric and Gas',
         paragraphs: [
           'Map your typical riding day against a given electric model\'s published range and your realistic access to home or destination charging. If your riding pattern fits comfortably inside that range with charging time built in, an electric sled is a genuinely practical choice rather than a novelty purchase.',
           'Run that comparison against a real week of riding, not a hypothetical best day. If your riding pattern — distance, route, and charging access — fits comfortably inside a specific model\'s published range with margin to spare, an electric snowmobile is a genuinely practical choice today, not a novelty purchase made on principle. If it does not fit, that is not a failure of the technology; it just means a gas sled still matches your riding pattern better for now, and that gap narrows with every model year as range and charging infrastructure continue to improve.',
@@ -2265,7 +2248,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'first-snowmobile-buying-guide-beginners',
-    title: 'First Snowmobile Buying Guide: What Beginners Should Know Before Ordering',
+    title: 'First Snowmobile Buying Guide for Beginners',
     excerpt:
       'Your first snowmobile purchase comes with questions a spec sheet does not answer. Here is a practical, beginner-focused starting point.',
     category: 'Buyer Guides',
