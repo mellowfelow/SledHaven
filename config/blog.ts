@@ -225,24 +225,94 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: 'Start With the Helmet, Not the Jacket',
         paragraphs: [
           'A dedicated snowmobile helmet differs from a motorcycle helmet in one critical way: ventilation and anti-fog management for sustained sub-freezing airflow. Full-face helmets with a heated or double-pane shield handle the coldest trail days; modular helmets trade a little cold-weather sealing for the convenience of flipping the chin bar up at a trailhead stop.',
+          'SledHaven’s own Carbon Heated Helmet Kit illustrates what the better end of that spec sheet looks like in practice: a hand-laid 3K carbon-fiber shell weighing 1,320 grams (about 2.9 lbs), DOT/ECE 22.06 certification, and a bronze mirrored dual-pane electric shield rated to prevent icing down to -40°F. The 12V heated shield plugs into the sled’s own electrical system through an RCA quick-disconnect, so there’s no separate battery pack to charge between rides.',
+          'Fit and closure hardware matter as much as the shell material. A Fidlock magnetic chin strap can be closed and released one-handed while wearing thick insulated gauntlets — a small detail that matters a lot at a trailhead with bare fingers in single-digit wind chill. Multi-density EPS liners, sized across five or six shell sizes rather than one generic fit, keep the helmet snug enough that wind can’t work its way in around the edges.',
+          'Helmet sizing is measured in centimeters of head circumference rather than S/M/L alone on most serious riding helmets, and a helmet that fits correctly should feel evenly snug all around with no single pressure point. A quick side-to-side head shake test is a reliable check: a correctly sized helmet stays put, while one that rotates independently of the head is too large regardless of what the tag says.',
         ],
       },
       {
         heading: 'Jacket, Bibs, or a One-Piece Suit',
         paragraphs: [
           'A two-piece jacket-and-bibs combination is the most versatile choice for most riders — the jacket alone works for shoulder-season trail maintenance or quick garage jobs, while the bibs add a high-waisted, snow-sealed layer for deep-powder days. One-piece suits offer the best cold and snow sealing for dedicated mountain riders who do not need the layering flexibility.',
+          'The detail that separates a riding-specific jacket from a general winter coat is mapped insulation — heavier padding across the chest and shoulders where wind hits hardest at speed, thinner padding under the arms and at the back where the body generates its own heat and needs to vent rather than trap it. A storm cuff and an adjustable powder skirt matter more than they sound: the cuff seals around a glove gauntlet so wind can’t funnel up the sleeve, and the powder skirt cinches tight at the waist to keep drift from working its way up the jacket when you’re stopped standing in snow rather than moving through it.',
+          'Riding bibs solve a different problem than a jacket: a high-rise back panel blocks drift intrusion at the exact point where a rider’s back meets the seat, and reinforced knee panels resist the abrasion of kneeling on running boards or push-starting a stuck sled. Buying a jacket and bibs from the same mapped-insulation system, rather than mixing brands or insulation weights, avoids cold gaps where the two pieces overlap at the waist — SledHaven’s Alpine Riding Jacket and Alpine Riding Bibs are built to the same insulation spec for exactly this reason.',
+          'A one-piece suit’s single biggest practical downside shows up off the sled, not on it: using a bathroom or stripping down for a mid-ride break takes longer in a one-piece than in a two-piece jacket-and-bibs setup, which is a real consideration for multi-stop trail days even though it rarely comes up in a product description.',
         ],
       },
       {
         heading: 'Gloves and Hand Warmth',
         paragraphs: [
           'Hands lose heat faster than any other extremity on a moving sled, which is why heated gloves have become common rather than a luxury add-on for long trail days. A mid-weight insulated glove paired with disposable hand warmers covers most riders; dedicated heated gloves earn their cost back on multi-hour backcountry trips.',
+          'Battery-heated gauntlet gloves like SledHaven’s Heated Alpine Gauntlet Gloves run a rechargeable heating element across the back of the hand and fingers with three heat settings, giving a rider control over runtime versus warmth rather than an all-or-nothing chemical warmer. A touchscreen-compatible fingertip means a rider can check a trail map or answer a phone without pulling the glove off into the cold, and a gauntlet cuff that seals over the jacket sleeve closes the same wind gap the jacket’s storm cuff is designed to prevent.',
+          'Grip feel degrades before a rider consciously notices their hands are cold, and that loss of fine control over the throttle and brake lever is a real safety factor on technical terrain, not just a comfort complaint. Sizing a glove snug enough to preserve dexterity — rather than oversized for extra insulation — generally produces better control and, counterintuitively, better warmth, since a tight glove traps less dead air to pump in and out with every hand movement.',
         ],
       },
       {
         heading: 'Eye Protection: Goggles vs. a Helmet Visor',
         paragraphs: [
           'Full-face helmets with an integrated visor are simpler — one less piece of gear to fog or fail — while goggles paired with an open or modular helmet give a wider field of view and easier lens swaps for changing light conditions. Either works; the decision usually comes down to which system a rider finds easier to defog on a cold start.',
+          'SledHaven’s Anti-Fog Riding Goggles pair a dual-pane lens with a fleece-lined foam gasket, sized to fit under an open-face or modular helmet for riders who’d rather not rely on a helmet’s built-in shield. The dual-pane construction works the same way a double-glazed window does — an insulating air gap between an inner and outer lens keeps the inner surface closer to face temperature, which is what actually prevents fogging, rather than any coating alone.',
+          'Whichever system a rider chooses, lens tint should match conditions rather than style: a dark tint for bright midday sun on open snowfields, a clear or low-light lens for dawn starts, overcast skies, or tree-shaded trail. Carrying a spare lens costs little and solves one of the most common causes of a cut-short riding day — showing up with the wrong tint for the light.',
+        ],
+      },
+      {
+        heading: 'Boots: The Most Overlooked Piece of the Kit',
+        paragraphs: [
+          'Cold feet end a ride faster than cold hands or a cold chest, mostly because boots get the least attention during a pre-ride gear check and the most abuse from running boards, trailer loading, and standing in deep snow at a trailhead. A boot built for casual winter wear simply isn’t rated for the combination of sustained sub-zero exposure and the abrasion of climbing on and off a moving machine.',
+          'SledHaven’s Insulated Riding Boots address both problems directly: a waterproof insulated shell handles the cold and wet, a reinforced toe box survives running-board and trailer-loading abuse that would crack a standard winter boot’s shell over a season, and a grippy lug outsole holds footing on an icy running board rather than skating across it. A pull-tab entry speeds up getting boots on over base layers at a cold trailhead, which matters more than it sounds like it would at 6 a.m. in a parking lot.',
+          'A boot that fits too snugly over a heavy wool sock actually performs worse in the cold, not better — compressing the insulation layer reduces the trapped air that provides warmth. Sizing a riding boot to allow a thick sock without compression, rather than sizing for a bare-foot fit, is one of the most common mistakes riders make when buying boots for the first time.',
+        ],
+      },
+      {
+        heading: 'Layering Strategy: Base, Mid, and Shell',
+        paragraphs: [
+          'Outerwear like a jacket, bibs, and boots only works as well as what’s underneath it. A moisture-wicking synthetic or merino wool base layer against the skin moves sweat away from the body rather than letting it sit and chill once a rider stops moving — cotton does the opposite, holding moisture against the skin and accelerating heat loss, which is why cotton base layers are a real liability in cold-weather riding rather than just an inferior choice.',
+          'A mid layer — fleece or a thin synthetic-insulated jacket — adds trapped-air warmth without the bulk of a single thick garment, and critically, it can be removed at a trailhead stop if a rider starts to overheat during exertion like digging out a stuck sled. The outer shell then only has to do one job: block wind and snow, not provide the bulk of the insulation itself.',
+          'This three-layer approach also solves the overheating problem a single heavy coat can’t: venting a mid layer or unzipping a shell’s pit zips during high-exertion moments, then zipping back up once moving again at speed, keeps a rider in a narrower, more comfortable temperature band all day instead of swinging between sweating and shivering.',
+          'Socks deserve the same layering logic as everything else: a single thick sock often performs worse than a thinner wicking liner sock under a moderate-weight insulating sock, since the liner moves moisture away from the foot while the outer sock holds the trapped-air warmth, and the combination is less likely to bunch and cause a pressure point inside a riding boot over a long day than one overly thick sock alone.',
+        ],
+      },
+      {
+        heading: 'Matching Your Kit to Riding Discipline',
+        paragraphs: [
+          'Mountain riders doing frequent falls and side-hilling in deep, loose powder get the most practical benefit from sealed systems: a one-piece suit or a jacket-and-bibs combination with a snug waist interface, taller boots, and a helmet shield rated for sustained extreme cold, since powder works its way into any gap during a fall in a way groomed-trail riding simply doesn’t.',
+          'Trail and touring riders spend more time upright and moving at a sustained pace on groomed corridors, where wind chill from speed matters more than snow intrusion from falls. Heated features — a heated shield, heated gloves, and on two-up machines a heated seat — pay off faster for this group because the ride itself is longer and steadier, with fewer stops to warm back up through exertion.',
+          'Backcountry and off-trail riders doing technical, physical riding in variable temperatures often do better layering lighter and relying on the three-layer system covered above, since heavy exertion digging out a stuck machine or climbing a steep pitch generates real heat that a fully sealed, heavily insulated kit traps rather than vents.',
+          'Youth and first-time riders generally do better starting with a versatile two-piece jacket-and-bibs kit rather than a one-piece suit or heavily specialized mountain gear, since they’re still building the riding experience to know which discipline they’ll settle into, and a two-piece setup resells and layers more flexibly if that direction changes after a season.',
+        ],
+      },
+      {
+        heading: 'Sizing and Trying Gear Before You Commit',
+        paragraphs: [
+          'Snowmobile apparel sizing runs differently across brands and even across product lines from the same brand, since a riding jacket needs room for a mid layer underneath that a size chart built for streetwear doesn’t assume. Ordering true-to-chart size in a dedicated riding jacket usually fits better over a base and mid layer than sizing up from a normal jacket size would suggest.',
+          'Gloves are the one item worth erring toward a snugger fit rather than a looser one, for the dexterity reasons covered earlier — a glove that feels slightly tight bare-handed in a warm house usually fits correctly once the insulation compresses slightly in use and a thin liner is added underneath for the coldest days.',
+          'Boots sit in between: enough room for a thick technical sock without compressing it, but not so loose that the heel lifts during the exact running-board and trailer-loading motions the reinforced toe box is built to survive. Trying a full kit together before a first big trip — helmet, goggles or visor, jacket collar, and glove gauntlet all interacting at once — catches fit conflicts that trying pieces individually misses.',
+          'Returns and exchanges matter more for apparel than for almost any other category of gear, since a helmet or boot that feels fine for five minutes standing in a living room can reveal a pressure point only after an hour of actual riding posture and vibration. Buying from a retailer with a clear exchange policy on unworn gear, and trying everything on at home before cutting any tags, protects against exactly that gap between a quick try-on and a real ride.',
+        ],
+      },
+      {
+        heading: 'Building a Complete Kit Without Overspending',
+        paragraphs: [
+          'A complete kit — helmet, jacket, bibs, gloves, boots, and goggles — adds up quickly, so sequencing the purchase matters more than buying everything in one order. A quality helmet and a pair of properly insulated or heated gloves protect the two systems most likely to cut a ride short — vision and hand function — which makes them worth prioritizing first, with jacket and bibs next and goggles or a boot upgrade after that.',
+          'SledHaven parts and gear orders ship free via US parcel once a cart reaches $500, which a helmet plus one or two other pieces crosses easily, and every parts order carries a $200 minimum. Riders assembling a full kit across more than one order can also use the Pay-in-4 installment option — splitting the total into four equal payments, 25% due immediately with the remaining three every four weeks at 0% interest — to spread a full kit purchase out rather than delaying it to a single large payment.',
+          'Paying with Bitcoin or USDT also applies SledHaven’s standard 10% instant discount to a gear order the same way it does to a vehicle order, which is worth factoring in before checkout if a rider already holds either currency — on a full kit running several hundred dollars, that discount is not trivial.',
+          'Gear ships via standard US parcel, not the crated freight used for vehicles, so there’s no freight-quote step at checkout the way there is for a snowmobile. Ordering a full kit in late summer or early fall, before the first cold snap, avoids the scramble that hits most riders once the first real snowfall makes everyone realize their gloves from three seasons ago have stopped holding heat, and it leaves time to try the whole kit together before a first real trail day.',
+        ],
+      },
+      {
+        heading: 'Common Mistakes to Avoid',
+        paragraphs: [
+          'Buying insulation by warmth rating alone, without accounting for how much heat a rider’s own activity level generates, is the most common mistake — a mountain rider working hard side-hilling and digging out stuck machines needs less raw insulation and more venting than a touring rider sitting at a steady throttle for hours, even in the same ambient temperature.',
+          'Treating goggles or a visor as a one-tint-fits-all purchase is the second most common mistake; a dark lens that looks great on a bright bluebird day turns nearly unusable at dusk or under tree cover, and riders who only own one tint often end a ride early rather than push on in conditions their eyewear can’t handle.',
+          'The third is skipping boots and gloves to spend more on a jacket, since hands and feet are the first extremities to fail in the cold and the hardest to warm back up mid-ride once they’ve gone numb — a mid-tier jacket paired with a quality glove and boot setup outperforms a premium jacket paired with bargain hand and foot protection.',
+        ],
+      },
+      {
+        heading: 'Caring for Your Gear Between Seasons',
+        paragraphs: [
+          'Waterproof-breathable shells lose their water-shedding ability over a season as the durable water repellent (DWR) finish wears down from dirt, abrasion, and repeated compression in a gear bag — water stops beading and starts soaking into the fabric surface instead, which is the first sign it’s time to re-treat it with a wash-in or spray-on DWR restorer rather than replace the whole garment.',
+          'Heated gear — gloves, a heated shield, a heated seat — should be fully dried and stored with contacts protected from corrosion before the off-season; a damp connector left sealed up in a gear bag for months is a common and avoidable cause of heated gear failing to power on the following winter. A quick continuity check before the first ride of the season catches this early, while there’s still time to order a replacement before you need it on the trail.',
+          'A helmet’s EPS liner degrades with UV exposure and temperature cycling even without a visible impact, which is why most manufacturers recommend replacing a helmet every three to five years regardless of how it looks. Storing a helmet away from direct sunlight and extreme heat — not in a hot vehicle trunk over summer — meaningfully extends that service life.',
         ],
       },
     ],
@@ -647,18 +717,53 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: 'What Studs Are Actually Solving For',
         paragraphs: [
           'Track studs bite into ice and hardpack snow in conditions where a plain rubber track loses traction — frozen lakes, groomed-but-icy trail sections, and hardpack parking and staging areas. They add weight and drivetrain stress, which is why stud count is a genuine tradeoff rather than a free upgrade.',
+          'A stock track’s rubber lugs grip loose and compacted snow well through friction and the way the lug profile shears into it, but that grip mechanism fails on glare ice and polished hardpack, where there’s nothing for the rubber to bite into. Studs replace that friction-based grip with a mechanical one — a hardened point that physically digs a few millimeters into the ice surface with every revolution, which is a fundamentally different kind of traction than anything rubber alone can provide.',
+          'That mechanical bite comes with a real cost in resistance: a stud dragging across bare asphalt in a parking lot or dry hardpack with no ice film creates noticeably more drag and wear than a stud actually cutting into ice, which is part of why stud count should match a rider’s real ice exposure rather than a one-size worst-case assumption.',
+        ],
+      },
+      {
+        heading: 'Stud Anatomy: Length, Backing Plates, and Carbide Tips',
+        paragraphs: [
+          'A track stud is really three parts working together: the stud body that passes through the track, a backing plate on the inside of the track that spreads the load across more rubber so the stud doesn’t pull through under stress, and in most performance studs a hardened or carbide tip that actually contacts the ice. Skipping the backing plate to save weight is a false economy — it’s one of the most common causes of a stud tearing out of the track under hard acceleration.',
+          'Stud length has to clear the track’s lug height without extending so far that it drags unnecessarily or contacts the heat exchanger and suspension components underneath. That’s why stud kits are sold matched to a specific lug depth range rather than as one universal length — a stud sized for a shallow trail lug sits too short to bite through a deep mountain lug, and a stud sized for a deep mountain lug drags excessively on a shallow trail track.',
         ],
       },
       {
         heading: 'Matching Stud Count to Riding Conditions',
         paragraphs: [
           'A lighter stud count (often in the 60-to-96 range depending on track size) suits riders who occasionally cross icy sections but mostly ride groomed or powder trail. Higher stud counts suit riders regularly crossing frozen lakes or hardpack ice where traction, not trail wear, is the priority.',
+          'SledHaven’s own Trail & Crossover Stud Kit ships with 96 studs and backing plates in a standard stagger pattern sized for the 1.0"-1.6" lug tracks used across the trail, crossover, and touring lineup — a count calibrated for balanced ice grip without adding excess rotating weight to a track that spends most of its life on groomed or lightly icy trail.',
+          'Riders who regularly cross frozen lakes, hardpack staging areas, or icy approach trails before reaching powder get more out of a higher stud count, even with the added rotating weight, because the traction gap on glare ice at speed is large enough that a lighter stud count doesn’t fully close it. The right number is a function of how much of your actual mileage happens on ice, not a fixed recommendation that applies to every rider.',
+          'Every added stud also adds a small amount of rotating mass at the track’s outer radius, where weight has the most leverage against the clutch and brake system. A 120-stud kit meaningfully changes acceleration feel and brake heat compared to the same sled unstudded or lightly studded, which is worth budgeting for if ice crossing is only an occasional part of your season rather than most of it.',
+        ],
+      },
+      {
+        heading: 'Matching Stud Length and Kit to Track Lug Depth',
+        paragraphs: [
+          'A mountain sled’s deep 2.5"-to-3.0" lug is built for flotation in loose powder, which is the opposite problem a stud kit solves — but most mountain riders still cross a hardpacked, icy approach trail before reaching untouched snow, and a deep lug alone doesn’t grip that stretch well. SledHaven’s Deep-Powder Stud Kit addresses this with 120 taller studs sized to clear a 2.5"-3.0" lug profile without snagging, fitted to the track families used on the Ski-Doo Summit and Polaris RMK mountain lineups.',
+          'Installing a stud kit sized for the wrong lug depth is a common and costly mistake: a short trail-length stud on a deep mountain lug barely reaches the ice, while a tall mountain-length stud on a shallow trail lug drags against the ground constantly and wears out far faster than it should. Checking your track’s lug height against a kit’s rated fitment range before ordering avoids both outcomes.',
+        ],
+      },
+      {
+        heading: 'Installation and Track Stress Considerations',
+        paragraphs: [
+          'Every stud is a puncture point in the track carcass, and more studs means more individual stress risers distributed across the belt. A correctly backed and torqued stud spreads that stress across the backing plate rather than concentrating it at one small hole, which is why using the hardware included in a kit — rather than reusing worn backing plates from a previous install — matters more than it might seem.',
+          'A standard stagger pattern, alternating stud position side to side down the track rather than running them in a straight line, balances grip evenly across both skis’ tracking line and avoids concentrating wear in one section of track. Straight-line patterns exist for specific performance applications but trade some of that balance for a different handling characteristic, which is why most general-purpose kits ship staggered by default.',
         ],
       },
       {
         heading: 'Trail Wear and Trail Etiquette',
         paragraphs: [
           'Heavily studded tracks accelerate wear on groomed trail surfaces, which is part of why some trail systems post stud-length restrictions. Checking local trail rules before adding a high stud count is worth doing before you buy, not after.',
+          'Studs that protrude too far below the track lug scrape and gouge groomed trail surfaces even when there’s a reasonable base of packed snow underneath, which is the specific damage trail-grooming organizations are trying to prevent with length and count restrictions. A stud kit sized correctly to the track’s lug depth, rather than oversized for extra insurance, generally stays within those limits without a rider having to think about it twice.',
+        ],
+      },
+      {
+        heading: 'Maintenance: Re-Torquing and Replacing Worn Studs',
+        paragraphs: [
+          'Stud hardware loosens gradually with the repeated flex of a track cycling around the drive and idler wheels, so a torque check partway through the season catches a stud working loose before it’s lost entirely on the trail. A missing stud doesn’t just cost traction at that one point — it leaves an unbalanced gap that concentrates wear and vibration at the stud positions next to it.',
+          'Carbide-tipped studs wear gradually rather than failing outright, which makes a visual check — a stud tip that’s visibly rounded or flattened compared to a new one — a better replacement signal than a mileage number. Replacing a worn set before a long ice-heavy trip, rather than after noticing reduced grip mid-ride, is the cheaper and safer sequence.',
+          'Keeping a spare stud or two, along with the correct backing-plate hardware, in a trailside toolkit is cheap insurance on a long backcountry or lake-crossing day, since a stud sheared off mid-trip is a quick fix with the right part on hand and a slow ride home without it.',
         ],
       },
     ],
@@ -689,18 +794,53 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: 'What Ice Scratchers Do',
         paragraphs: [
           'Liquid-cooled snowmobiles rely on snow being thrown up onto the heat exchangers under the tunnel to stay cool. Ice scratchers are small metal bars mounted near the track that intentionally dig into packed snow or ice to throw extra snow onto those heat exchangers when there is not enough loose snow to do it naturally.',
+          'The heat exchangers themselves look similar to a car radiator’s fins, but instead of air moving through them from the vehicle’s own forward motion, they rely on snow contact and the coolant’s own heat transfer to that snow as it’s thrown against the tunnel underside. No airflow-based radiator exists on most sleds because there’s no practical place to mount one that wouldn’t constantly clog with snow and ice.',
+          'Ice scratchers themselves don’t generate cooling — they’re a mechanical aid that restores the snow-contact mechanism the whole system depends on when natural snow conditions fail to provide it. Thinking of them as a condition-specific accessory, not a universal upgrade every sled needs, is the right frame for deciding whether to install a set.',
+        ],
+      },
+      {
+        heading: 'How Liquid Cooling Actually Depends on Snow Spray',
+        paragraphs: [
+          'In deep, loose powder, a track naturally throws a continuous spray of snow up against the tunnel and heat exchangers with every revolution — there’s more than enough contact to keep coolant temperature in a normal range without any help. The entire cooling system is designed around that assumption, which is also why liquid-cooled sleds have no separate radiator fan or grille the way a car does.',
+          'That assumption breaks down the moment the snow underneath stops being loose and deep. On glare ice, hardpack, or a thin late-season base, the track spins against a surface with little or nothing to throw, and coolant temperature can climb quickly with no visible warning beyond a temperature gauge or warning light most riders don’t check constantly mid-ride.',
+          'This is also why cooling problems on liquid-cooled sleds tend to show up specifically in spring and late-season conditions, when a shrinking snowpack exposes bare patches, ice, and dirt that weren’t a factor during a deep midwinter base. A rider who’s never had a cooling issue in January can still run hot in March on the exact same sled and trail system.',
+        ],
+      },
+      {
+        heading: 'Fixed vs. Spring-Loaded Scratchers',
+        paragraphs: [
+          'SledHaven’s Tunnel Ice Scratcher Kit uses a fixed-drag design — the scratcher bars stay in constant light contact with the surface underneath, with replaceable carbide tips that extend service life as the original contact point wears down. It’s a bolt-on kit requiring no permanent modification, sold as a complete left/right pair with mounting hardware.',
+          'The Performance Straight-Line Ice Scratchers take a different approach: spring-loaded deployment that backs off automatically in loose powder — reducing drag penalty exactly where it isn’t needed — and bears down harder on glare ice, where it is. That matters for riders who cross both conditions in the same outing, since a fixed scratcher drags unnecessarily through powder sections a spring-loaded unit would simply lift away from.',
         ],
       },
       {
         heading: 'When They Matter Most',
         paragraphs: [
           'Late-season riding, low-snow years, and hardpacked groomed trails are exactly the conditions where a cooling system can run hot without help — which is when ice scratchers earn their keep. In deep, loose powder, there is usually already enough snow being thrown up naturally.',
+          'Groomed trail systems in particular compact snow into a dense base specifically to make for a smoother, faster ride — which is good for trail speed and bad for scratcher-free cooling, since compaction is exactly what removes the loose snow a liquid-cooled engine depends on. Riders who stick mostly to groomed corridors are, somewhat counterintuitively, often in more need of scratchers than riders cutting fresh lines through untouched backcountry powder.',
+          'Resort and groomed-trail riding areas with heavy daily traffic compact snow into hardpack even faster than natural weather conditions alone would, since repeated grooming and traffic both work the same way — pressing air and loft out of the snowpack. High-traffic groomed systems are, again somewhat counterintuitively, some of the more scratcher-dependent riding environments rather than the safest default assumption.',
         ],
       },
       {
         heading: 'When They Are Unnecessary',
         paragraphs: [
           'Air-cooled engines and deep-powder mountain riding generally do not need ice scratchers the way hardpack trail riding on a liquid-cooled sled does. Adding them unnecessarily is mostly just extra weight and drag, not a safety issue.',
+          'Air-cooled engines dissipate heat directly to passing airflow around the cylinder rather than through a coolant loop and heat exchanger, so the entire premise scratchers solve for doesn’t apply to them — there’s no heat exchanger under the tunnel waiting for snow contact. Bolting scratchers onto an air-cooled sled adds drag and unnecessary complexity without a cooling benefit to offset it.',
+        ],
+      },
+      {
+        heading: 'Installation and Adjustment',
+        paragraphs: [
+          'Tunnel-mount scratcher kits bolt to existing mounting points without drilling, and ride height is typically adjustable to set how aggressively the bars contact the surface underneath — too shy and they don’t throw enough snow on borderline hardpack, too aggressive and they add unnecessary drag and wear through sections that don’t need the help.',
+          'Checking scratcher height alongside a seasonal track-tension check is a reasonable habit, since the correct ride height can shift slightly as a track settles with use. A quick visual check that the carbide tips are still making contact — not worn flush or riding too high to touch anything — takes a minute and catches a problem before a hot trail day exposes it.',
+        ],
+      },
+      {
+        heading: 'Signs Your Cooling System Is Already Struggling',
+        paragraphs: [
+          'A coolant temperature warning light or gauge reading outside the normal range is the most direct signal, but a drop in power delivery, an engine that feels sluggish compared to earlier in the same ride, or a change in exhaust smell can all precede a dashboard warning on some models. Pulling over and checking for visible snow buildup — or the lack of it — on the tunnel underside is a quick field diagnostic if a warning does appear.',
+          'A pattern of overheating specifically on hardpack or icy sections, but not in powder earlier in the same ride, is close to a textbook case for adding ice scratchers rather than a sign of a deeper mechanical problem. Riders who see overheating in all conditions, including deep powder, should look at coolant level, water pump function, or a clogged heat exchanger before assuming scratchers alone will fix it.',
+          'Keeping a simple mental checklist — temperature gauge in the normal range for your specific model, visible snow contact on the tunnel underside, and no unusual smell or power loss — takes seconds to run through at a fuel stop and catches a developing problem well before it becomes a trailside breakdown.',
         ],
       },
     ],
@@ -731,18 +871,48 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: 'Trailerable Covers: Built for Highway Abrasion',
         paragraphs: [
           'A trailerable cover is reinforced to withstand wind abrasion, road grit, and water spray at highway speed on an open trailer. It is typically a heavier, more abrasion-resistant fabric than a cover meant only for sitting still in a garage.',
+          'Wind abrasion at highway speed is a genuinely different stress than anything a stationary cover experiences — a cover flapping even slightly against bodywork for hours at highway speed wears through a lightweight fabric at the high-contact points (the windshield area, mirrors, and any protruding trim) far faster than the same fabric would wear sitting still in a garage for the same number of hours.',
+          'Reinforced strap points are the other half of the trailering spec: a cover rated for highway use anchors down at multiple points — typically front and rear, sometimes at the sides — rather than relying on a single cinch cord, because a single attachment point concentrates all of that wind load at one spot and is far more likely to tear loose.',
+          'Water spray kicked up from the tow vehicle or trailer tires at highway speed also carries road salt and grit in winter conditions, which accelerates both fabric wear and any corrosion on exposed metal trim underneath the cover if the fabric isn’t genuinely water-resistant rather than just water-repellent in name.',
         ],
       },
       {
         heading: 'Storage Covers: Built for Breathability',
         paragraphs: [
           'A dedicated storage cover prioritizes breathability over abrasion resistance, since the main threats during months of stationary storage are trapped moisture and UV exposure, not road grit. Using a non-breathable tarp for long-term storage can trap condensation against the seat and bodywork.',
+          'Breathable fabric works by letting water vapor escape from underneath the cover while still blocking liquid water and UV from penetrating through from outside — the same principle behind a breathable rain jacket. A sealed, non-breathable material like a plastic tarp traps whatever moisture is already present — from melting snow, ambient humidity, or a sled parked wet — against the seat foam, vinyl, and metal fasteners for the entire storage period, which is exactly the condition that promotes mold, mildew, and corrosion.',
+          'SledHaven’s own covers are built to the more demanding trailerable spec rather than a storage-only spec, which means they handle season-long garage storage without issue while also surviving the drive to the trailhead — a rider buying one cover doesn’t need a separate storage-only product for the off-season.',
         ],
       },
       {
         heading: 'Fit Matters as Much as Fabric',
         paragraphs: [
           'A properly fitted cover — sized to your specific model rather than a generic universal fit — resists wind flapping during trailering and sheds snow load better during storage. A loose, ill-fitting cover undermines the benefit of either fabric type.',
+          'A universal-fit cover compromises on both ends of the size range it claims to fit — too loose on a smaller model to resist wind flap, too tight on a larger model to clear the windshield and mirrors without stretching the fabric thin at those pressure points. A model-specific fit avoids both compromises by being cut to one size range rather than stretched across several.',
+        ],
+      },
+      {
+        heading: 'Sizing a Cover to Track Length',
+        paragraphs: [
+          'Track length is the dimension that actually determines cover fit on most snowmobiles, since the body and tunnel scale with it far more than ski stance or windshield height do. SledHaven sells its trailerable covers in two fitment ranges for exactly this reason: a 120"-146" track-length cover for the trail and crossover lineup, and an extended 154"-165" track-length cover for the longer mountain machines, including the Summit X with Expert Package’s longer track option.',
+          'Using the shorter cover on a longer mountain track leaves the rear tunnel and tail exposed to the same moisture and UV damage the cover is supposed to prevent, while using the extended cover on a shorter trail sled leaves excess material to flap loose in wind during trailering. Checking your model’s actual track length against the cover’s rated range — not just guessing from the vehicle class — gets the fit right the first time.',
+          'This same logic extends to any aftermarket track swap — a rider who’s lengthened a track from the factory spec should re-check cover fitment against the new length rather than assuming the original delivery-spec cover still matches.',
+        ],
+      },
+      {
+        heading: 'What Actually Damages an Uncovered or Poorly Covered Sled',
+        paragraphs: [
+          'UV exposure degrades plastic bodywork and rubber seals gradually through the same mechanism that fades outdoor furniture — breaking down polymer bonds at the surface until the material becomes brittle and chalky. A windshield left uncovered through a summer of direct sun often shows this first, developing a hazy, pitted surface that no amount of cleaning restores.',
+          'Moisture that collects under a seat cover or in body seams promotes corrosion on fasteners, electrical connectors, and any exposed metal trim, which is a slower but more expensive problem than cosmetic fading since it can affect function rather than just appearance. A battery left connected and exposed to wide temperature swings under a poor cover also drains and degrades faster than one properly protected.',
+          'Rodents looking for a warm, enclosed nesting spot over winter are drawn to the insulated gaps around a seat and under a hood, and a loose or torn cover gives them an easy entry point that a snug, properly fitted cover denies them. Chewed wiring harnesses from exactly this scenario are a genuinely common off-season repair, not a rare edge case.',
+          'None of these failure modes announce themselves immediately — fading, corrosion, and rodent damage all accumulate quietly over a single off-season and show up as a surprise the following fall, which is exactly why covering correctly from day one costs far less than repairing the damage covering poorly allows.',
+        ],
+      },
+      {
+        heading: 'Covering for the Trailer Ride vs. the Driveway',
+        paragraphs: [
+          'The practical difference between trailering and storage shows up mostly in how long the cover stays under stress and what kind of stress it is: a few hours of wind and road spray during transport versus months of stationary sun, temperature swings, and snow load during storage. A cover built for the harder of those two jobs — trailering — comfortably covers the easier one, which is why buying one trailerable-rated cover rather than two separate products makes practical sense for most owners.',
+          'Securing the cover properly for each situation still differs even with the same product: trailering calls for cinching every strap point tight before hitting the highway, while storage calls for a looser, more breathable fit that doesn’t compress the seat foam or trap the cover tight against an exhaust that hasn’t fully cooled.',
         ],
       },
     ],
@@ -772,19 +942,48 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: 'Why Two-Up Seating Is Its Own Category',
         paragraphs: [
-          'A two-up touring seat is longer and typically higher at the rear than a single-rider trail seat, giving a passenger a stable perch with a backrest and reasonable legroom. Riding discipline matters here — a seat built for one rider\'s aggressive mountain side-hilling is a poor base for two-up comfort, and vice versa.',
+          'A two-up touring seat is longer and typically higher at the rear than a single-rider trail seat, giving a passenger a stable perch with a backrest and reasonable legroom. Riding discipline matters here — a seat built for one rider’s aggressive mountain side-hilling is a poor base for two-up comfort, and vice versa.',
+          'Factory two-up models build this into the whole chassis, not just the seat — Ski-Doo’s Grand Touring lineup, for example, starts from the Grand Touring Sport with a 2-up seat featuring heated passenger handholds and air deflectors built in from the factory, and extends up to the Grand Touring LE with Platinum Package, which adds a studded track and Pilot TX skis suited to the steadier, heavier-loaded handling a two-up touring sled needs. A single-rider trail sled retrofitted with a passenger seat doesn’t get any of that supporting chassis tuning.',
+          'Passenger legroom and footrest position are the dimensions a one-rider-focused seat swap usually gets wrong. A genuine two-up seat places the passenger’s hips and knees at an angle that doesn’t cramp over a multi-hour ride, and factory touring models position the passenger footrests accordingly — something an aftermarket seat alone, bolted to a chassis not designed around a second rider, can’t fully replicate.',
+        ],
+      },
+      {
+        heading: 'What Makes a Two-Up Seat Comfortable: Foam, Shape, and Support',
+        paragraphs: [
+          'Foam density, not just thickness, determines how a seat feels after three hours versus three minutes. A soft, thick foam feels plush in a five-second showroom sit but compresses and bottoms out against the seat pan on a long ride, while a firmer, higher-density foam holds its shape and keeps weight distributed evenly across the ride instead of concentrating pressure at a few points as the softer foam collapses.',
+          'A contoured shape that separates rider and passenger zones — rather than one flat bench — keeps both people from sliding into each other under braking and acceleration, which matters more on a two-up sled than a solo one simply because there’s a second body’s momentum to manage. A proper backrest angle for the passenger does double duty here, bracing against acceleration forces without forcing an uncomfortable upright posture for the whole ride.',
         ],
       },
       {
         heading: 'Heated Seats for Long Corridor Days',
         paragraphs: [
           'Heated seating is a common factory or aftermarket upgrade on touring-focused models, since passengers — who are not actively working the controls and generating body heat the way a rider is — tend to get cold faster on long multi-hour corridor rides.',
+          'SledHaven’s Heated Touring Seat is a drop-in replacement that bolts to factory seat mounting points and adds a two-stage (high/low) heating element wired to the sled’s own 12V system, with a dense foam core that also addresses the shape and support factors covered above rather than just adding heat to a factory seat’s existing foam. It’s a single upgrade that solves two problems — comfort over distance and warmth — at once.',
+          'Factory heated passenger handholds, like the ones built into the Ski-Doo Grand Touring Sport’s 2-up seat, solve a related but separate problem: hands gripping a cold handhold for hours lose warmth the same way they would gripping a handlebar, and a heated grip surface keeps a passenger’s hands functional for longer without requiring heated gloves as a separate purchase.',
+          'Checking amperage draw before stacking a heated seat with other 12V accessories — heated grips, a heated visor, auxiliary lighting — is worth doing on any touring sled, since a factory charging system has a finite output and a heated seat added on top of an already fully loaded electrical system is a more common cause of underperforming heat than a defective seat.',
+        ],
+      },
+      {
+        heading: 'Windshield and Wind Protection for the Passenger',
+        paragraphs: [
+          'A taller windshield does more for a two-up sled’s comfort than most buyers expect, because wind that clears the rider’s helmet height still buffets a passenger seated higher and further back. SledHaven’s Tall Touring Windshield, at 19 inches, is sized specifically to deflect wind clear over the pilot’s helmet and onto the passenger behind, cutting fatigue on multi-hour corridor days rather than just protecting the rider up front.',
+          'Factory touring models address this the same way — the Grand Touring Sport ships with a 23-inch high windshield with side deflectors specifically because a two-up configuration needs more wind coverage than a single-rider trail windshield provides. Checking windshield height against passenger wind exposure, not just rider wind exposure, is worth doing before assuming a stock trail-sized shield is adequate for regular two-up riding.',
         ],
       },
       {
         heading: 'Storage and Backrest Add-Ons',
         paragraphs: [
           'Integrated luggage and a passenger backrest are the two upgrades that most change the practical usability of a two-up setup for genuine touring, as opposed to occasional short passenger rides — worth prioritizing over purely cosmetic seat upgrades if touring mileage is the goal.',
+          'A passenger backrest changes the physical experience of a two-up ride more than most buyers expect before trying it — without one, a passenger braces against the rider’s back under acceleration, which gets tiring for both people over a multi-hour day and subtly changes how the rider has to manage throttle input. A proper backrest lets the passenger brace independently, freeing the rider to ride more naturally.',
+          'Luggage capacity matters for genuine multi-day touring in a way it doesn’t for an afternoon passenger ride — a cargo trailer hitch kit, like SledHaven’s Expedition Cargo Trailer Hitch Kit, extends what a two-up sled can realistically carry for camp gear or fuel cans well beyond what a seat-mounted bag or tunnel bag alone can hold, without taking up passenger space.',
+        ],
+      },
+      {
+        heading: 'Matching a Seat Upgrade to Your Touring Pattern',
+        paragraphs: [
+          'A rider who carries a passenger occasionally — weekend trips, the odd afternoon ride — gets most of the practical benefit from a budget comfort step like SledHaven’s Seat Cover & Cushion Kit, which slips over the factory seat and adds a gel cushion insert to reduce vibration fatigue without the cost of a full seat replacement.',
+          'A rider doing genuine multi-hour corridor touring with a passenger on a regular basis gets more lasting value from the heated seat, taller windshield, and backrest combination covered above, since the cumulative fatigue those upgrades address compounds specifically over distance and time in the saddle — exactly the riding pattern a cushion alone doesn’t fully solve.',
+          'Buying incrementally rather than all at once is a reasonable approach here: a seat cover and cushion kit first to test whether two-up riding is a regular pattern worth investing in, then stepping up to a heated seat, taller windshield, and backrest once that pattern is confirmed over a season or two. Matching the upgrade to actual riding frequency, rather than buying the most expensive option on the assumption that more is always better, gets the best return on a touring comfort budget.',
         ],
       },
     ],
@@ -815,18 +1014,51 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: 'Why Stock Headlights Are Often Not Enough',
         paragraphs: [
           'Factory headlights are designed for everyday trail visibility, not the kind of extended-range illumination backcountry or after-dark riders often want. An aftermarket LED light bar extends usable visibility well past stock range, which matters most for riders navigating unfamiliar terrain after dusk.',
+          'A stock headlight’s beam pattern and output are also tuned for a single use case — following a groomed, marked trail at moderate speed — which is a narrower problem than backcountry or off-trail riding actually presents. Reading terrain, spotting obstacles off the direct line of travel, and judging snow conditions by eye all benefit from wider, brighter illumination than a factory beam provides.',
+          'This gap matters more as sleds get faster and riders cover more ground per hour than a stock lighting system was originally designed around decades ago — a headlight beam calibrated for a slower average trail speed simply doesn’t give as much reaction time at today’s typical riding pace.',
+        ],
+      },
+      {
+        heading: 'How LED Light Bars Actually Work: Lumens, Beam Pattern, and Color Temperature',
+        paragraphs: [
+          'Total lumen output is the raw brightness number most buyers look at first, but beam pattern determines how that brightness actually gets used — a flood pattern spreads light wide for peripheral awareness close to the sled, a spot pattern throws a narrow, longer-range beam for seeing further down the trail, and a combo pattern blends both in a single bar for riders who don’t want to choose.',
+          'Color temperature, measured in Kelvin, also affects how usable a light actually feels in snow conditions specifically — a very cool white light (6000K and above) can wash out against bright falling snow or reflect harshly off ice, while a slightly warmer white (5000K-5500K) often reads as more usable in exactly those conditions without actually sacrificing raw brightness.',
+          'IP-rated sealing (commonly IP67 or IP68 on quality aftermarket bars) describes how well a housing resists dust and water intrusion under specific test conditions, and checking that rating before buying is a more reliable way to judge weatherproofing than marketing language like “waterproof” alone, which isn’t a standardized claim the way an IP rating is.',
         ],
       },
       {
         heading: 'Single-Row vs. Dual-Row Bars',
         paragraphs: [
-          'A single-row LED bar is lighter, lower-profile, and draws less current — a reasonable upgrade for riders who mainly want supplemental fill light. A dual-row bar throws significantly more total light output at the cost of added weight, bulk, and higher current draw on the sled\'s charging system.',
+          'A single-row LED bar is lighter, lower-profile, and draws less current — a reasonable upgrade for riders who mainly want supplemental fill light. A dual-row bar throws significantly more total light output at the cost of added weight, bulk, and higher current draw on the sled’s charging system.',
+          'SledHaven’s LED Auxiliary Light Bar is a single-row 8-inch unit at 1.6 lbs, built to add wide-angle fill light to the sides of the main headlight beam with a sealed housing rated for sustained snow and spray exposure and a complete plug-and-play wiring harness — no cutting into the factory harness required. For a rider who occasionally rides into dusk or wants better peripheral visibility without a major electrical change, that’s the simpler of the two upgrades.',
+          'The Premium Dual-Row LED Light Bar steps up to a 12-inch dual-row design at 2.8 lbs — not just brighter at the same throw distance, but genuinely more usable light for a rider running full backcountry darkness or a pre-dawn start, where a single-row bar’s fill-light role isn’t enough. The tradeoff is the one covered below: nearly double the dry weight and a meaningfully higher current draw.',
+          'Both SledHaven bars share the same sealed-housing and plug-and-play wiring approach, which means the choice between them comes down almost entirely to how much light a rider’s actual riding pattern demands rather than any difference in build quality or installation complexity between the two tiers.',
+        ],
+      },
+      {
+        heading: 'Mounting Location and Wiring',
+        paragraphs: [
+          'Where a light bar mounts changes what it’s actually good for: a bumper or headlight-pod mount sits low and throws light along the snow surface, which is useful for spotting terrain texture and obstacles close to the track, while a handlebar or windshield mount sits higher and throws light further down the trail at the cost of some of that close-range terrain detail.',
+          'A proper wiring harness routes through a relay and fuse rather than tapping directly into an existing circuit, which protects both the new light and the sled’s factory wiring if something shorts out. SledHaven’s kits include the complete mounting hardware and harness for a factory-look install specifically so a rider isn’t left sourcing connectors or splicing into existing circuits to get a clean installation.',
+          'A sealed housing rated for sustained snow and spray exposure matters as much as the mounting point itself, since a light bar sits in the direct path of thrown snow and slush regardless of where it’s mounted. A housing that isn’t properly sealed lets moisture into the electrical connections over a season, which is a far more common failure mode for aftermarket lighting than the LEDs themselves burning out.',
+          'Running the wiring harness along existing factory routing paths, rather than a new path across exposed bodywork, also protects the harness itself from abrasion and snow intrusion over the life of the installation — a detail that matters more over several seasons than it does on the first ride after installing.',
         ],
       },
       {
         heading: 'Checking Your Electrical Capacity First',
         paragraphs: [
-          'Before adding a light bar — especially a dual-row unit — check your sled\'s stock charging system output against the accessory\'s current draw, particularly if you are also running heated gear on the same electrical system. Overloading a stock charging system is a common and avoidable mistake.',
+          'Before adding a light bar — especially a dual-row unit — check your sled’s stock charging system output against the accessory’s current draw, particularly if you are also running heated gear on the same electrical system. Overloading a stock charging system is a common and avoidable mistake.',
+          'A factory charging system has a fixed maximum output, and every accessory wired into it — heated grips, a heated seat, a heated visor, auxiliary lighting — draws from that same finite pool rather than having its own independent supply. Adding a dual-row light bar on top of an already-loaded electrical system is one of the more common causes of underperforming heated gear, dim headlights, or a battery that won’t hold charge overnight.',
+          'Checking current draw in amps, not just watts, against your model’s documented charging output is the right comparison, since amperage is what actually determines whether a circuit is overloaded. A single-row bar’s lower draw gives meaningfully more headroom to add other accessories later without hitting that ceiling, which is worth factoring in even for a rider who only needs fill light today.',
+          'A quick way to sanity-check capacity without pulling out a wiring diagram is to note whether existing accessories already dim noticeably at idle or low RPM — that’s usually a sign the charging system is already near its ceiling before a new light bar is added at all.',
+        ],
+      },
+      {
+        heading: 'Matching a Light Bar to Your Riding Pattern',
+        paragraphs: [
+          'A rider who occasionally rides into dusk on familiar groomed trail gets most of the practical benefit from a single-row bar’s wider fill light at the lower cost and lower electrical draw — the stock headlight is already handling the main beam duty, and the aftermarket bar is just filling in the edges.',
+          'A rider regularly running full backcountry darkness, pre-dawn starts, or unfamiliar terrain after dusk gets genuinely more usable range and brightness from a dual-row bar, and that extra range is a real safety factor when the alternative is slowing down significantly to compensate for a beam that doesn’t reach far enough ahead.',
+          'Budgeting for the wiring and electrical-capacity check alongside the light bar itself, rather than treating installation as an afterthought, is what actually determines whether either upgrade performs as advertised — the light bar is only as good as the electrical system and mounting behind it. Either tier is a meaningful upgrade over stock; the mismatch to avoid is buying a dual-row bar for occasional dusk riding and never using the extra output, or buying a single-row bar for regular backcountry darkness and finding it consistently falls short.',
         ],
       },
     ],
