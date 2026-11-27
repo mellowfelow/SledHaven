@@ -167,30 +167,95 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           'Shoppers often assume snowmobiling has a long list of active manufacturers the way the car market does. In reality, industry data from the International Snowmobile Manufacturers Association names a short list of full-line builders still producing new consumer sleds: BRP (which owns both Ski-Doo and Lynx), Polaris, and Arctic Cat. Yamaha, once a major player, ended new snowmobile production and now only supports existing owners through its dealer network — a detail worth knowing before you shop a "new" Yamaha anywhere.',
           'Treating these as four engineering lineages rather than a long list of interchangeable options makes comparison shopping far more useful: each brand has a distinct chassis philosophy that shows up in how a sled rides, not just in badge and paint.',
+          'A smaller manufacturer field has a practical upside for buyers: parts, dealer networks, and model-year carryover are more predictable when four or five builders are refining a handful of chassis platforms year over year, rather than a dozen brands cycling through more frequent redesigns. Learning one brand’s suspension and drivetrain naming conventions tends to pay off for the life of your ownership, since most model-year updates are iterative rather than ground-up replacements.',
         ],
       },
       {
         heading: 'Ski-Doo: Breadth Across Every Riding Discipline',
         paragraphs: [
           'Ski-Doo fields the widest model spread of any single brand — mountain-specific Summit platforms, trail-focused MXZ models, Backcountry and Expedition crossovers, Grand Touring two-up sleds, and the Skandic utility line, plus the Grand Touring Electric. That breadth means a Ski-Doo dealer can usually match a rider to a purpose-built platform rather than a general-purpose compromise.',
+          'At the mountain end, the Summit X with Expert Package pairs the Rotax 850 E-TEC Turbo R (or the naturally aspirated 850 E-TEC) with a 154-inch by 16-inch by 3.0-inch PowderMax X-Light track and tMotion XT rear suspension for predictable side-hilling, starting at $17,699. The trail lineup runs the opposite spread deliberately: the MXZ Sport is the value-oriented entry point at $10,199 with a Rotax 600 EFI engine and electric start, while the MXZ X-RS with Competition Package sits at the top with the Rotax 850 E-TEC Turbo R and water injection system, RAS RX front suspension with Pilot RX skis, and an available Smart-Shox semi-active damping system, starting at $16,399.',
+          'The crossover, touring, utility, and electric categories show the same purpose-built pattern. The Backcountry X-RS offers an optional 43-inch wide ski stance for off-trail stability, while the Expedition Xtreme carries a 20-inch Multi-LinQ cargo plate rated for 125 pounds of gear. The Grand Touring LE with Platinum Package tops the two-up lineup with a 10.25-inch color touchscreen running BRP Connect and built-in GPS, a studded track, and Pilot TX skis, starting at $17,699, while the Skandic SE utility sled adds a 135-liter (35.7-gallon) LinQ cargo box for ranch and expedition hauling. The Grand Touring Electric rounds out the brand’s reach into the electric segment on the same REV platform philosophy.',
         ],
       },
       {
         heading: 'Polaris: Deep-Snow Performance Heritage',
         paragraphs: [
           'Polaris built its reputation on the RMK mountain platform, and the RMK Khaos trims remain a benchmark for steep, technical powder riding — turbocharged power paired with a narrow ski stance and long-travel rear suspension built specifically for side-hilling and climbing.',
+          'The 850 RMK Khaos 155 illustrates how specifically Polaris tunes for this one discipline: an 840cc liquid-cooled Patriot twin drives a 15-inch by 155-inch track available with either a 2.75-inch (Series 8) or 3.25-inch (Series 9) lug, while the RMK React front suspension delivers 9 inches of travel and the RMK Khaos rear suspension adds 16 inches — numbers Polaris publishes specifically because deep-snow riders shop on suspension travel the way trail riders shop on top speed. Polaris lists an estimated dry weight of 426 pounds, and the model starts at $17,049.',
+          'Where Ski-Doo spreads engineering resources across every riding discipline, Polaris concentrates much of its snowmobile development on doing mountain performance exceptionally well. That is a real tradeoff for buyers: a rider who wants one brand to cover trail, touring, and utility needs under a single nameplate will find Ski-Doo, Polaris, or Arctic Cat dealer lots differently stocked, and Polaris dealers tend to lean hardest into deep-snow specialization relative to the other full-line US brands.',
         ],
       },
       {
         heading: 'Arctic Cat: An Independent Builder Again',
         paragraphs: [
           'Arctic Cat has had a more complex ownership history than Ski-Doo or Polaris. As of April 2025 it operates under an independent investor group rather than a larger parent conglomerate — a meaningful change for buyers who care about a brand\'s long-term parts and warranty support, and worth confirming directly with a dealer since ownership structures in this industry have shifted before.',
+          'Specifically, Textron sold Arctic Cat to an investor group led by former Arctic Cat and Argo executive Brad Darling in April 2025. Independent ownership can cut either way for a buyer: it often means a leaner, more focused company without a large conglomerate\'s competing product-line priorities, but it also means parts supply and warranty backing rest on that one company\'s stability rather than a diversified parent\'s balance sheet — a reasonable question to ask any Arctic Cat dealer directly.',
+          'On the product side, Arctic Cat\'s lineup is smaller and more focused than Ski-Doo\'s. The ZR 858 Sno Pro is the brand\'s trail-performance flagship, running the 858cc C-TEC2 twin-cylinder EFI engine with AWS 42 front suspension and a 137-inch by 15-inch by 1.25-inch track with RipSaw lugs, starting at $16,999 (listed as the 2027 model year on Arctic Cat\'s own site at time of writing). The Bearcat 600 LT covers the brand\'s utility side with a 600-class twin-cylinder engine in a wide-track chassis built for ranch, trail-grooming, and haulage work, at a dealer-listed $16,499 — a two-pronged trail-plus-utility lineup rather than Ski-Doo\'s full spread across every discipline.',
         ],
       },
       {
         heading: 'Lynx: BRP\'s Newest Brand in the US Market',
         paragraphs: [
           'Lynx is a genuinely new option for American buyers, not a legacy nameplate — BRP expanded its distribution from Europe and Scandinavia into North America starting with the 2026 model year. Its crossover-focused lineup, like the XTerrain, shares BRP engineering DNA with Ski-Doo while carving out its own identity in the wide-stance crossover segment.',
+          'The XTerrain, priced from $21,349, is positioned for riders who want trail speed and backcountry wide-stance capability in a single machine rather than choosing between a dedicated trail sled and a dedicated mountain sled. Because Lynx shares a parent company with Ski-Doo, it draws on the same Rotax engine family, but BRP markets and engineers it as its own brand rather than a rebadged Ski-Doo — a distinction confirmed through BRP\'s own investor communications and the brand\'s official US site.',
+          'Being new to the US market cuts both ways for a buyer. On one hand, Lynx benefits from BRP\'s established Rotax engine and parts supply chain rather than starting from zero. On the other, a smaller installed base in the United States means fewer years of real-world ownership data and a thinner used-sled market than an established nameplate like Ski-Doo or Polaris carries today — a reasonable factor to weigh for buyers planning to own a sled for many seasons rather than trade it after one or two.',
+        ],
+      },
+      {
+        heading: 'Taiga Motors: The Fifth Brand and the Only Dedicated Electric Builder',
+        paragraphs: [
+          'Taiga Motors is a Montreal, Quebec-based manufacturer building snowmobiles as ground-up electric machines rather than retrofitting a gas platform with a battery — the only one of the five brands doing so. Three Nomad trims are currently order-now: the Nomad Pro starting at $19,499 with a 67 kW drive unit, the Nomad Performance starting at $21,999 with a 120 kW drive unit, and the Nomad Scout starting at $22,249, also with the 120 kW drive unit paired to a deeper-lug, backcountry-tuned track.',
+          'Across the Nomad line, Taiga publishes an estimated 100 km (62 mi) of range, CCS1 fast charging to 80% in under 20 minutes, a 511 kg (1,125 lb) towing capacity, and up to 3 kW of onboard power for running tools or charging gear away from an outlet. The Pro leans toward fleet and utility use with remote fleet management and geofenced speed zones built into Taiga\'s OS-5 platform; the Performance targets individual trail-capable riders; the Scout adds a 2-inch deeper-lug all-terrain track, an integrated gear rack, and ski or snowboard mounts for backcountry use.',
+          'Taiga\'s approach differs meaningfully from Ski-Doo\'s Grand Touring Electric, which is a single electric model built on a shared chassis platform alongside Ski-Doo\'s gas lineup. Taiga instead engineers every trim in its catalog around the electric drivetrain from the start, which shows up in details like onboard power output and fleet-management software that a retrofitted platform typically does not prioritize.',
+        ],
+      },
+      {
+        heading: 'Comparing Chassis and Suspension Philosophy Side by Side',
+        paragraphs: [
+          'Ski-Doo\'s RAS RX and RAS 3 front suspensions, paired with tMotion or cMotion rear ends depending on the model, are tuned differently per segment but share a common design language across the whole lineup — the same basic geometry philosophy scales from the Summit mountain platform up through the MXZ X-RS trail flagship, with an available Smart-Shox semi-active damping system on performance trims that adjusts compression in milliseconds.',
+          'Polaris takes a narrower, deeper approach on the RMK platform specifically: the RMK React front and RMK Khaos rear suspensions publish exact travel figures (9 inches and 16 inches, respectively) because the entire design brief is optimized for one job — steep, technical deep-snow climbing and side-hilling — rather than a geometry that also has to work acceptably on a touring or utility chassis.',
+          'Arctic Cat\'s AWS 42 front suspension and SLIDE-ACTION rear end on the ZR 858 Sno Pro represent a third distinct geometry philosophy, developed independently of BRP\'s or Polaris\'s design lineage. Riders who have spent time on more than one brand\'s chassis consistently describe a genuine difference in handling character between the three approaches — differences that are difficult to fully capture in a spec sheet and are worth a demo ride if your dealer offers one.',
+        ],
+      },
+      {
+        heading: 'Matching Rider Discipline to Brand Strength',
+        paragraphs: [
+          'Mountain and backcountry riders chasing maximum deep-snow performance are well served by either Ski-Doo\'s Summit X with Expert Package or Polaris\'s 850 RMK Khaos 155 — both are purpose-built for steep, technical terrain, and the right pick for this group usually comes down to ergonomics, local dealer support, and a demo ride rather than a clear spec-sheet winner.',
+          'Trail riders and crossover or two-up touring buyers get the most benefit from Ski-Doo\'s breadth, since the MXZ, Backcountry, Expedition, and Grand Touring lines all live under one dealer network and one parts catalog; Arctic Cat\'s ZR 858 Sno Pro is a legitimate alternative for trail-first riders who prioritize that brand\'s specific chassis feel, and Lynx\'s XTerrain is worth cross-shopping for riders who specifically want trail speed and backcountry wide-stance capability in one machine.',
+          'Utility and fleet buyers should look at Ski-Doo\'s Skandic line or Arctic Cat\'s Bearcat 600 LT for gas-powered haulage work, while riders or operators specifically curious about electric should compare Ski-Doo\'s Grand Touring Electric against Taiga\'s three Nomad trims — the deciding factor is usually whether you want electric as one option within a larger gas lineup (Ski-Doo) or a manufacturer built around electric from the ground up (Taiga).',
+        ],
+      },
+      {
+        heading: 'Ownership, Freight, and Paperwork Across All Five Brands',
+        paragraphs: [
+          'Regardless of which of these five brands you choose, the ownership logistics at SledHaven work the same way. Every vehicle ships crated and insured nationwide, with freight calculated by your destination state at checkout rather than a flat nationwide rate — Mountain West, Upper Midwest, and New England deliveries price differently because the actual freight cost differs.',
+          'Every SledHaven snowmobile, whatever the brand, ships with a Manufacturer Certificate of Origin (MCO) and an itemized dealership bill of sale, which together are what your state DMV, DNR, or Parks & Recreation office needs to issue your registration and trail sticker. This paperwork requirement does not vary by manufacturer — it is a function of how new-vehicle sales and state registration work in the US, not a brand-specific policy.',
+          'Before any unit — Ski-Doo, Polaris, Arctic Cat, Lynx, or Taiga Motors alike — is crated for transport, it goes through the same pre-delivery inspection: fluid levels, belt deflection, suspension nitrogen pressure, heated grip continuity, and lighting systems are all verified, then the chassis is secured inside a heavy-gauge transport crate with tie-down isolation pads protecting hoods, windshields, and anodized rail edges. That process is brand-agnostic by design, since the goal is a sled that arrives ready to register and ride regardless of which of the five manufacturers built it.',
+          'Financing and payment options also apply identically across all five brands, since they are a dealership settlement structure rather than a manufacturer program: the Pay-in-4 installment plan splits any order into four equal payments at 0% interest, and paying by Bitcoin or USDT applies an automatic 10% discount to your subtotal at checkout. Neither benefit depends on whether you are ordering a Ski-Doo, Polaris, Arctic Cat, Lynx, or Taiga Motors machine.',
+        ],
+      },
+      {
+        heading: 'Pricing Spread and What It Actually Reflects',
+        paragraphs: [
+          'Across these five brands, US pricing on the models discussed here runs from about $10,199 (Ski-Doo MXZ Sport, entry trail) up to $22,249 (Taiga Nomad Scout, backcountry electric). That spread doesn\'t map cleanly to "better" versus "worse" — it maps to feature set, engine architecture, and how narrowly a platform is purpose-built.',
+          'An entry trail sled like the MXZ Sport is priced lower because it skips a turbocharged engine option, semi-active suspension, and premium electronics — not because the underlying chassis is a lesser machine for a new trail rider\'s actual needs. At the other end, a turbocharged flagship like the MXZ X-RS with Competition Package or the Summit X with Expert Package costs more because Rotax Turbo R engines, semi-active Smart-Shox damping, and competition-grade suspension components all carry real additional manufacturing cost.',
+          'Electric models cluster at the higher end of this range for a related reason: a battery pack and purpose-built electric drive unit remain more expensive to manufacture per unit of performance than a comparable gas powertrain today, which is reflected in the Taiga Nomad lineup\'s $19,499-to-$22,249 pricing and the Ski-Doo Grand Touring Electric\'s $17,499 starting price sitting near the top of Ski-Doo\'s own gas touring range rather than at the bottom.',
+        ],
+      },
+      {
+        heading: 'A Note on Model-Year Labeling and Spec Verification',
+        paragraphs: [
+          'One honest complication worth knowing before you shop: manufacturers don\'t always update every model page on the same calendar schedule. The Arctic Cat ZR 858 Sno Pro, for example, is listed as a 2027 model year on Arctic Cat\'s own site at the time of writing, even though most of this guide\'s other comparisons reference 2026 model-year specs — simply because that was the most current official spec page available for that specific model when it was researched.',
+          'Similarly, some product photography and spec details (track length, exact dry weight, specific engine displacement on a given trim) aren\'t always published by every manufacturer for every package variant. Where that\'s the case, treat the manufacturer\'s own current-year dealer spec sheet as the final word, not any single guide or review — including this one — since trims, packages, and even model-year numbering can shift between when a page is written and when you actually place an order.',
+        ],
+      },
+      {
+        heading: 'Cross-Shopping All Five Brands From One Dealer',
+        paragraphs: [
+          'Because SledHaven carries all five of these brands rather than specializing in one, a buyer can genuinely cross-shop a Ski-Doo mountain sled against a Polaris RMK, or an Arctic Cat trail flagship against a Lynx crossover, without visiting five separate dealerships with five separate sales processes.',
+          'The side-by-side comparison tool lets you weigh up to three models together — dry weight, track footprint, suspension travel, and fuel range sit next to each other rather than requiring you to tab between five different manufacturer brochure PDFs that each format their specs differently. For a decision this expensive, that kind of direct comparison is worth using before you lock in an allocation.',
+          'The order itself works the same way no matter which of the five brands you choose: confirm your allocation, select a payment method and plan (paying in full, with the 10% crypto discount if you settle in Bitcoin or USDT, or splitting the order into four installments with Pay-in-4), and let the dealership\'s settlement desk verify the transaction before freight and crating begin. Brand choice changes the machine underneath you; it does not change how the purchase itself is structured.',
         ],
       },
     ],
@@ -433,18 +498,58 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: 'Full-Face Helmets: The Cold-Weather Default',
         paragraphs: [
           'A dedicated full-face snowmobile helmet seals more completely against cold air intrusion around the chin and neck than a modular design, which is why it remains the default choice for riders doing sustained trail miles in sub-freezing temperatures.',
+          'A full-face shell also carries the weight and reach to support a fully heated electric shield without the hinge mechanism a modular design needs at the chin bar. SledHaven\'s own Carbon Heated Helmet Kit, for example, is built around a hand-laid 3K carbon-fiber shell weighing 2.9 lbs (1,320 g) specifically so the added mass of a heated-shield harness doesn\'t push total helmet weight into fatigue territory over a multi-hour ride.',
         ],
       },
       {
         heading: 'Modular Helmets: Convenience Trade-Off',
         paragraphs: [
           'A modular (flip-up) helmet lets a rider lift the chin bar at a trailhead stop or gas-up without fully removing the helmet — a real convenience, at the cost of slightly more cold-air leakage at the chin-bar seam compared to a true full-face shell.',
+          'That tradeoff matters most on back-to-back short stops — loading at a trailhead, checking a map, talking to a group — where repeatedly pulling a full-face helmet on and off becomes its own hassle. For a rider whose day is mostly continuous trail miles with few stops, the modular\'s convenience advantage shows up less often, which tilts the decision back toward a full-face shell\'s better seal.',
+        ],
+      },
+      {
+        heading: 'Understanding Helmet Certification: DOT, ECE, and Snell',
+        paragraphs: [
+          'In the US, a snowmobile helmet needs to meet at minimum the DOT (FMVSS 218) standard, which is self-certified by the manufacturer and tests impact absorption, penetration resistance, and retention-system strength. ECE 22.06 is a separate, lab-tested European standard that many riders consider more rigorous because an independent lab — not the manufacturer — verifies compliance before the helmet can carry the rating.',
+          'A helmet carrying both DOT and ECE 22.06 certification, like SledHaven\'s Carbon Heated Helmet Kit, has cleared two independent testing regimes rather than one. Snell is a third, separate voluntary certification common in motorcycle and auto racing helmets; it is less commonly seen on dedicated snowmobile helmets but is a mark of additional third-party testing where it does appear. None of these certifications measure cold-weather performance — that is a separate set of features, covered below — they measure impact protection only.',
         ],
       },
       {
         heading: 'Is a Heated or Electric Shield Worth It?',
         paragraphs: [
           'A heated (electric) shield actively resists fogging and frosting on the inside of the visor, which matters most for riders in consistently sub-20°F conditions or anyone who has dealt with a fogged-over shield mid-trail. For milder climates or shorter rides, a quality anti-fog coating on a standard double-pane shield is often enough.',
+          'The mechanism is straightforward: a thin heating element runs across the inner pane of a dual-pane shield, keeping its interior surface warm enough that moist exhaled breath and sweat can\'t condense into fog or frost. SledHaven\'s bronze mirrored dual-pane heated shield is rated to prevent icing down to -40°F, powered through a magnetic RCA quick-disconnect cord that lets a rider unplug and walk away at a stop without unwinding a wired connection first.',
+        ],
+      },
+      {
+        heading: 'Shell Materials and Weight: Why Carbon Fiber Matters',
+        paragraphs: [
+          'Snowmobile helmet shells are typically molded from polycarbonate, fiberglass composite, or carbon fiber, in roughly ascending order of both cost and weight reduction. Polycarbonate is the most affordable and widely used; fiberglass composite splits the difference on weight and price; hand-laid carbon fiber, like 3K woven carbon, delivers the lowest weight per unit of shell strength but costs more to manufacture.',
+          'Weight matters more on a snowmobile helmet than it might seem, because neck fatigue compounds over a multi-hour ride on a vibrating, bouncing machine — a helmet that feels fine for the first twenty minutes can become genuinely tiring by hour three. A helmet in the 2.9-to-3.5 lb range, achievable with a carbon-fiber shell, meaningfully reduces that fatigue compared to a 4-plus lb polycarbonate equivalent carrying the same feature set.',
+        ],
+      },
+      {
+        heading: 'Fit, Liner, and Replacement Timeline',
+        paragraphs: [
+          'A multi-density EPS foam liner is what actually absorbs impact energy — the shell\'s job is to spread and resist penetration, while the liner crushes in a controlled way to slow your head\'s deceleration. A correct, snug fit against that liner is part of how the certification testing works; a helmet that\'s too loose doesn\'t transfer impact force the way the tested configuration did.',
+          'A magnetic chin-strap closure, such as a Fidlock buckle, is worth prioritizing for cold-weather use specifically because it can be operated with thick insulated gauntlet gloves on — a standard D-ring strap often requires removing a glove first, which is exactly the kind of small daily friction that adds up over a season. As a general rule, replace a helmet every 3 to 5 years even without a visible impact, since liner foam and shell materials degrade with age, UV exposure, and temperature cycling — and always replace one immediately after any impact, regardless of how new it is.',
+        ],
+      },
+      {
+        heading: 'Ventilation and Anti-Fog Airflow',
+        paragraphs: [
+          'Ventilation on a snowmobile helmet does the opposite job it does on a motorcycle helmet: instead of maximizing airflow to cool a hot rider, intake and exhaust vents are deliberately minimized and positioned to limit how much cold air reaches the face while still giving exhaled moisture somewhere to escape. Too much airflow across the inside of a shield in sub-zero conditions causes frost, not comfort.',
+          'A cold-weather-specific breath deflector — a small silicone or fabric panel inside the chin bar — redirects exhaled breath down and away from the shield rather than letting it rise directly onto the lens, which is one of the simplest, lowest-cost design features that meaningfully reduces fogging before you even get to a heated or anti-fog shield. It\'s worth checking for specifically on any helmet marketed generically as "winter" rather than snowmobile-specific, since not every cold-weather helmet includes one.',
+        ],
+      },
+      {
+        heading: 'Comparing Helmet Types for Different Riding Styles',
+        paragraphs: [
+          'Trail and touring riders doing long, continuous stretches at speed get the most value from a full-face helmet with a heated shield, since their ride profile is exactly the scenario — sustained cold-air exposure with few stops — where a full-face seal and active fog resistance matter most.',
+          'Mountain and backcountry riders who frequently stop to scout a line, dig out a stuck machine, or communicate with a riding partner often lean toward a modular helmet despite its slightly less complete seal, because the ability to flip the chin bar up without fully removing the helmet saves real time and hassle across a day with many brief stops.',
+          'Two-up touring riders and passengers benefit from the same full-face-and-heated-shield logic as solo trail riders, with one addition worth checking: passenger helmets see less airflow than a rider\'s, since they sit slightly behind the windshield\'s wind-blocking effect, so fogging can actually be a bigger issue for a passenger than for the rider operating the machine.',
+          'Youth and new riders are the one group where simplicity should outweigh every other factor on this list: a correctly sized, certified full-face helmet with a quality double-pane anti-fog shield covers the overwhelming majority of a beginner\'s riding conditions without the added cost or complexity of heated electronics. Heated shields and premium carbon shells are upgrades worth adding once a rider has logged enough seasons to know exactly which conditions they ride in most, not a default starting point.',
         ],
       },
     ],
@@ -479,18 +584,63 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: 'The Case for a Two-Piece Jacket and Bibs',
         paragraphs: [
           'A separate jacket and bibs combination is the most versatile setup for riders who also use gear off the sled — the jacket alone works for garage maintenance, shoulder-season rides, or layering in a pinch, while high-waisted bibs add a snow-sealed layer only when you need it.',
+          'A two-piece set built properly for riding, rather than general winter wear, uses a fully waterproof-windproof shell with insulation mapped by zone — heavier across the chest and shoulders where wind chill hits hardest at speed, lighter under the arms where you generate the most body heat. SledHaven\'s Alpine Riding Jacket and matching Alpine Riding Bibs follow this pattern: the jacket adds a storm cuff and adjustable powder skirt to seal out drift when the machine stops moving, while the bibs add a high-rise back panel and reinforced knee panels for abrasion resistance against the seat and running boards.',
         ],
       },
       {
         heading: 'The Case for a One-Piece Suit',
         paragraphs: [
           'A one-piece suit seals better against snow and cold at the waist, since there is no jacket-to-bib interface for snow to work into during a deep-powder fall or prolonged side-hilling. Dedicated mountain riders who spend most of a season in deep snow tend to prefer the one-piece for this reason.',
+          'The tradeoff runs the other direction from a two-piece setup\'s versatility: a one-piece suit is an all-or-nothing garment. You can\'t wear just the lower half for a quick trailer-loading job or just the upper half on an unseasonably mild afternoon, and venting a one-piece suit to dump heat during exertion (climbing a steep pitch, digging out a stuck sled) typically means more zippers to manage than a jacket you can simply unzip or remove.',
+        ],
+      },
+      {
+        heading: 'Layering Underneath: Base and Mid Layers',
+        paragraphs: [
+          'Whichever outer system you choose, the layers underneath do most of the actual temperature regulation. A moisture-wicking synthetic or merino wool base layer against the skin is the foundation — cotton is a poor choice here because it holds sweat against the body rather than moving it outward, which accelerates chilling once you stop moving.',
+          'A mid layer — fleece or a thin insulated jacket — adds the adjustable warmth that a shell\'s fixed insulation can\'t provide on its own. On a warmer day or during high-exertion stretches, shedding the mid layer while keeping the waterproof-windproof shell on lets you regulate temperature without compromising weather protection, which is harder to do with a one-piece suit\'s more integrated construction.',
         ],
       },
       {
         heading: 'Matching Apparel to Riding Discipline',
         paragraphs: [
           'Trail and touring riders, who spend more time upright on groomed corridors, generally get full value from a two-piece setup\'s flexibility. Mountain and backcountry riders doing frequent falls and side-hilling in deep snow get more practical benefit from a one-piece suit\'s sealed design.',
+          'Two-up touring and utility riders fall somewhere in between: long days in the saddle favor the two-piece\'s layering flexibility for temperature swings over the course of a day, but anyone regularly loading cargo, digging in, or working around the sled off-trail will appreciate being able to strip down to just the jacket for that work.',
+        ],
+      },
+      {
+        heading: 'Insulation Mapping and Sizing Considerations',
+        paragraphs: [
+          'Mapped-zone insulation — more fill where wind chill and heat loss are greatest, less where you naturally run warm — is a meaningfully better design than uniform insulation throughout, since uniform warmth either overheats your torso or underinsulates your extremities. When comparing two jackets or suits with the same stated insulation weight, ask whether it\'s mapped by zone or applied evenly; the mapped version will almost always feel more comfortable across a full riding day.',
+          'Sizing runs differently across brands and styles, and riding apparel is typically cut to allow a base and mid layer underneath, so true-to-street-size often runs tight once you\'re actually dressed for the trail. SledHaven\'s Alpine Riding Jacket and Bibs are offered from S through 3XL specifically to accommodate that layering margin — when in doubt between two sizes, sizing up is usually the safer call for a riding-specific garment.',
+        ],
+      },
+      {
+        heading: 'Durability and Multi-Season Value',
+        paragraphs: [
+          'Reinforcement at high-wear points — knees against running boards, the seat interface, cuffs against repeated glove contact — determines how a garment holds up over multiple seasons far more than the shell fabric\'s headline waterproof rating does. A jacket and bibs sold as a matched set, with the same insulation level and reinforcement philosophy, also simplifies replacement: wearing out bibs faster than a jacket (common, given knee and seat contact) doesn\'t force replacing the whole suit the way a one-piece does.',
+          'Reflective accents for low-light trailhead visibility are a small but genuinely useful detail worth checking on either style, particularly for riders who load up or arrive back at the trailhead near dusk. Whichever system you choose, treat it as a multi-season investment rather than a single-trip purchase — the cost difference between a durable, properly insulated set and a budget alternative is usually smaller than one season\'s worth of regret in sub-zero wind.',
+        ],
+      },
+      {
+        heading: 'Ventilation and Temperature Regulation While Riding',
+        paragraphs: [
+          'Pit zips — zippered vents under the arms — and a two-way front zipper are small features that matter more than their size suggests, because exertion (climbing off the sled to dig out a stuck track, hauling gear, hiking up a steep pitch) generates heat quickly even in sub-zero air. Without a way to vent that heat, sweat builds up inside the shell and chills you faster once you stop moving and the sweat evaporates.',
+          'A one-piece suit typically offers fewer independent venting zones than a jacket-and-bibs combination, since there\'s only one garment to add zippers to rather than two, which is part of the practical tradeoff mountain riders accept in exchange for the one-piece\'s better snow sealing at the waist. Riders who run hot during exertion should weigh this specifically, not just the snow-sealing advantage, when choosing between the two systems.',
+        ],
+      },
+      {
+        heading: 'Care and Maintenance for Riding Apparel',
+        paragraphs: [
+          'Waterproof-breathable shells lose some of their water repellency over a season of use as dirt and body oils coat the fabric\'s surface, which is why most manufacturers recommend a technical wash with a dedicated cleaner rather than regular detergent, followed by a DWR (durable water repellent) reapplication every season or two depending on use.',
+          'Zippers, storm flaps, and the powder skirt\'s elastic are the components that fail first on riding apparel, typically well before the shell fabric itself wears out — a quick pre-season check of each, with a light zipper lubricant where needed, catches small problems before they become a mid-ride failure. Proper off-season storage (fully dry, loosely hung rather than compressed in a stuff sack for months) also meaningfully extends a garment\'s useful life across multiple winters.',
+        ],
+      },
+      {
+        heading: 'Budgeting for a Complete Riding Apparel System',
+        paragraphs: [
+          'Pricing a jacket-and-bibs system against a one-piece suit isn\'t always a straightforward like-for-like comparison, since the two-piece setup is priced and sold as two separate garments that happen to be designed to match. Buying a jacket now and bibs later, as budget allows, is a realistic option with a two-piece system in a way it generally isn\'t with a one-piece suit, which makes the two-piece path easier to phase in for a rider building out a first full kit.',
+          'Whichever direction you go, apparel sits alongside a helmet, goggles or a visor, and gloves as one piece of a complete cold-weather system — treating it as a single line item in a first-season budget, rather than an afterthought purchased at the last minute before a trip, tends to produce a better-matched, more durable result than piecing it together reactively.',
         ],
       },
     ],
@@ -521,18 +671,63 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: 'Why Hands Get Cold Fastest on a Sled',
         paragraphs: [
           'Wind chill at speed combined with constant exposure to handlebar-mounted controls makes hands one of the first extremities to lose dexterity in cold conditions — and cold, stiff hands make it harder to operate the throttle and brake smoothly, which is a real safety consideration, not just a comfort one.',
+          'Hands and feet are also where your body deliberately restricts blood flow first in cold conditions, a reflex (vasoconstriction) that protects core temperature at the direct expense of extremity warmth. Add handlebar vibration and the wind-chill effect of riding at 40-plus mph into already-cold ambient air, and fingers lose dexterity well before a rider’s core feels cold at all — which is why hand protection deserves its own dedicated decision rather than an afterthought bundled into a general winter-glove purchase.',
         ],
       },
       {
         heading: 'Insulated Gloves Plus Disposable Warmers',
         paragraphs: [
           'For most riders doing shorter trail outings, a quality insulated glove paired with disposable chemical hand warmers tucked into the palm or back of the hand covers the vast majority of riding conditions at a fraction of the cost of heated gear.',
+          'Disposable warmers work through an exothermic oxidation reaction (iron powder reacting with oxygen) that releases steady, low-grade heat for roughly 5 to 10 hours per packet, long enough for most single-day trail rides. The main limitation is that the heat output isn\'t adjustable — you get what the packet gives, with no way to dial it up on an unexpectedly brutal stretch or down on a milder one.',
+        ],
+      },
+      {
+        heading: 'How Heated Glove Battery Systems Work',
+        paragraphs: [
+          'A battery-heated glove, like SledHaven\'s Heated Alpine Gauntlet Gloves, runs a thin heating element across the back of the hand and fingers, powered by a rechargeable battery pack rather than a one-time chemical reaction. That design gives you adjustable output — typically three heat settings — so you can match warmth to actual conditions instead of being locked into a single fixed heat curve.',
+          'The tradeoff for that adjustability is weight, bulk, and a battery to manage. A heated glove is almost always heavier and slightly less dexterous straight out of the box than an unpowered insulated glove of comparable warmth, since it has to carry a heating element and battery pocket in addition to the insulation itself.',
         ],
       },
       {
         heading: 'When Heated Gloves Make Sense',
         paragraphs: [
           'Multi-hour backcountry trips, sustained sub-zero temperatures, or riders with circulation sensitivity are the cases where battery-powered heated gloves earn back their higher upfront cost in rider comfort and reduced hand fatigue over a full day of riding.',
+          'The math is straightforward: a rechargeable heated glove system rated for up to 6 hours of runtime on a lower setting costs more upfront than a season\'s worth of disposable warmer packets, but pays that difference back the first time a trip runs longer than expected or conditions turn colder than forecast — situations where a disposable warmer simply runs out with no way to add more heat mid-ride.',
+        ],
+      },
+      {
+        heading: 'Gauntlet Cuffs and Matching to Your Jacket System',
+        paragraphs: [
+          'A gauntlet-style cuff — long enough to seal over a jacket sleeve rather than tucking under it — blocks wind and snow from working up the arm, which matters more at trail speed than most riders expect. A short cuff that gaps even slightly at the wrist lets cold air pump in and out with every arm movement, undermining warmth that the glove\'s insulation is otherwise providing.',
+          'A touchscreen-compatible fingertip is a small but genuinely useful detail on a heated glove, since it lets you operate a phone, GPS unit, or a sled\'s digital gauge cluster without removing a glove you\'ve specifically chosen to avoid taking off. Matching your glove\'s connector family to your helmet\'s heated-shield system, where both exist, also means carrying one spare battery or charging cable instead of two incompatible ones.',
+        ],
+      },
+      {
+        heading: 'Battery Care and Cold-Weather Runtime Expectations',
+        paragraphs: [
+          'Rechargeable battery capacity drops in cold temperatures the same way it does in a phone or a cold vehicle battery — a glove rated for 6 hours of runtime at room temperature will typically deliver less than that in sustained sub-zero conditions. Charging batteries fully the night before a ride, rather than topping off a partial charge, gives the most predictable runtime when it matters most.',
+          'Carrying a disposable chemical warmer as backup, even when running heated gloves, is cheap insurance against a battery that dies mid-ride or a charger left at home — the two solutions aren\'t mutually exclusive, and many experienced riders use both: heated gloves as the primary system, with a packet of disposable warmers in a pocket for the day the battery doesn\'t last as long as planned.',
+        ],
+      },
+      {
+        heading: 'Fit and Dexterity Tradeoffs',
+        paragraphs: [
+          'Any glove warm enough for serious cold-weather riding sacrifices some fine dexterity compared to a thin pair of street gloves — that\'s an unavoidable tradeoff of insulation thickness, not a flaw specific to one brand or style. The practical question is whether you can still operate the throttle, brake lever, and any handlebar-mounted switches smoothly with the glove on, not whether you could thread a needle in it.',
+          'A glove that fits too loosely wastes insulation value by trapping extra cold air inside the glove alongside your hand, while one that fits too tightly restricts the blood flow your fingers need to stay warm in the first place — an uncomfortably tight "warm" glove can paradoxically leave your fingertips colder than a properly fitted one. Trying a glove on over the base layer you actually plan to wear underneath, rather than bare-handed, is the only reliable way to judge this before a cold trailhead makes it obvious.',
+        ],
+      },
+      {
+        heading: 'Matching Gloves to Your Full Riding System',
+        paragraphs: [
+          'Glove cuff length and jacket sleeve design need to work together, not be chosen independently — a short glove cuff paired with a short jacket sleeve leaves a gap at the wrist no matter how warm either piece is on its own. Checking the two together, ideally by trying them on as a pair, catches this before it becomes a cold surprise on the trail.',
+          'For riders building a complete cold-weather system — helmet, jacket, bibs, and gloves — standardizing on components designed to work together (a shared 12V connector family between a heated helmet shield and heated gloves, for example) simplifies both charging logistics and spare-parts planning compared to mixing unrelated brands and power systems that each need their own charger and cable.',
+        ],
+      },
+      {
+        heading: 'A Simple Decision Framework',
+        paragraphs: [
+          'Start by being honest about your actual riding pattern rather than the riding you aspire to do: a rider doing occasional half-day trail outings in moderate cold is genuinely well served by insulated gloves and disposable warmers, and spending more on heated gear won\'t meaningfully improve that experience.',
+          'The decision flips once any of three conditions show up regularly — rides routinely run past three or four hours, temperatures are consistently well below zero rather than just cold, or you\'ve personally experienced hands going numb enough to affect throttle or brake control. At that point, a heated glove system is addressing a real comfort and safety gap that disposable warmers, with their fixed and non-adjustable heat output, cannot fully close.',
         ],
       },
     ],
@@ -563,18 +758,57 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: 'Integrated Visors: Fewer Moving Parts',
         paragraphs: [
           'A full-face helmet\'s built-in visor is one less piece of gear to manage — no separate strap, no gap between goggle and helmet for wind to find. Double-pane visors with anti-fog coatings handle most riding conditions well.',
+          'A heated electric shield takes this further by actively resisting fogging and frosting rather than just coating against it passively. SledHaven\'s Carbon Heated Helmet Kit, for example, pairs a bronze mirrored dual-pane shield with a heating element rated to prevent icing down to -40°F, connected through a magnetic quick-disconnect cord — a setup that removes fogging as a trailside problem rather than just reducing it.',
         ],
       },
       {
         heading: 'Goggles: Field of View and Lens Flexibility',
         paragraphs: [
           'Goggles paired with an open-face or modular helmet typically offer a wider peripheral field of view, and swapping lenses for different light conditions — a dark tint for bright sun, a clear or low-light lens for dusk or overcast rides — is faster than swapping an entire visor.',
+          'A dedicated riding goggle, rather than a repurposed ski goggle, also matters for fit against a helmet\'s foam. SledHaven\'s Anti-Fog Riding Goggles, for example, use a fleece-lined foam gasket specifically sized to seal against an open-face or modular helmet\'s opening, with a dual-pane anti-fog lens for the same passive fog resistance a double-pane visor provides.',
+        ],
+      },
+      {
+        heading: 'How Fogging Actually Happens (and How Anti-Fog Coatings Work)',
+        paragraphs: [
+          'Fogging happens when warm, moist air — from your own breath or sweat — contacts a cold lens surface and condenses into tiny water droplets. A single-pane lens has no insulation, so its inner surface stays close to outside air temperature and fogs easily; a double-pane (dual-pane) design traps a thin insulating air gap between two lens layers, keeping the inner surface closer to your face temperature and far less prone to condensation.',
+          'An anti-fog coating adds a hydrophilic layer that spreads condensation into a thin, clear film instead of letting it bead into visibility-blocking droplets. A heated shield or lens goes a step further by actively warming the inner surface above the dew point, which is why it outperforms a passive coating in the coldest, highest-humidity conditions — hard, sustained exertion in sub-zero temperatures.',
+        ],
+      },
+      {
+        heading: 'Lens Tint and Light Conditions',
+        paragraphs: [
+          'Lens tint changes how well you can see in different light, not just how the lens looks. A dark tint cuts glare off bright, sun-reflective snow — genuinely important at altitude or on a clear bluebird day, where reflected UV and visible light off a snowfield is far more intense than most riders expect.',
+          'A clear or lightly tinted yellow/rose lens does the opposite job: it boosts contrast in flat, overcast, or dusk light where a dark lens would make terrain features harder to read, not easier. Riders who do both conditions regularly benefit from owning two lenses and swapping them — goggles make that swap simple, while a full-face visor swap is a bigger job, which is part of why some riders choose goggles specifically for this flexibility.',
         ],
       },
       {
         heading: 'Which to Choose',
         paragraphs: [
           'Full-face-and-visor riders value simplicity and a sealed cold-weather fit; goggle-and-modular riders value flexibility and easier lens changes. Both are valid choices used across the sport — the decision usually comes down to which system a given rider finds easier to defog and maintain.',
+          'If you ride mostly one type of light condition and want the fewest things to manage mid-ride, a heated full-face visor is the simpler system. If you regularly cross bright sun, flat overcast, and dusk in the same outing, or you already prefer an open-face or modular helmet for ventilation and chin-bar convenience, dedicated anti-fog goggles with a swappable lens are the more flexible choice.',
+        ],
+      },
+      {
+        heading: 'Gasket Fit and Seal Against Cold Air',
+        paragraphs: [
+          'A goggle\'s foam gasket does for eye protection what a helmet\'s chin-bar seal does for the rest of your face — it\'s the barrier between outside air and the warm pocket around your eyes, and a gap anywhere along that seal lets cold air in and fog-causing warm air escape unevenly. A fleece-lined foam gasket, rather than a thin single-layer foam strip, holds its shape better over repeated helmet-on, helmet-off cycles across a season.',
+          'Strap tension matters here too: a goggle strap that\'s too loose lets the gasket lift away from the face with helmet vibration at speed, while one that\'s too tight can distort the gasket\'s shape enough to create its own small gaps at the corners. Most riders find the correct tension by feel — snug enough that the goggle doesn\'t shift when you turn your head, loose enough that you don\'t feel pressure points after an hour of riding.',
+        ],
+      },
+      {
+        heading: 'Prescription Lenses and Over-the-Glasses Options',
+        paragraphs: [
+          'Riders who wear prescription glasses face a genuine fitment problem with both systems: a standard visor sits too close to the face to clear glasses frames, and many goggles aren\'t deep enough either. Over-the-glasses (OTG) goggles solve this with a deeper foam channel specifically shaped to clear glasses temples, though they\'re a narrower product category with fewer lens-tint options than standard goggles.',
+          'A full-face helmet with a deeper internal clearance, or a modular helmet that lifts clear for easier glasses placement before riding, are the two realistic paths for prescription-wearing riders who don\'t want to switch to contacts for riding days. Checking a specific helmet or goggle\'s glasses clearance before buying — rather than assuming any "one size fits all" fit — saves a frustrating return.',
+        ],
+      },
+      {
+        heading: 'Replacement and End-of-Life Signs',
+        paragraphs: [
+          'A visor\'s anti-fog coating and a goggle lens\'s anti-fog layer both wear down with repeated cleaning and UV exposure over multiple seasons, which is why a shield or lens that fogged rarely in its first year can start fogging more often by its third or fourth, even with identical riding conditions. That gradual decline is easy to mistake for a technique problem (not venting enough, breathing wrong) when it\'s actually just the coating reaching the end of its useful life.',
+          'Scratches are the other practical end-of-life sign, and they matter more on a snowmobile lens than on sunglasses because a scratch across the center of your field of view at speed, in low light, is a genuine visibility hazard rather than just a cosmetic flaw. Most goggle systems sell replacement lenses separately from the frame specifically because the lens is the wear item — replacing a scratched or fog-prone lens on an otherwise good frame is both cheaper and more sustainable than replacing the whole unit.',
+          'As a practical checkpoint, inspect any visor or goggle lens at the start of each season for scratches, coating wear (a hazy or uneven matte appearance where it should be clear), and strap or gasket elasticity. None of these degrade overnight, but catching the gradual decline early — before a trip, not during one — is what keeps eye protection actually protective rather than just present.',
         ],
       },
     ],
@@ -605,18 +839,63 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: 'What Carbide Skis Actually Do',
         paragraphs: [
           'A carbide insert bonded into the bottom of a ski\'s runner bites into hardpack and ice to give a rider predictable steering feedback. Without a sharp, correctly sized carbide, steering input on hard-packed trail or icy conditions becomes vague and delayed.',
+          'The physics are straightforward: a plastic or metal ski bottom alone simply slides across hard-packed snow and ice with very little resistance, which is fine for flotation in soft powder but leaves almost nothing for the rider to steer against on firmer surfaces. The exposed carbide edge — harder than the surrounding ski material and ground to a defined profile — digs in just enough to translate handlebar input into an actual change of direction, rather than the ski skating sideways across the surface.',
         ],
       },
       {
         heading: 'Narrow Carbides for Mountain Riding',
         paragraphs: [
           'Narrow carbide runners reduce steering effort for quick, light direction changes — exactly what a mountain rider needs when side-hilling or threading tight tree lines in deep powder, where fast, low-effort steering input matters more than high-speed stability.',
+          'A shorter carbide footprint also matches how a mountain ski is actually used: most of a ride happens in soft, unpacked snow where the carbide barely engages at all, with only occasional contact on a packed approach road or a wind-scoured ridge. SledHaven\'s Precision Carbide Runner — Narrow Mountain Stance is sized for the 34-to-38-inch narrow ski stance used across most Ski-Doo and Polaris mountain models, bolting directly to the factory ski loop with no drilling required.',
         ],
       },
       {
         heading: 'Wide Carbides for Trail and Crossover Riding',
         paragraphs: [
           'Wider carbide runners provide more stable, planted tracking at trail speeds, trading some steering quickness for predictability through fast groomed sweepers — the right tradeoff for riders covering long trail mileage rather than technical deep-snow maneuvering.',
+          'A longer carbide footprint also handles side-load better, which matters on a wide-stance crossover model carrying more lateral force off-trail than a standard trail ski. SledHaven\'s Precision Carbide Runner — Wide Crossover Stance extends to a 7.5-inch carbide length built for the roughly 39-to-43-inch wide stance found on crossover models like the Ski-Doo Backcountry X-RS and Lynx XTerrain, giving a stable edge whether the machine is on a groomed corridor or cutting sideways through backcountry snow.',
+        ],
+      },
+      {
+        heading: 'Carbide Length and Material: Tungsten vs. Standard Hardness',
+        paragraphs: [
+          'Carbide inserts themselves also vary in hardness, not just in the runner\'s overall length. A standard-duty tungsten-carbide insert balances cost against wear life for typical seasonal mileage, while an ultra-hard tungsten alloy — used in race-spec runners — holds a sharp edge through a full season of aggressive rough-trail or race use that would wear a standard carbide flat by mid-season.',
+          'The tradeoff with an ultra-hard race-spec carbide is a sharper break-in period before the edge settles into predictable steering feel, which is a reasonable cost for riders who put in genuinely high rough-trail or competitive mileage but an unnecessary one for a rider doing moderate weekend trail use. Matching carbide hardness to actual mileage and terrain, not just picking the hardest available option, gets the best balance of feel and service life.',
+        ],
+      },
+      {
+        heading: 'Reading Carbide Wear and When to Replace',
+        paragraphs: [
+          'A new carbide has a defined, slightly angular profile; as it wears, that edge rounds off and steering feedback gets progressively vaguer long before the carbide disappears entirely. The clearest visual sign is a flat, shiny wear patch where the sharp edge used to be — once you see that, steering precision has already degraded even if the ski still "works."',
+          'Inspecting carbides at the start and middle of the season, rather than waiting for a problem to show up on the trail, catches this gradual wear before it becomes a safety issue on ice or hardpack. Replacement is a straightforward bolt-on job on most factory ski loops, which is part of why it is one of the more cost-effective wear-item upgrades a rider can do themselves between seasons.',
+        ],
+      },
+      {
+        heading: 'Matching Carbides to Conditions, Not Just Ski Stance',
+        paragraphs: [
+          'Ski stance width is the primary factor in carbide selection because it determines what fits your specific sled, but the terrain you actually ride should drive the hardness and length decision within that constraint. A narrow-stance mountain rider who spends significant time on hardpack approach roads benefits from a tougher carbide than one who rides almost exclusively in soft, ungroomed powder, even though both are shopping the same 34-to-38-inch stance category.',
+          'The same logic applies on the wide-stance crossover side: a rider splitting time evenly between groomed trail and backcountry side-hilling gets more value from the standard wide-stance runner\'s balance of length and durability, while a rider doing serious mileage on icy groomed corridors might lean toward the harder race-spec insert even on a crossover-width ski. Buying based on your actual riding mix, rather than stance width alone, is the detail that separates a carbide that feels right from one that merely fits.',
+        ],
+      },
+      {
+        heading: 'Installation Basics and What to Check Before Riding',
+        paragraphs: [
+          'Most factory ski loops accept a direct bolt-on carbide runner without drilling, which makes this a realistic driveway job rather than a dealer-only service — but torque matters more than it might seem. An under-tightened mounting bolt lets the runner shift under load, which both dulls steering precision and accelerates wear at the mounting point; manufacturer torque specs exist for a reason and are worth following rather than guessing at "snug."',
+          'After installing new carbides, a short low-speed test on a known surface before committing to a full ride lets you confirm even bite on both skis — a carbide that sits even a few degrees off from its partner changes how the sled tracks straight-line, which is far easier to notice and correct in a parking lot than at trail speed.',
+        ],
+      },
+      {
+        heading: 'Carbides as Part of a Complete Ski and Suspension System',
+        paragraphs: [
+          'Carbide choice interacts with ski suspension geometry more than many riders realize — a worn or mismatched carbide can make a well-tuned front suspension feel vague, while a sharp, correctly matched carbide can make even a basic stock suspension feel noticeably more precise. Troubleshooting "vague steering" by checking carbide condition first, before assuming a suspension or alignment problem, is often the faster and cheaper diagnostic step.',
+          'Ski alignment (toe-in/toe-out) also affects how evenly a carbide wears across its length, so a carbide replaced on a misaligned ski will often wear unevenly again at the same rate as the one it replaced. Checking alignment at the same time as a carbide swap — not a separate, optional step — gets the most life out of the new runner and the most consistent steering feel in the meantime.',
+        ],
+      },
+      {
+        heading: 'Budgeting Carbides Into Your Seasonal Maintenance',
+        paragraphs: [
+          'Carbides are a genuine consumable, not a one-time purchase, which is worth planning for the same way you\'d budget for a drive belt or a set of track studs rather than treating a worn-out carbide as a surprise expense. Riders who log heavy hardpack or trail mileage should expect to budget for a replacement set most seasons; riders who stay almost exclusively in soft powder may stretch a set across several seasons before the wear becomes noticeable.',
+          'Buying the correct width for your specific ski stance the first time avoids the wasted cost of an ill-fitting runner — doubly true for a crossover-width ski, where the narrow-stance and wide-stance product lines look similar enough at a glance that a stance measurement, not a guess, should decide which one you order.',
         ],
       },
     ],
