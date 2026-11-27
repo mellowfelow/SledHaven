@@ -53,6 +53,9 @@ export const metadata: Metadata = {
   },
   verification: {
     google: SITE.seo.googleSiteVerification,
+    other: {
+      'msvalidate.01': SITE.seo.bingSiteVerification,
+    },
   },
   openGraph: {
     type: 'website',

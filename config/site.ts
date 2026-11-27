@@ -80,6 +80,7 @@ export const SITE = {
       'nationwide snowmobile freight delivery',
     ],
     googleSiteVerification: '4CVwnpNCnx0Se8LuQOrCIHYnx-1SeuSXs4Tb1NmTgmY',
+    bingSiteVerification: '1E4E659BFCC8CE6853AFC74B2AD6D954',
   },
   reply: {
     enabled: true,
