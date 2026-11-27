@@ -51,6 +51,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  verification: {
+    google: SITE.seo.googleSiteVerification,
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',

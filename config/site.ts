@@ -79,6 +79,7 @@ export const SITE = {
       'snowmobile financing',
       'nationwide snowmobile freight delivery',
     ],
+    googleSiteVerification: '4CVwnpNCnx0Se8LuQOrCIHYnx-1SeuSXs4Tb1NmTgmY',
   },
   reply: {
     enabled: true,
