@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { SITE } from '@/config/site';
 import { CATEGORIES, PRODUCTS } from '@/config/catalog';
-import { BLOG_POSTS } from '@/config/blog';
+import { BLOG_POSTS, getBlogPageCount } from '@/config/blog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -45,5 +45,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     images: [`${SITE.url}${post.coverImage}`],
   }));
 
-  return [...staticRoutes, ...categoryRoutes, ...productRoutes, ...blogRoutes];
+  const blogPageCount = getBlogPageCount();
+  const blogPaginationRoutes: MetadataRoute.Sitemap = Array.from(
+    { length: blogPageCount - 1 },
+    (_, i) => ({
+      url: `${SITE.url}/blog/page/${i + 2}/`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.6,
+    })
+  );
+
+  return [
+    ...staticRoutes,
+    ...categoryRoutes,
+    ...productRoutes,
+    ...blogRoutes,
+    ...blogPaginationRoutes,
+  ];
 }

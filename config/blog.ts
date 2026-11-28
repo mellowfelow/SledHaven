@@ -2506,3 +2506,15 @@ export const BLOG_POSTS: BlogPost[] = [
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
   return BLOG_POSTS.find((post) => post.slug === slug);
 }
+
+export const BLOG_PAGE_SIZE = 16;
+
+export function getSortedBlogPosts(): BlogPost[] {
+  return [...BLOG_POSTS].sort(
+    (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+  );
+}
+
+export function getBlogPageCount(): number {
+  return Math.max(1, Math.ceil(BLOG_POSTS.length / BLOG_PAGE_SIZE));
+}
